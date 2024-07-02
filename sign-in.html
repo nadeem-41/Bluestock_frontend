@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLUESTOCK</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 400px;
+            height: 715px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .container a {
+            padding-left: 175px;
+            font-size: small;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        label {
+            margin-bottom: 1px;
+        }
+
+        .Keep {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        .Keep input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 40px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .g-recaptcha {
+            margin-bottom: 40px;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #5D12D2;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.7s;
+            margin-bottom: 15px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #8550da;
+            transition: 0.7s;
+        }
+
+        button[type="button"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #e4e7eb;
+            color: #7d8693;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.7s;
+            margin-bottom: 15px;
+            margin-top: 5px;
+        }
+
+        button[type="button"]:hover {
+            background-color: #d5dce6;
+            transition: 0.7s;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        a {
+            color: #5D12D2;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .crt a {
+            padding-left: 132px;
+            color: #5D12D2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>! BLUESTOCK</h1>
+        <form action="https://bluestock.com/signup" method="post">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <a href="forgot-password.html">Forgot Password?</a>
+            <input type="password" id="password" name="password" required>
+
+            <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+            <!-- <label for="robot">I'm not a robot</label> -->
+            <!-- <input type="checkbox" id="robot" name="robot" required> -->
+            <div class="Keep">
+                <input type="checkbox" id="keep-signed-in" name="keep-signed-in">
+                <label for="keep-signed-in">Keep me signed in</label>
+            </div>
+            <button type="submit">Login</button>
+            <p>or sign in with</p>
+            <button type="button">G Continue with Google</button>
+            
+            <div class="crt">
+                <a href="create-account.html">Create an account</a>
+            </div>
+        </form>
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>

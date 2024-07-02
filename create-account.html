@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        top: 66px;
+      }
+
+      .container {
+        width: 400px;
+        height: 828px;
+        margin-top: 66px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+        
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .form-group {
+        margin-bottom: 40px;
+      }
+
+      .form-label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .form-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+      }
+
+      .btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #5d12d2;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: #8550da;
+      }
+
+      .social-buttons {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .social-button {
+        display: inline-block;
+        margin: 0 10px;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        color: #333;
+        text-decoration: none;
+      }
+
+      .g-recaptcha {
+        margin-bottom: 40px;
+      }
+
+      .social-button:hover {
+        background-color: #eee;
+      }
+
+      .or-separator {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      button[type="button"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #e4e7eb;
+        color: #7d8693;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 0.7s;
+        margin-bottom: 15px;
+        margin-top: 5px;
+      }
+
+      button[type="button"]:hover {
+        background-color: #d5dce6;
+        transition: 0.7s;
+      }
+      .or-separator span {
+        padding: 0 10px;
+        background-color: #f4f4f4;
+      }
+
+      .terms {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 12px;
+      }
+
+      .terms a {
+        color: #333;
+        text-decoration: none;
+      }
+    </style>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>BLUESTOCK</h1>
+      <h1>Create an account</h1>
+      <form>
+        <div class="form-group">
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            class="form-input"
+            placeholder="Saisha Wagh"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            class="form-input"
+            placeholder="hello@bluestock.in"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="form-input"
+            placeholder="********"
+          />
+        </div>
+        <div class="form-group">
+          <label for="terms" class="form-label"
+            >By continuing, you agree to our terms of service.</label
+          >
+        </div>
+        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+        <button type="submit" class="btn">Sign up</button>
+        <div class="or-separator">
+          <span>or sign up with</span>
+        </div>
+        <button type="button">G Continue with Google</button>
+      </form>
+      <div class="terms">
+        Already have an account? <a href="sign-in.html">Sign in here</a>
+      </div>
+    </div>
+  </body>
+</html>
