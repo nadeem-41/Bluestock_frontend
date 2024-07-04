@@ -25,7 +25,7 @@
             height: 715px;
             padding: 20px;
             background-color: #fff;
-            border-radius: 4px;
+            border-radius: 22px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
@@ -118,22 +118,45 @@
             padding-left: 132px;
             color: #5D12D2;
         }
+        .container img {
+            width: 222px; /* Adjust the width as needed */
+            height: 44px;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 340px;
+                height: 700px;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 22px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            .container a {
+                margin-top: -40px;
+                padding-left: 119px;
+            }
+
+            .crt a {
+                padding-left: 101px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>! BLUESTOCK</h1>
+        <img src="bluestock.png" alt="BLUESTOCK">
         <form action="https://bluestock.com/signup" method="post">
             <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required placeholder="hello@bluestock.in">
 
             <label for="password">Password</label>
             <a href="forgot-password.html">Forgot Password?</a>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" name="password" required placeholder="*********">
 
             <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-            <!-- <label for="robot">I'm not a robot</label> -->
-            <!-- <input type="checkbox" id="robot" name="robot" required> -->
             <div class="Keep">
                 <input type="checkbox" id="keep-signed-in" name="keep-signed-in">
                 <label for="keep-signed-in">Keep me signed in</label>
