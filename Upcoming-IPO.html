@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPO Listings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: white;
+            width: 87%;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            display: block;
+            margin: 0 auto 10px;
+        }
+        .card h2 {
+            text-align: center;
+            color: #4260e1;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .card .info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .card .info div {
+            text-align: center;
+        }
+        .card .info div span {
+            display: block;
+            color: #a0a0a0;
+            font-size: 12px;
+        }
+        .card .info div strong {
+            display: block;
+            color: #000;
+            font-size: 14px;
+        }
+        .card .buttons {
+            display: flex;
+            justify-content: space-around;
+        }
+        .card .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            text-align: center;
+        }
+        .card .buttons a.rhp {
+            border: 1px solid #4260e1;
+            color: #4260e1;
+        }
+        .card .buttons a.drhp {
+            background-color: #ff6158;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- First 6 cards -->
+        <div class="card">
+            <img src="logo.png" alt="Nova Agritech Ltd.">
+            <h2>Nova Agritech Ltd.</h2>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Rs 39 - 41</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>2024-01-22</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>2024-01-24</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>143.81 Cr.</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>2024-01-30</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="logo.png" alt="EPACK Durable Ltd.">
+            <h2>EPACK Durable Ltd.</h2>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Rs 298 - 300</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>2024-01-23</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>2024-01-23</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>840.02 Cr.</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>2024-01-29</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="logo.png" alt="RK Swamy Ltd.">
+            <h2>RK Swamy Ltd.</h2>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>Not Issued</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="logo.png" alt="Oravel Stays Ltd.">
+            <h2>Oravel Stays Ltd.</h2>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>8430 Cr.</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>Not Issued</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="logo.png" alt="Imagine Marketing Ltd.">
+            <h2>Imagine Marketing Ltd.</h2>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>2000 Cr.</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>Not Issued</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="logo.png" alt="Kids Clinic India Ltd.">
+            <h2>Kids Clinic India Ltd.</h2>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>Not Issued</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+        <!-- Next 6 cards -->
+        <div class="card">
+            <img src="logo.png" alt="OLA Electric Mobility Ltd.">
+            <h2>OLA Electric Mobility Ltd.</h2>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>Not Issued</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="logo.png" alt="One Mobikwik Systems Ltd.">
+            <h2>One Mobikwik Systems Ltd.</h2>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>1900 Cr.</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>Not Issued</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="logo.png" alt="Le Travenues Technology">
+            <h2>Le Travenues Technology</h2>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>1600 Cr.</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>Not Issued</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="logo.png" alt="CMR Green Technologies">
+            <h2>CMR Green Technologies</h2>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>Not Issued</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="logo.png" alt="Wellness Forever">
+            <h2>Wellness Forever</h2>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>Not Issued</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="logo.png" alt="PKH Ventures Ltd.">
+            <h2>PKH Ventures Ltd.</h2>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>Not Issued</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
