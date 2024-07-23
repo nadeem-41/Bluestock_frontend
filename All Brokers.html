@@ -1,1084 +1,1062 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Component4</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <style>
-        body {
-  font-family: Poppins;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f4ff;
-}
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Component4</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+      <style>
+          body {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4ff;
+  }
 
-/*--------------Navbar section-------------------------*/
+  /*--------------Navbar section-------------------------*/
 
-.navbar {
-  width: 1320px;
-  height: 100px;
-  gap: 0px;
-  opacity: 0px;
-  background-color: #ffffff;
-  overflow: visible;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  box-shadow: 0px 4px 20px 5px #00000005;
-}
-
-.navbar-logo {
-  display: inline-block;
-  margin-right: 10px;
-  background-size: cover;
-}
-
-.navbar-logo img {
-  width: 85px;
-  height: 45px;
-  top: 37px;
-  left: 86px;
-  gap: 0px;
-  opacity: 0px;
-}
-
-.navbar-brand {
-  color: #1e1e1e;
-  width: 299.68px;
-  height: 68px;
-  top: 27px;
-  left: 196px;
-  gap: 0px;
-  opacity: 0px;
-  font-size: 45px;
-  font-weight: 700;
-  line-height: 67.5px;
-  margin-right: auto;
-  text-transform: uppercase;
-}
-
-.navbar-links {
-  width: 693.27px;
-  height: 23px;
-  top: 47px;
-  left: 618.73px;
-  gap: 0px;
-  border-radius: 2px 0px 0px 0px;
-  border: 1px 0px 0px 0px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 22.5px;
-  cursor: pointer;
-}
-
-.navbar-links li {
-  display: inline-block;
-  margin-right: 15px;
-}
-
-.navbar-links a {
-  color: #9a9a9a;
-  text-decoration: none;
-  padding: 10px;
-  text-transform: uppercase;
-}
-
-.dropbtn {
-  border: none;
-  background: none;
-  padding: 0;
-  font: inherit;
-  color: inherit;
-  cursor: pointer;
-}
-
-.dropbtn,
-.dropdown-content {
-  color: #9a9a9a;
-  font-size: 15px;
-  text-transform: uppercase;
-}
-
-.dropdown-content {
-  background: white;
-  color: black;
-}
-
-.navbar-links a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.livenews-NEW-design {
-  width: 38px;
-  height: 16px;
-  gap: 0px;
-  border-radius: 2px 0px 0px 0px;
-  opacity: 0px;
-  color: #ffffff;
-  background-color: #3f52ff;
-  border-radius: 2px;
-  font-size: 11px;
-  margin-left: -2px;
-  top: -28px;
-}
-
-.navbar-actions {
-  margin-left: auto;
-}
-
-.navbar-actions a {
-  width: 296.04px;
-  height: 42px;
-  top: 37px;
-  left: 1521px;
-  gap: 0px;
-  opacity: 0px;
-  color: #9a9a9a;
-  text-decoration: none;
-  padding: 10px;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  margin-left: 10px;
-}
-
-.navbar-actions a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-#sign-in {
-  gap: 0px;
-  opacity: 0px;
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 22.5px;
-  text-align: left;
-}
-
-#signup-btn {
-  width: 110px;
-  font-size: 13px;
-  line-height: 22px;
-  height: 42px;
-  color: #ffffff;
-  background-color: #3f52ff;
-  gap: 0px;
-  opacity: 0px;
-  border-radius: 5px;
-  border-color: #3f52ff;
-  cursor: pointer;
-}
-
-i {
-  width: 15.63px;
-  height: 21.88px;
-  top: 1.56px;
-  left: 4.69px;
-  gap: 0px;
-  opacity: 0px;
-  margin-left: 10px;
-  cursor: pointer;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.container {
-  position: absolute;
-  width: 681px;
-  height: 144px;
-  top: 50px;
-  left: 76px;
-  gap: 0px;
-  opacity: 0px;
-  padding: 50px 0;
-  margin-bottom: 50px;
-}
-
-.moto{
-  font-size: 50px;
-  color: #7445d9;
-  text-shadow: 2px 2px 4px #ccc;
-  font-family: Poppins;
-  font-weight: 600;
-  line-height: 120px;
-  text-align: left;
-}
-
-.moto span {
-  color: #45b97e;
-  text-shadow: 2px 2px 4px #ccc;
-}
-
-/*------------------------------------Frames sections-----------------------------------------------------*/
-.frames{
-  margin-top: 100px;
-  margin-left: 200px;
-}
-
-.container1,
-.container2 {
-  width: 900px; /* Adjust width as needed */
-  margin: 20px auto auto 20px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.container1 {
-  background-color: #83a2ff4d;
-}
-
-.container2 {
-  background-color: #ffd28f66;
-}
-
-.header {
-  font-weight: 700;
-}
-
-.review-account-container span,
-.review-account-container div span,
-.cta p,
-.cta button {
-  font-weight: 700;
-}
-
-.services ul li,
-.charges p,
-.charges p span {
-  font-weight: 600;
-}
-
-.charges p,
-.charges p span {
-  font-size: 12px;
-}
-
-.header {
-  flex: 1;
-}
-
-.header h1 {
-  font-size: 24px;
-  margin: 0;
-}
-
-.rating {
-  margin: 10px 0;
-}
-
-.rating .stars {
-  color: gold;
-  font-size: 18px;
-  border: 1px;
-  border-color: black;
-}
-
-.review-account-container {
-  display: flex;
-  flex-direction: row;
-  gap: 20px; /* Adjust spacing between reviews and accounts */
-}
-
-.reviews,
-.accounts {
-  margin: 5px 0;
-  align-items: center;
-}
-
-.accounts {
-  display: flex;
-  flex-direction: column;
-}
-.cta p {
-  margin: 10px 0 5px 15px;
-  font-size: 16px;
-}
-
-.cta button {
-  width: 125px;
-  height: 40px;
-  margin-right: 10px;
-  padding: 10px 15px;
-  border: none;
-  background-color: #f0f4ff;
-  color: black;
-  font-size: 14px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.cta button:last-child {
-  background-color: #f0f4ff;
-}
-
-.services ul {
-  list-style: none;
-  padding: 0;
-}
-
-.services li {
-  position: relative;
-  left: -180px;
-  margin-bottom: 20px;
-  padding-left: 25px; /* Add some padding to the left to make space for the image */
-}
-
-.services li::before {
-  content: url("");
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 16px; /* Adjust size as needed */
-  height: 16px; /* Adjust size as needed */
-  background-image: url("https://s3-alpha-sig.figma.com/img/53da/cc23/14fa6f8ca5deb52902977cbab492dbf4?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BJZKjjolgFNdKTtOAROtM-iRlB6ci-ItorC17NQn3y~n3lhBzyOLmc6f~87q8C1Uy5~M~846IJAxBfVBRHBEJlzLqpkzyAT8FsE6l4pTbVdpuLmRDkPlMlGMxNTvdc6BLGZJjFy1LHWV7dAZ9fvXoBwxIOYqm0-ECsJ8FZ5RdzYqAvlXpxXO8H-vY2Mp~xQcbQOsaP7eJloVXyd5wtFBd6ZjsYWC9r2LUBz9O55JUHgMgNcvMs2sn3~gpbkP~BYE0lyeWqkYDoCzdjQiyxOWL7DBf2Ll6vWGcYIyJC4UeuMh9Qhuu5xi9PuYu0QKJ6Q95D0tn2nURGUZcQFyNGzEVA__"); /* Replace with the path to your image */
-  background-size: contain; /* Ensure the image fits within the width and height */
-  background-repeat: no-repeat; /* Prevent repeating the image */
-}
-
-.charges p {
-  position: relative;
-  left: -100px;
-  margin: 5px 0;
-  margin-bottom: 10px;
-  margin-top: 12px;
-}
-
-.logo img {
-  width: 200px;
-  height: auto;
-  margin-top: 20px;
-}
-
-
-/* Responsive design for Navbar */
-  
-@media( max-width: 1200px) {
   .navbar {
+    width: 1320px;
+    height: 100px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #ffffff;
+    overflow: visible;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 20px 5px #00000005;
+  }
+
+  .navbar-logo {
+    display: inline-block;
+    margin-right: 10px;
+    background-size: cover;
+  }
+
+  .navbar-logo img {
+    width: 85px;
+    height: 45px;
+    top: 37px;
+    left: 86px;
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  .navbar-brand {
+    color: #1e1e1e;
+    width: 299.68px;
+    height: 68px;
+    top: 27px;
+    left: 196px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 67.5px;
+    margin-right: auto;
+    text-transform: uppercase;
+  }
+
+  .navbar-links {
+    width: 693.27px;
+    height: 23px;
+    top: 47px;
+    left: 618.73px;
+    gap: 0px;
+    border-radius: 2px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22.5px;
+    cursor: pointer;
+  }
+
+  .navbar-links li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  .navbar-links a {
+    color: #9a9a9a;
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+
+  .dropbtn {
+    border: none;
+    background: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .dropbtn,
+  .dropdown-content {
+    color: #9a9a9a;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+
+  .dropdown-content {
+    background: white;
+    color: black;
+  }
+
+  .navbar-links a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .livenews-NEW-design {
+    width: 38px;
+    height: 16px;
+    gap: 0px;
+    border-radius: 2px 0px 0px 0px;
+    opacity: 0px;
+    color: #ffffff;
+    background-color: #3f52ff;
+    border-radius: 2px;
+    font-size: 11px;
+    margin-left: -2px;
+    top: -28px;
+  }
+
+  .navbar-actions {
+    margin-left: auto;
+  }
+
+  .navbar-actions a {
+    width: 296.04px;
+    height: 42px;
+    top: 37px;
+    left: 1521px;
+    gap: 0px;
+    opacity: 0px;
+    color: #9a9a9a;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+
+  .navbar-actions a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  #sign-in {
+    gap: 0px;
+    opacity: 0px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22.5px;
+    text-align: left;
+  }
+
+  #signup-btn {
+    width: 110px;
+    font-size: 13px;
+    line-height: 22px;
+    height: 42px;
+    color: #ffffff;
+    background-color: #3f52ff;
+    gap: 0px;
+    opacity: 0px;
+    border-radius: 5px;
+    border-color: #3f52ff;
+    cursor: pointer;
+  }
+
+  i {
+    width: 15.63px;
+    height: 21.88px;
+    top: 1.56px;
+    left: 4.69px;
+    gap: 0px;
+    opacity: 0px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .container {
+    position: absolute;
+    width: 681px;
+    height: 144px;
+    top: 50px;
+    left: 76px;
+    gap: 0px;
+    opacity: 0px;
+    padding: 50px 0;
+    margin-bottom: 50px;
+  }
+
+  .moto{
+    font-size: 50px;
+    color: #7445d9;
+    text-shadow: 2px 2px 4px #ccc;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 120px;
+    text-align: left;
+  }
+
+  .moto span {
+    color: #45b97e;
+    text-shadow: 2px 2px 4px #ccc;
+  }
+
+  /*------------------------------------Frames sections-----------------------------------------------------*/
+  .frames{
+    margin-top: 100px;
+    margin-left: 200px;
+  }
+
+  .container1,
+  .container2 {
+    width: 900px; /* Adjust width as needed */
+    margin: 20px auto auto 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .container1 {
+    background-color: #83a2ff4d;
+  }
+
+  .container2 {
+    background-color: #ffd28f66;
+  }
+
+  .header {
+    font-weight: 700;
+  }
+
+  .review-account-container span,
+  .review-account-container div span,
+  .cta p,
+  .cta button {
+    font-weight: 700;
+  }
+
+  .services ul li,
+  .charges p,
+  .charges p span {
+    font-weight: 600;
+  }
+
+  .charges p,
+  .charges p span {
+    font-size: 12px;
+  }
+
+  .header {
+    flex: 1;
+  }
+
+  .header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .rating {
+    margin: 10px 0;
+  }
+
+  .rating .stars {
+    color: gold;
+    font-size: 18px;
+    border: 1px;
+    border-color: black;
+  }
+
+  .review-account-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Adjust spacing between reviews and accounts */
+  }
+
+  .reviews,
+  .accounts {
+    margin: 5px 0;
+    align-items: center;
+  }
+
+  .accounts {
+    display: flex;
+    flex-direction: column;
+  }
+  .cta p {
+    margin: 10px 0 5px 15px;
+    font-size: 16px;
+  }
+
+  .cta button {
+    width: 125px;
+    height: 40px;
+    margin-right: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #f0f4ff;
+    color: black;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .cta button:last-child {
+    background-color: #f0f4ff;
+  }
+
+  .services ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .services li {
+    position: relative;
+    left: -180px;
+    margin-bottom: 20px;
+    padding-left: 25px; /* Add some padding to the left to make space for the image */
+  }
+
+  .services li::before {
+    content: url("");
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px; /* Adjust size as needed */
+    height: 16px; /* Adjust size as needed */
+    background-image: url('images/green-rightmark-services.png'); /* Replace with the path to your image */
+    background-size: contain; /* Ensure the image fits within the width and height */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+  }
+
+  .charges p {
+    position: relative;
+    left: -100px;
+    margin: 5px 0;
+    margin-bottom: 10px;
+    margin-top: 12px;
+  }
+
+  .logo img {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .cta1 {
+    display: none;
+  }
+
+
+  /* Responsive design for Navbar */
+    
+  @media( max-width: 1200px) {
+    .navbar {
+      width: 100%;
+      height: auto;
+    }
+
+    .navbar-brand{
+        font-size: 35px;
+        margin: 10px;
+        display: inline;
+        width: 60px;
+    }
+    .navbar-links{
+      margin-left: 10rem;
+      margin-right: -15rem;
+    }
+    .navbar-links a {
+      font-size: 10px;
+    }
+    #sign-in,.navbar-actions button {
+      font-size: 10px;
+    }
+
+    .navbar-actions a{
+      width: auto;
+      margin-top: 1rem;
+    }
+    .navbar-actions i{
+        font-size: 1.5rem;
+    }
+    .navbar-logo img{
+        width: 75px;
+    height: 35px;
+    }
+    .dropbtn{
+        font-size: 10px;
+    }
+    .livenews-NEW-design{
+        font-size: 10px;
+    }
+    .navbar-actions button{
+        width: auto;
+        line-height:12px ;
+        height: auto;
+    }
+    .navbar-actions {
+        margin-bottom: 25px;
+        display: contents;
+    }
+
+  .container1,.container2{
+    width: 100%;
+    height: auto;
+    margin-left: -6.5rem;
+  }
+  .services{
+    margin-left: 4rem;
+    margin-right: -3rem;
+    display: inline-block;
+  }
+  .charges{
+    display: inline-block;
+    margin-right: -5rem;
+  }
+  }
+
+  @media(max-width: 992px) {
+    .navbar{
+        width: 100%;
+        height: auto;
+    }
+    .navbar-brand{
+        font-size: 25px;
+        width: auto;
+    }
+    .navbar-links{
+      margin-left: -1rem;
+    }
+    .navbar-links a {
+      font-size: 7px;
+    }
+    .navbar-actions a{
+      display: inline;
+    }
+    #sign-in,.navbar-actions button {
+      font-size: 7px;
+      display: inline;
+    }
+    .navbar-actions i{
+        size: 7px;
+    }
+    .navbar-logo img{
+        width: 65px;
+    height: 25px;
+    }
+    .dropbtn{
+        font-size: 7px;
+    }
+    .livenews-NEW-design{
+        font-size: 7px;
+    }
+    .navbar-actions button{
+        width: 70px;
+        line-height:8px ;
+        height: 7px;
+    }
+    .navbar-actions {
+        margin-bottom: 25px;
+    }
+
+  .container1,.container2{
     width: 100%;
     height: auto;
   }
 
-  .navbar-brand{
-      font-size: 35px;
-      margin: 10px;
-      display: inline;
-      width: 60px;
-  }
-  .navbar-links{
-    margin-left: 10rem;
-    margin-right: -15rem;
-  }
-  .navbar-links a {
-    font-size: 10px;
-  }
-  #sign-in,.navbar-actions button {
-    font-size: 10px;
+  .logo img{
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
   }
 
-  .navbar-actions a{
-    width: auto;
-    margin-top: 1rem;
   }
-  .navbar-actions i{
-      font-size: 1.5rem;
-  }
-  .navbar-logo img{
-      width: 75px;
-  height: 35px;
-  }
-  .dropbtn{
-      font-size: 10px;
-  }
-  .livenews-NEW-design{
-      font-size: 10px;
-  }
-  .navbar-actions button{
-      width: auto;
-      line-height:12px ;
+
+  @media(max-width: 876px) {
+    .navbar {
+      width:100%;
       height: auto;
-  }
-  .navbar-actions {
-      margin-bottom: 25px;
-      display: contents;
+    }
+
+    .navbar-links {
+      display: none;
+    }
+    .navbar-actions a,.navbar-actions button{
+      display: none;
+    }
+    .navbar-brand {
+        font-size: 3rem;
+        margin-left:-100rem;
+      }
+
+      .navbar-logo img{
+        width: 80px;
+        height: 50px;
+      }
+      #sign-in{
+        display: none;
+      }
+      .navbar-actions i {
+        font-size: 1.5rem;
+        margin-left:-80rem;
+        margin-top: -1rem;
+      }
+
+      .container1,.container2{
+        width: 100%;
+        height: auto;
+      }
+
+      .container{
+        width: 100%;
+        margin-left:9rem;
+      }
+      
+      .moto{
+        color:#1C1C1E;
+        font-size: 45px;
+        font-weight: 600;
+      }
+      
+      .moto span{
+        color:#1C1C1E;
+        font-size: 45px;
+        font-weight: 600;
+      }
+      .frames{
+        margin-left: -0.5rem;
+        width: 100%;
+        height: auto;
+        margin-top: -4em;
+      }
+      .container2,.container1{
+        display: flex;
+          flex-direction:column; /* Stack elements vertically */
+          width: 350px;  
+          height: 520px;
+          top: 166px;
+          left: 15px;
+          gap: 0px;
+          border-radius: 25px;
+          opacity: 0px;
+          margin: 10px auto 3rem ;
+          position: relative;
+        }
+      
+        .header {
+          margin-bottom: 20px;
+          font-size: 25px; /* Add spacing between sections */
+          display: inline;
+          position: relative;
+        }
+      
+        .header h1{
+          margin-left: 4rem;
+        }
+      
+        .header,.rating{
+          text-align: center
+        }
+      
+      .rating{
+        margin-top: -10px;
+        margin-left:4rem;
+        display: inline;
+      }
+      
+      .services{
+        margin-left: 1rem;
+        margin-right: -2rem;
+      }
+        .services ul {
+          margin-bottom: 15px; /* Add spacing between sections */
+          display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        }
+      
+        .services li {
+          left: 0; /* Align services correctly */
+          margin-right: 5px;
+          font-size: 8px;
+        }
+      
+        .charges {
+          margin-bottom: 20px; /* Add spacing between sections */
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+      
+        .charges p {
+          left: 0; /* Align charges correctly */
+          font-size: 10px;
+        }
+      
+        .logo {
+          margin-bottom: 20px; /* Add spacing between sections */
+          position: absolute;
+        top: 20px;
+        left: 20px;
+        margin-left: 20px;
+        margin-top: -15px;
+        }
+      
+        .review-account-container {
+          flex-direction: row; /* Stack reviews and accounts vertically */
+          gap: 160px;
+        }
+      
+        .reviews, .accounts {
+          text-align: center; /* Center the text for smaller screens */
+          font-size: 15px;
+        }
+      
+        .reviews{
+          margin-left: 15px;
+        }
+        .accounts{
+          margin-right: 15px;
+        }
+
+        .cta {
+      display: none;
+    }
+    .cta1 {
+      display: block;
+    }
+        .cta p{
+          text-align: center;
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+        .cta button {
+          margin: 0px 0px 15px 0.5rem; /* Adjust spacing between buttons */
+          width: 320px;
+          height: 40px;
+      font-size: 21px;
+        }
+        
+        .logo img{
+          width: 71px;
+      height: 67px;
+      top: 187px;
+      left: 32px;
+      border-radius: 10px;
+        }
   }
 
-.container1,.container2{
-  width: 100%;
-  height: auto;
-  margin-left: -6.5rem;
-}
-.services{
-  margin-left: 4rem;
-  margin-right: -3rem;
-  display: inline-block;
-}
-.charges{
-  display: inline-block;
-  margin-right: -5rem;
-}
-}
-
-@media(max-width: 992px) {
+  @media(max-width: 576px) {
   .navbar{
-      width: 100%;
-      height: auto;
-  }
-  .navbar-brand{
-      font-size: 25px;
-      width: auto;
-  }
-  .navbar-links{
-    margin-left: -1rem;
-  }
-  .navbar-links a {
-    font-size: 7px;
-  }
-  .navbar-actions a{
-    display: inline;
-  }
-  #sign-in,.navbar-actions button {
-    font-size: 7px;
-    display: inline;
-  }
-  .navbar-actions i{
-      size: 7px;
-  }
-  .navbar-logo img{
-      width: 65px;
-  height: 25px;
-  }
-  .dropbtn{
-      font-size: 7px;
-  }
-  .livenews-NEW-design{
-      font-size: 7px;
-  }
-  .navbar-actions button{
-      width: 70px;
-      line-height:8px ;
-      height: 7px;
-  }
-  .navbar-actions {
-      margin-bottom: 25px;
-  }
-
-.container1,.container2{
-  width: 100%;
-  height: auto;
-}
-
-.logo img{
-  width: 8rem;
-  height: 8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-size: cover;
-}
-
-}
-
-@media(max-width: 876px) {
-  .navbar {
     width:100%;
     height: auto;
   }
-
-  .navbar-links {
+  .navbar-logo img {
+  width: 60px;
+  height: 30px;
+  }
+  .navbar-brand {
+  font-size: 2.5rem;
+  margin-left:-6rem;
+  }
+  .navbar-links  {
     display: none;
   }
   .navbar-actions a,.navbar-actions button{
     display: none;
   }
-  .navbar-brand {
-      font-size: 3rem;
-      margin-left:-100rem;
+  .navbar-actions i {
+    size: 30px;
+    margin-left: 30px;
+    margin-top: -5px;
+  }
+  .navbar-logo img{
+    width: 80px;
+    height: 50px;
+  }
+  #sign-in{
+    display: none;
+  }
+
+  .container{
+    width: 100%;
+    margin-left:3rem;
+  }
+
+  .moto{
+    color:#1C1C1E;
+    font-size: 45px;
+    font-weight: 600;
+  }
+
+  .moto span{
+    color:#1C1C1E;
+    font-size: 45px;
+    font-weight: 600;
+  }
+  .frames{
+    margin-left: -0.5rem;
+    width: 100%;
+    height: auto;
+    margin-top: -4em;
+  }
+  .container2,.container1{
+    display: flex;
+      flex-direction:column; /* Stack elements vertically */
+      width: 350px;  
+      height: 520px;
+      top: 166px;
+      left: 15px;
+      gap: 0px;
+      border-radius: 25px;
+      opacity: 0px;
+      margin: 10px auto 3rem ;
+      position: relative;
     }
 
-    .navbar-logo img{
-      width: 80px;
-      height: 50px;
-    }
-    #sign-in{
-      display: none;
-    }
-    .navbar-actions i {
-      font-size: 1.5rem;
-      margin-left:-80rem;
-      margin-top: -1rem;
-    }
-
-    .container1,.container2{
-      width: 100%;
-      height: auto;
-    }
-
-    .container{
-      width: 100%;
-      margin-left:9rem;
-    }
-    
-    .moto{
-      color:#1C1C1E;
-      font-size: 45px;
-      font-weight: 600;
-    }
-    
-    .moto span{
-      color:#1C1C1E;
-      font-size: 45px;
-      font-weight: 600;
-    }
-    .frames{
-      margin-left: -0.5rem;
-      width: 100%;
-      height: auto;
-      margin-top: -4em;
-    }
-    .container2,.container1{
-      display: flex;
-        flex-direction:column; /* Stack elements vertically */
-        width: 350px;  
-        height: 520px;
-        top: 166px;
-        left: 15px;
-        gap: 0px;
-        border-radius: 25px;
-        opacity: 0px;
-        margin: 10px auto 3rem ;
-        position: relative;
-      }
-    
-      .header {
-        margin-bottom: 20px;
-        font-size: 25px; /* Add spacing between sections */
-        display: inline;
-        position: relative;
-      }
-    
-      .header h1{
-        margin-left: 4rem;
-      }
-    
-      .header,.rating{
-        text-align: center
-      }
-    
-    .rating{
-      margin-top: -10px;
-      margin-left:4rem;
+    .header {
+      margin-bottom: 20px;
+      font-size: 25px; /* Add spacing between sections */
       display: inline;
+      position: relative;
     }
-    
-    .services{
-      margin-left: 1rem;
-      margin-right: -2rem;
+
+    .header h1{
+      margin-left: 4rem;
     }
-      .services ul {
-        margin-bottom: 15px; /* Add spacing between sections */
-        display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      }
-    
-      .services li {
-        left: 0; /* Align services correctly */
-        margin-right: 5px;
-        font-size: 8px;
-      }
-    
-      .charges {
-        margin-bottom: 20px; /* Add spacing between sections */
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      }
-    
-      .charges p {
-        left: 0; /* Align charges correctly */
-        font-size: 10px;
-      }
-    
-      .logo {
-        margin-bottom: 20px; /* Add spacing between sections */
-        position: absolute;
+
+    .header,.rating{
+      text-align: center
+    }
+
+  .rating{
+    margin-top: -10px;
+    margin-left:4rem;
+    display: inline;
+  }
+
+  .services{
+    margin-left: 1rem;
+    margin-right: -2rem;
+  }
+    .services ul {
+      margin-bottom: 15px; /* Add spacing between sections */
+      display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    }
+
+    .services li {
+      left: 0; /* Align services correctly */
+      margin-right: 5px;
+      font-size: 8px;
+    }
+
+    .charges {
+      margin-bottom: 20px; /* Add spacing between sections */
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .charges p {
+      left: 0; /* Align charges correctly */
+      font-size: 10px;
+    }
+
+    .logo {
+      margin-bottom: 20px; /* Add spacing between sections */
+      position: absolute;
       top: 20px;
       left: 20px;
       margin-left: 20px;
       margin-top: -15px;
-      }
+    }
+
+    .review-account-container {
+      flex-direction: row; /* Stack reviews and accounts vertically */
+      gap: 160px;
+    }
+
+    .reviews, .accounts {
+      text-align: center; /* Center the text for smaller screens */
+      font-size: 15px;
+    }
+
+    .reviews{
+      margin-left: 15px;
+    }
+    .accounts{
+      margin-right: 15px;
+    }
+
+    .cta {
+      display: none;
+    }
+    .cta1 {
+      display: block;
+    }
+    .cta p{
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    .cta button {
+      margin: 0px 0px 15px 0.5rem; /* Adjust spacing between buttons */
+      width: 320px;
+      height: 40px;
+      font-size: 21px;
+    }
     
-      .review-account-container {
-        flex-direction: row; /* Stack reviews and accounts vertically */
-        gap: 160px;
-      }
-    
-      .reviews, .accounts {
-        text-align: center; /* Center the text for smaller screens */
-        font-size: 15px;
-      }
-    
-      .reviews{
-        margin-left: 15px;
-      }
-      .accounts{
-        margin-right: 15px;
-      }
-       .cta p{
-        text-align: center;
-        font-size: 18px;
-        margin-bottom: 15px;
-       }
-      .cta button {
-        margin: 0px 0px 15px 0.5rem; /* Adjust spacing between buttons */
-        width: 320px;
-        height: 40px;
-    font-size: 21px;
-      }
+    .logo img{
+      width: 71px;
+  height: 67px;
+  top: 187px;
+  left: 32px;
+  border-radius: 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+  .navbar{
+    width:100%;
+    height: auto;
+  }
+  .navbar-logo img {
+  width: 40px;
+  height: 20px;
+  }
+  .navbar-brand {
+  font-size: 30px;
+  margin-left: -2rem;
+  width: auto;
+  }
+  .navbar-links  {
+    display: none;
+  }
+  .navbar-actions a,.navbar-actions button{
+    display: none;
+  }
+
+  #sign-in{
+  display: none;
+  }
+
+  .container{
+    width: 100%;
+    margin-left: -3rem;
+  }
+
+  .moto{
+    color:#1C1C1E;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .moto span{
+    color:#1C1C1E;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .frames{
+    margin-left: -0.5rem;
+    width: 100%;
+    height: auto;
+  }
+  .navbar-actions i {
+    font-size: 1.5rem;
+    margin-left: 30px;
+    margin-top: -5px;
+  }
+  .navbar-logo img{
+    width: 80px;
+    height: 50px;
+  }
+  .container2,.container1{
+    display: flex;
+      flex-direction:column; /* Stack elements vertically */
+      width: 300px;  
+      height: 520px;
+      top: 166px;
+      left: 15px;
+      gap: 0px;
+      border-radius: 25px;
+      opacity: 0px;
+      margin: 10px auto 3rem;
+      position: relative;
       
-      .logo img{
-        width: 71px;
-    height: 67px;
-    top: 187px;
-    left: 32px;
-    border-radius: 10px;
-      }
-}
+    }
 
-@media(max-width: 576px) {
-.navbar{
-  width:100%;
-  height: auto;
-}
-.navbar-logo img {
-width: 60px;
-height: 30px;
-}
-.navbar-brand {
-font-size: 2.5rem;
-margin-left:-6rem;
-}
-.navbar-links  {
-  display: none;
-}
-.navbar-actions a,.navbar-actions button{
-  display: none;
-}
-.navbar-actions i {
-  size: 30px;
-  margin-left: 30px;
-  margin-top: -5px;
-}
-.navbar-logo img{
-  width: 80px;
-  height: 50px;
-}
-#sign-in{
-  display: none;
-}
+    .header {
+      margin-bottom: 20px;
+      font-size: 25px; /* Add spacing between sections */
+      display: inline;
+      position: relative;
+    }
 
-.container{
-  width: 100%;
-  margin-left:3rem;
-}
+    .header,.rating{
+      text-align: center
+    }
 
-.moto{
-  color:#1C1C1E;
-  font-size: 45px;
-  font-weight: 600;
-}
-
-.moto span{
-  color:#1C1C1E;
-  font-size: 45px;
-  font-weight: 600;
-}
-.frames{
-  margin-left: -0.5rem;
-  width: 100%;
-  height: auto;
-  margin-top: -4em;
-}
-.container2,.container1{
-  display: flex;
-    flex-direction:column; /* Stack elements vertically */
-    width: 350px;  
-    height: 520px;
-    top: 166px;
-    left: 15px;
-    gap: 0px;
-    border-radius: 25px;
-    opacity: 0px;
-    margin: 10px auto 3rem ;
-    position: relative;
-  }
-
-  .header {
-    margin-bottom: 20px;
-    font-size: 25px; /* Add spacing between sections */
+  .rating{
+    margin-top: -10px;
+    margin-left:-40px;
     display: inline;
-    position: relative;
   }
 
-  .header h1{
-    margin-left: 4rem;
+  .services{
+    margin-left: -0.5rem;
   }
+    .services ul {
+      margin-bottom: 15px; /* Add spacing between sections */
+      display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    }
 
-  .header,.rating{
-    text-align: center
-  }
+    .services li {
+      left: 0; /* Align services correctly */
+      margin-right: 5px;
+      font-size: 8px;
+    }
 
-.rating{
-  margin-top: -10px;
-  margin-left:4rem;
-  display: inline;
-}
+    .charges {
+      margin-bottom: 20px; /* Add spacing between sections */
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
 
-.services{
-  margin-left: 1rem;
-  margin-right: -2rem;
-}
-  .services ul {
-    margin-bottom: 15px; /* Add spacing between sections */
-    display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  }
+    .charges p {
+      left: 0; /* Align charges correctly */
+      font-size: 10px;
+    }
 
-  .services li {
-    left: 0; /* Align services correctly */
-    margin-right: 5px;
-    font-size: 8px;
-  }
+    .logo {
+      margin-bottom: 20px; /* Add spacing between sections */
+      position: absolute;
+    top: 20px;
+    left: 20px;
+    margin-left: 20px;
+    margin-top: -15px;
+    }
 
-  .charges {
-    margin-bottom: 20px; /* Add spacing between sections */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+    .review-account-container {
+      flex-direction: row; /* Stack reviews and accounts vertically */
+      gap: 160px;
+    }
 
-  .charges p {
-    left: 0; /* Align charges correctly */
-    font-size: 10px;
-  }
+    .reviews, .accounts {
+      text-align: center; /* Center the text for smaller screens */
+      font-size: 15px;
+    }
 
-  .logo {
-    margin-bottom: 20px; /* Add spacing between sections */
-    position: absolute;
-  top: 20px;
-  left: 20px;
-  margin-left: 20px;
-  margin-top: -15px;
-  }
-
-  .review-account-container {
-    flex-direction: row; /* Stack reviews and accounts vertically */
-    gap: 160px;
-  }
-
-  .reviews, .accounts {
-    text-align: center; /* Center the text for smaller screens */
-    font-size: 15px;
-  }
-
-  .reviews{
-    margin-left: 15px;
-  }
-  .accounts{
-    margin-right: 15px;
-  }
-   .cta p{
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 15px;
-   }
-  .cta button {
-    margin: 0px 0px 15px 0.5rem; /* Adjust spacing between buttons */
-    width: 320px;
-    height: 40px;
-font-size: 21px;
-  }
-  
-  .logo img{
-    width: 71px;
-height: 67px;
-top: 187px;
-left: 32px;
-border-radius: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-.navbar{
-  width:100%;
-  height: auto;
-}
-.navbar-logo img {
-width: 40px;
-height: 20px;
-}
-.navbar-brand {
-font-size: 30px;
-margin-left: -2rem;
-width: auto;
-}
-.navbar-links  {
-  display: none;
-}
-.navbar-actions a,.navbar-actions button{
-  display: none;
-}
-
-#sign-in{
-display: none;
-}
-
-.container{
-  width: 100%;
-  margin-left: -3rem;
-}
-
-.moto{
-  color:#1C1C1E;
-  font-size: 35px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.moto span{
-  color:#1C1C1E;
-  font-size: 35px;
-  font-weight: 600;
-}
-.frames{
-  margin-left: -0.5rem;
-  width: 100%;
-  height: auto;
-}
-.navbar-actions i {
-  font-size: 1.5rem;
-  margin-left: 30px;
-  margin-top: -5px;
-}
-.navbar-logo img{
-  width: 80px;
-  height: 50px;
-}
-.container2,.container1{
-  display: flex;
-    flex-direction:column; /* Stack elements vertically */
-    width: 300px;  
-    height: 520px;
-    top: 166px;
-    left: 15px;
-    gap: 0px;
-    border-radius: 25px;
-    opacity: 0px;
-    margin: 10px auto 3rem;
-    position: relative;
+    .reviews{
+      margin-left: 15px;
+    }
+    .accounts{
+      margin-right: 15px;
+    }
+    .cta {
+      display: none;
+    }
+    .cta1 {
+      display: block;
+    }
+    .cta p{
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    .cta button {
+      margin: 0px 0px 15px 0px; /* Adjust spacing between buttons */
+      width: 320px;
+      height: 40px;
+      font-size: 21px;
+    }
     
+    .logo img{
+      width: 71px;
+      height: 67px;
+      top: 187px;
+      left: 32px;
+      border-radius: 10px;
+    }
   }
 
-  .header {
-    margin-bottom: 20px;
-    font-size: 25px; /* Add spacing between sections */
-    display: inline;
-    position: relative;
-  }
-
-  .header,.rating{
-    text-align: center
-  }
-
-.rating{
-  margin-top: -10px;
-  margin-left:-40px;
-  display: inline;
-}
-
-.services{
-  margin-left: -0.5rem;
-}
-  .services ul {
-    margin-bottom: 15px; /* Add spacing between sections */
-    display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  }
-
-  .services li {
-    left: 0; /* Align services correctly */
-    margin-right: 5px;
-    font-size: 8px;
-  }
-
-  .charges {
-    margin-bottom: 20px; /* Add spacing between sections */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .charges p {
-    left: 0; /* Align charges correctly */
-    font-size: 10px;
-  }
-
-  .logo {
-    margin-bottom: 20px; /* Add spacing between sections */
-    position: absolute;
-  top: 20px;
-  left: 20px;
-  margin-left: 20px;
-  margin-top: -15px;
-  }
-
-  .review-account-container {
-    flex-direction: row; /* Stack reviews and accounts vertically */
-    gap: 160px;
-  }
-
-  .reviews, .accounts {
-    text-align: center; /* Center the text for smaller screens */
-    font-size: 15px;
-  }
-
-  .reviews{
-    margin-left: 15px;
-  }
-  .accounts{
-    margin-right: 15px;
-  }
-   .cta p{
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 15px;
-   }
-  .cta button {
-    margin: 0px 0px 15px -30px; /* Adjust spacing between buttons */
-    width: 320px;
-    height: 40px;
-font-size: 21px;
-  }
-  
-  .logo img{
-    width: 71px;
-height: 67px;
-top: 187px;
-left: 32px;
-border-radius: 10px;
-  }
-}
 
 
 
+  /*---------------------------End of content---------------------------------------------*/
 
-/*---------------------------End of content---------------------------------------------*/
-
-    </style>
-</head>
-<body>
-    <div class="navbar">
-        <div class="navbar-logo">
-          <img src="https://s3-alpha-sig.figma.com/img/33b9/eda0/4843225c388eec499ad6ac8810e70a6a?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qC3hyULrOrWvCRUupUViTBHBjb~PHGG6uyB7qdWqu4T7F9D5P7d7~CRwxa2O53GN~Jcbwi19jSbqOe3aiNLADhILa-OLd6dbTVJ94qVGb47MLBRJgXYWOv-m09Cu-JLaGFmw94o~slZxCW7vRYUZkAUr48ODPW1D324x667VkR8GDdcYWKtkFJr1rmzbY9KeZR2cua~psKrXWH-UvdauZR20HzZP30E0PSJg0d1Ywi~wXnCqCKoSEm-Y7ITa9lFTygSUy6pVNvktN2PPY9gzLnVx2KsTTIHfbi5A1E2FGdC6FczhitwlMeUiIOhq1jBwUaf0MiNWtC~5lIfgNuS8Vg__" alt="Bluestock logo">
-        </div>
-        <div class="navbar-brand">Bluestock</div>
-        <ul class="navbar-links">
-          <li><a href="#">IPO</a></li>
-          <li><a href="#">Community</a></li>
-          <li><div class="dropdown">
-            <button class="dropbtn">Products &#9660;</button>
-            <div class="dropdown-content">
-              <a href="#">Photos</a>
-              <a href="#">Videos</a>
-              <a href="#">Audio</a>
-            </div></li>
-          <li><a href="#">Brokers</a></li>
-          <li><a href="#">Live News</a> <span class="livenews-NEW-design">NEW</span></li>
-        </ul>
-        <div class="navbar-actions">
-          <a href="#" id="sign-in">Sign In</a>
-          <button id="signup-btn">Sign Up Now</button>
-          <i class="fa-solid fa-grip-vertical"></i>
-        </div>
-      </div>
-      <div class="container">
-        <div class="moto">Made <span>to Trade</span></div>
-      </div>
-      <div class="frames">
-        <div class="upstox">
-          <div class="container1">
-            <div class="header">
-                <h1>Upstox</h1>
-                <div class="rating">
-                    <span class="stars" >★★★★☆</span>
-                </div>
-                <div class="review-account-container">
-                  <div class="reviews">
-                    <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
-                    <div><span>Reviews </span></div>
-                  </div>
-                  <div class="accounts">
-                   <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
-                   <div><span>Accounts</span></div>
-                  </div>
-                </div>
-                <div class="cta">
-                    <p>Open Demat A/c for FREE</p>
-                    <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
-                    <button class="learn-more-btn">Learn More</button>
-                </div>
-            </div>
-            <div class="services">
-              <ul>
-                  <li>Equity</li>
-                  <li>Commodity</li>
-                  <li>Currency</li>
-                  <li>Futures</li>
-                  <li>Options</li>
-              </ul>
-            </div>
-          <div class="charges">
-              <p>A/c Opening Charge: </p>
-              <p><span>₹ Rs. 0</span></p>
-              <p>Maintenance Charge: </p>
-              <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
-              <p>Delivery Brokerage: </p>
-              <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-              <p>Intraday Brokerage: </p>
-              <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+      </style>
+  </head>
+  <body>
+      <div class="navbar">
+          <div class="navbar-logo">
+            <img src="images/Bluestock.png" alt="Bluestock logo">
           </div>
-          <div class="logo">
-              <img src="https://s3-alpha-sig.figma.com/img/d3ba/86db/97e6033a9e06888a4ba8a71290973b43?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PC39UbrptpAeuArZsKiGaiXzZF6JCzVbmK8QOkDzSFmBM-PFHIbJjIoelSKVaFtED576MV2E5srGI0EqS6hSezYz-oY~qY75Bhgx1yJ8gGFguqXhoTSyMQ7pQPka-MLPWnsticuPhB7I0PUWyc8DbRVsznkvObluZP8HITbHGYcN89i5-Znw0s9TPUPWOhJpG-YkM11gbta5ahUePc2aJOtUdxjqt~QISp-WX09zxtBtwwxLFCYMp9bCiD~gvQWSKFRi2IE3oyY7rDRwC1TJvOfWWApr3P8B5-439sylzEGwLDfTS-wBvuF4Q49I6B~HhU9ZkO8kxSmjB-RkFcoqXA__" alt="Upstox Logo">
+          <div class="navbar-brand">Bluestock</div>
+          <ul class="navbar-links">
+            <li><a href="#">IPO</a></li>
+            <li><a href="#">Community</a></li>
+            <li><div class="dropdown">
+              <button class="dropbtn">Products &#9660;</button>
+              <div class="dropdown-content">
+                <a href="#">Photos</a>
+                <a href="#">Videos</a>
+                <a href="#">Audio</a>
+              </div></li>
+            <li><a href="#">Brokers</a></li>
+            <li><a href="#">Live News</a> <span class="livenews-NEW-design">NEW</span></li>
+          </ul>
+          <div class="navbar-actions">
+            <a href="#" id="sign-in">Sign In</a>
+            <button id="signup-btn">Sign Up Now</button>
+            <i class="fa-solid fa-grip-vertical"></i>
           </div>
         </div>
-          <div class="angelone">
-            <div class="container2">
+        <div class="container">
+          <div class="moto">Made <span>to Trade</span></div>
+        </div>
+        <div class="frames">
+          <div class="upstox">
+            <div class="container1">
               <div class="header">
-                  <h1>AngleOne</h1>
+                  <h1>Upstox</h1>
                   <div class="rating">
                       <span class="stars" >★★★★☆</span>
                   </div>
@@ -1088,8 +1066,8 @@ border-radius: 10px;
                       <div><span>Reviews </span></div>
                     </div>
                     <div class="accounts">
-                     <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
-                     <div><span>Accounts</span></div>
+                    <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
+                    <div><span>Accounts</span></div>
                     </div>
                   </div>
                   <div class="cta">
@@ -1097,6 +1075,109 @@ border-radius: 10px;
                       <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
                       <button class="learn-more-btn">Learn More</button>
                   </div>
+              </div>
+              <div class="services">
+                <ul>
+                    <li>Equity</li>
+                    <li>Commodity</li>
+                    <li>Currency</li>
+                    <li>Futures</li>
+                    <li>Options</li>
+                </ul>
+                <div class="cta1 cta">
+                  <p>Open Demat A/c for FREE</p>
+                  <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                  <button class="learn-more-btn">Learn More</button>
+                </div>
+              </div>
+            <div class="charges">
+                <p>A/c Opening Charge: </p>
+                <p><span>₹ Rs. 0</span></p>
+                <p>Maintenance Charge: </p>
+                <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
+                <p>Delivery Brokerage: </p>
+                <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                <p>Intraday Brokerage: </p>
+                <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+            </div>
+            <div class="logo">
+                <img src="images/upstox.png" alt="Upstox Logo">
+            </div>
+          </div>
+            <div class="angelone">
+              <div class="container2">
+                <div class="header">
+                    <h1>AngleOne</h1>
+                    <div class="rating">
+                        <span class="stars" >★★★★☆</span>
+                    </div>
+                    <div class="review-account-container">
+                      <div class="reviews">
+                        <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
+                        <div><span>Reviews </span></div>
+                      </div>
+                      <div class="accounts">
+                      <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
+                      <div><span>Accounts</span></div>
+                      </div>
+                    </div>
+                    <div class="cta">
+                        <p>Open Demat A/c for FREE</p>
+                        <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                  </div>
+                  <div class="services">
+                      <ul>
+                          <li>Equity</li>
+                          <li>Commodity</li>
+                          <li>Currency</li>
+                          <li>Futures</li>
+                          <li>Options</li>
+                      </ul>
+                  </div>
+                  <div class="cta1 cta">
+                    <p>Open Demat A/c for FREE</p>
+                    <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                    <button class="learn-more-btn">Learn More</button>
+                  </div>
+                  <div class="charges">
+                      <p>A/c Opening Charge: </p>
+                      <p><span>₹ Rs. 0</span></p>
+                      <p>Maintenance Charge: </p>
+                      <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
+                      <p>Delivery Brokerage: </p>
+                      <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                      <p>Intraday Brokerage: </p>
+                      <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                  </div>
+                  <div class="logo">
+                      <img src="images/angelone.png" alt="AngelOne Logo">
+                  </div>
+              </div>
+            </div>
+            <div class="groww">
+              <div class="container1">
+                <div class="header">
+                    <h1>Groww</h1>
+                    <div class="rating">
+                        <span class="stars" >★★★★☆</span>
+                    </div>
+                    <div class="review-account-container">
+                      <div class="reviews">
+                        <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
+                        <div><span>Reviews </span></div>
+                      </div>
+                      <div class="accounts">
+                      <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
+                      <div><span>Accounts</span></div>
+                      </div>
+                    </div>
+                    <div class="cta">
+                        <p>Open Demat A/c for FREE</p>
+                        <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
                 </div>
                 <div class="services">
                     <ul>
@@ -1106,6 +1187,11 @@ border-radius: 10px;
                         <li>Futures</li>
                         <li>Options</li>
                     </ul>
+                </div>
+                <div class="cta1 cta">
+                  <p>Open Demat A/c for FREE</p>
+                  <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                  <button class="learn-more-btn">Learn More</button>
                 </div>
                 <div class="charges">
                     <p>A/c Opening Charge: </p>
@@ -1118,810 +1204,843 @@ border-radius: 10px;
                     <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
                 </div>
                 <div class="logo">
-                    <img src="https://s3-alpha-sig.figma.com/img/02cf/c886/1ebd2633c38a7949438ca3d2024c33c7?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LFRGxdX4CkDU8PQmL9I-9YE~f1VDHyGKis1WSvRuf074osa9KizOy3e3SP3O0QKfZ1quce9qe4GwBiogeEfxA3-lps-n2NBzs7PZMhmqBQ6ecqrO10kdt6qF8EOGaIi0nHx89bV7rQAHuE9vHpE0TLdJh~-xUueAX0IswNET-X2~umgjjh43AJoyVojRm9tNwCVvOZntxeM1VWsqknigbV3tlpJS4Pg4zBsYgSzd2gz3~xSsu86W8qcWHBLDF6R1SHdG-QWNPruZIgcRdoHRUKE2fA9~OYhpsMeWonEpSkmKKqU53aI1MomVGu7etsdM7CF6ryZ9h-VVnDYQUI8mQw__" alt="AngelOne Logo">
+                    <img src="images/groww.png" alt="Groww Logo">
                 </div>
             </div>
-          </div>
-          <div class="groww">
-            <div class="container1">
-              <div class="header">
-                  <h1>Groww</h1>
-                  <div class="rating">
-                      <span class="stars" >★★★★☆</span>
-                  </div>
-                  <div class="review-account-container">
-                    <div class="reviews">
-                      <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
-                      <div><span>Reviews </span></div>
+            </div>
+            <div class="dhan">
+              <div class="container2">
+                <div class="header">
+                    <h1>Dhan</h1>
+                    <div class="rating">
+                        <span class="stars" >★★★★☆</span>
                     </div>
-                    <div class="accounts">
-                     <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
-                     <div><span>Accounts</span></div>
+                    <div class="review-account-container">
+                      <div class="reviews">
+                        <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
+                        <div><span>Reviews </span></div>
+                      </div>
+                      <div class="accounts">
+                      <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
+                      <div><span>Accounts</span></div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="cta">
-                      <p>Open Demat A/c for FREE</p>
-                      <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
-                      <button class="learn-more-btn">Learn More</button>
-                  </div>
-              </div>
-              <div class="services">
-                  <ul>
-                      <li>Equity</li>
-                      <li>Commodity</li>
-                      <li>Currency</li>
-                      <li>Futures</li>
-                      <li>Options</li>
-                  </ul>
-              </div>
-              <div class="charges">
-                  <p>A/c Opening Charge: </p>
-                  <p><span>₹ Rs. 0</span></p>
-                  <p>Maintenance Charge: </p>
-                  <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
-                  <p>Delivery Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-                  <p>Intraday Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-              </div>
-              <div class="logo">
-                  <img src="https://s3-alpha-sig.figma.com/img/2db4/198e/34285bff89ad35c6c4df35352fdcc07e?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pGhxK4f4gVN2vKT9pr5puVosDf9fVxTQd1~cPPPkrZHyYmjAYMRJmyMKgCnE5m-UORJXsCmbTEpfFqrvq7AHj0mb2zfX8IpbgBUCNuzXlVCQMYP9WZxk4oDKApYWPO6nppjU5kKkMWRm6wqGYvlAwA5f2nDi-RT9ucrDmNt0XiUlcSYNXI~CtA3kUI4AW6rBCkUwJADPeoCh6itqHSFRAWgJ90qysc98EqIzT3YTb~2B5ZwLkUITOMG0P8FRb31bsJmRmSlAgYL3EBoPgY3jAGY9hsqB~fo59B9rBGe50XY7r52EifcuMbHknWIb2DQ6DCLWCziAcHwIcIMawH9jIA__" alt="Groww Logo">
-              </div>
-          </div>
-          </div>
-          <div class="dhan">
-            <div class="container2">
-              <div class="header">
-                  <h1>Dhan</h1>
-                  <div class="rating">
-                      <span class="stars" >★★★★☆</span>
-                  </div>
-                  <div class="review-account-container">
-                    <div class="reviews">
-                      <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
-                      <div><span>Reviews </span></div>
+                    <div class="cta">
+                        <p>Open Demat A/c for FREE</p>
+                        <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                        <button class="learn-more-btn">Learn More</button>
                     </div>
-                    <div class="accounts">
-                     <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
-                     <div><span>Accounts</span></div>
+                </div>
+                <div class="services">
+                    <ul>
+                        <li>Equity</li>
+                        <li>Commodity</li>
+                        <li>Currency</li>
+                        <li>Futures</li>
+                        <li>Options</li>
+                    </ul>
+                </div>
+                <div class="cta1 cta">
+                  <p>Open Demat A/c for FREE</p>
+                  <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                  <button class="learn-more-btn">Learn More</button>
+                </div>
+                <div class="charges">
+                    <p>A/c Opening Charge: </p>
+                    <p><span>₹ Rs. 0</span></p>
+                    <p>Maintenance Charge: </p>
+                    <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
+                    <p>Delivery Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                    <p>Intraday Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                </div>
+                <div class="logo">
+                    <img src="images/dhan.jfif" alt="Dhan Logo">
+                </div>
+            </div>
+            </div>
+            <div class="alice-blue">
+              <div class="container1">
+                <div class="header">
+                    <h1>Alice Blue</h1>
+                    <div class="rating">
+                        <span class="stars" >★★★★☆</span>
                     </div>
-                  </div>
-                  <div class="cta">
-                      <p>Open Demat A/c for FREE</p>
-                      <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
-                      <button class="learn-more-btn">Learn More</button>
-                  </div>
-              </div>
-              <div class="services">
-                  <ul>
-                      <li>Equity</li>
-                      <li>Commodity</li>
-                      <li>Currency</li>
-                      <li>Futures</li>
-                      <li>Options</li>
-                  </ul>
-              </div>
-              <div class="charges">
-                  <p>A/c Opening Charge: </p>
-                  <p><span>₹ Rs. 0</span></p>
-                  <p>Maintenance Charge: </p>
-                  <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
-                  <p>Delivery Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-                  <p>Intraday Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-              </div>
-              <div class="logo">
-                  <img src="https://s3-alpha-sig.figma.com/img/cecd/d299/e45ea3e821112b70105c368f9a59c6e2?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=keT3EexXfVAycs0yiDabMhA-XNGW~NvVtuJJhXEPnHit2mT-Y8d79TGlyTpof74BIOhmu0Z~pb-4heFOkx5zWyFJdb0TbY2ETVoTHVq02y~t-DKXPkCm0aFOaTe~PPHVdIs1TSTkdKy~OHwVnJML-7aayjJkAvArMvBq8n6xygoGZbz0gJ3-7ZsWK6KZw5ACxWgs4uBSc1GY9w9g~YJQq6U14KEsCCXJPXTkaKz2lsLoXp-t8UBPrCg0FbwSFGRtIcAIfihW1ubN7IefXvwA03nBCLX7Zw8iGhNijITCMyWzkXgq~zOAZzLV8Fnegecn-QpGeA3oz6Wf1fQ~2s8mOg__" alt="Dhan Logo">
-              </div>
-          </div>
-          </div>
-          <div class="alice-blue">
-            <div class="container1">
-              <div class="header">
-                  <h1>Alice Blue</h1>
-                  <div class="rating">
-                      <span class="stars" >★★★★☆</span>
-                  </div>
-                  <div class="review-account-container">
-                    <div class="reviews">
-                      <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
-                      <div><span>Reviews </span></div>
+                    <div class="review-account-container">
+                      <div class="reviews">
+                        <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
+                        <div><span>Reviews </span></div>
+                      </div>
+                      <div class="accounts">
+                      <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
+                      <div><span>Accounts</span></div>
+                      </div>
                     </div>
-                    <div class="accounts">
-                     <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
-                     <div><span>Accounts</span></div>
+                    <div class="cta">
+                        <p>Open Demat A/c for FREE</p>
+                        <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                        <button class="learn-more-btn">Learn More</button>
                     </div>
-                  </div>
-                  <div class="cta">
-                      <p>Open Demat A/c for FREE</p>
-                      <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
-                      <button class="learn-more-btn">Learn More</button>
-                  </div>
-              </div>
-              <div class="services">
-                  <ul>
-                      <li>Equity</li>
-                      <li>Commodity</li>
-                      <li>Currency</li>
-                      <li>Futures</li>
-                      <li>Options</li>
-                  </ul>
-              </div>
-              <div class="charges">
-                  <p>A/c Opening Charge: </p>
-                  <p><span>₹ Rs. 0</span></p>
-                  <p>Maintenance Charge: </p>
-                  <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
-                  <p>Delivery Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-                  <p>Intraday Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-              </div>
-              <div class="logo">
-                  <img src="https://s3-alpha-sig.figma.com/img/638e/f3ca/30baf7b29ef17f2d14e6adf9a11343ce?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XUFQ6mFz0yIHyBZgKn7u2QToTLby1W4wtcnROxzYfrC3DDnM6tEV9l8lMvMKHZ6GsZGX5LcfygN~DhpHSFvEJXxoBGGAxIxOjMR5oU9Qnf91KSwMQOci65wgnW62tZG9xwAVj5mTT5ortLSYjN4qqP8Kwfa1STr9VXi1wPxB0Y90GcmA80MjYlvL7snomDJMs08mivXRgxHGTQwCqaTYgN5gziZ2tc6SAEjNvkXImpu6vfUMIc~ThCdu3CMpN6Ea0rotIUPglHoAFMZBDzIsAWF36cNgdvwBNboPnEqfof7EKH~nF5tj3RGQ~OFXY9AfyqZJzMXfAN0HUHNVBW9wuA__" alt="Alice blue Logo">
-              </div>
-          </div>
-          </div>
-          <div class="axis-direct">
-            <div class="container2">
-              <div class="header">
-                  <h1>Axis Direct</h1>
-                  <div class="rating">
-                      <span class="stars" >★★★★☆</span>
-                  </div>
-                  <div class="review-account-container">
-                    <div class="reviews">
-                      <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
-                      <div><span>Reviews </span></div>
+                </div>
+                <div class="services">
+                    <ul>
+                        <li>Equity</li>
+                        <li>Commodity</li>
+                        <li>Currency</li>
+                        <li>Futures</li>
+                        <li>Options</li>
+                    </ul>
+                </div>
+                <div class="cta1 cta">
+                  <p>Open Demat A/c for FREE</p>
+                  <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                  <button class="learn-more-btn">Learn More</button>
+                </div>
+                <div class="charges">
+                    <p>A/c Opening Charge: </p>
+                    <p><span>₹ Rs. 0</span></p>
+                    <p>Maintenance Charge: </p>
+                    <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
+                    <p>Delivery Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                    <p>Intraday Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                </div>
+                <div class="logo">
+                    <img src="images/aliceblue.png" alt="Alice blue Logo">
+                </div>
+            </div>
+            </div>
+            <div class="axis-direct">
+              <div class="container2">
+                <div class="header">
+                    <h1>Axis Direct</h1>
+                    <div class="rating">
+                        <span class="stars" >★★★★☆</span>
                     </div>
-                    <div class="accounts">
-                     <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
-                     <div><span>Accounts</span></div>
+                    <div class="review-account-container">
+                      <div class="reviews">
+                        <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
+                        <div><span>Reviews </span></div>
+                      </div>
+                      <div class="accounts">
+                      <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
+                      <div><span>Accounts</span></div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="cta">
-                      <p>Open Demat A/c for FREE</p>
-                      <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
-                      <button class="learn-more-btn">Learn More</button>
-                  </div>
-              </div>
-              <div class="services">
-                  <ul>
-                      <li>Equity</li>
-                      <li>Commodity</li>
-                      <li>Currency</li>
-                      <li>Futures</li>
-                      <li>Options</li>
-                  </ul>
-              </div>
-              <div class="charges">
-                  <p>A/c Opening Charge: </p>
-                  <p><span>₹ Rs. 0</span></p>
-                  <p>Maintenance Charge: </p>
-                  <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
-                  <p>Delivery Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-                  <p>Intraday Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-              </div>
-              <div class="logo">
-                  <img src="https://s3-alpha-sig.figma.com/img/e50d/46db/69ed321439f072920c4aaa570dd1db2e?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kUZRzQjUxuYml8hUKqfpW0ND4Q8oUtZlAIz3OxK839g9L3tSv574DenvZREtmszWV1FWYy7Z0CSX9xCLc0zX86-DMVV0MsG9dRWi~DqZP398dnUbYWbuV5rymXpZGEn1AinQKRutngDsNP2XyvHfHBXP03q7ununuoJYdiilHoLh1s49rd3YVnqV3WbxCoUIuqn-CcpswMXwffKIUfcqzXFtI8Ibl9PrYfVNDHfnv5ZGyq5PRwnGIlHlmm~jy9esw~Yci~nJ3CwGwEx4KAoSjlTez9SwoWUi1Qy2dGPbRWstJp2WsQRWYE5tqALq~w-w4FMyfZE381ePLxVdm7AiTQ__" alt="Axis Direct Logo">
-              </div>
-          </div>
-          </div>
-          <div class="fyers">
-            <div class="container1">
-              <div class="header">
-                  <h1>Fyers</h1>
-                  <div class="rating">
-                      <span class="stars" >★★★★☆</span>
-                  </div>
-                  <div class="review-account-container">
-                    <div class="reviews">
-                      <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
-                      <div><span>Reviews </span></div>
+                    <div class="cta">
+                        <p>Open Demat A/c for FREE</p>
+                        <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                        <button class="learn-more-btn">Learn More</button>
                     </div>
-                    <div class="accounts">
-                     <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
-                     <div><span>Accounts</span></div>
+                </div>
+                <div class="services">
+                    <ul>
+                        <li>Equity</li>
+                        <li>Commodity</li>
+                        <li>Currency</li>
+                        <li>Futures</li>
+                        <li>Options</li>
+                    </ul>
+                </div>
+                <div class="cta1 cta">
+                  <p>Open Demat A/c for FREE</p>
+                  <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                  <button class="learn-more-btn">Learn More</button>
+                </div>
+                <div class="charges">
+                    <p>A/c Opening Charge: </p>
+                    <p><span>₹ Rs. 0</span></p>
+                    <p>Maintenance Charge: </p>
+                    <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
+                    <p>Delivery Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                    <p>Intraday Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                </div>
+                <div class="logo">
+                    <img src="images/axisdirect.png" alt="Axis Direct Logo">
+                </div>
+            </div>
+            </div>
+            <div class="fyers">
+              <div class="container1">
+                <div class="header">
+                    <h1>Fyers</h1>
+                    <div class="rating">
+                        <span class="stars" >★★★★☆</span>
                     </div>
-                  </div>
-                  <div class="cta">
-                      <p>Open Demat A/c for FREE</p>
-                      <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
-                      <button class="learn-more-btn">Learn More</button>
-                  </div>
-              </div>
-              <div class="services">
-                  <ul>
-                      <li>Equity</li>
-                      <li>Commodity</li>
-                      <li>Currency</li>
-                      <li>Futures</li>
-                      <li>Options</li>
-                  </ul>
-              </div>
-              <div class="charges">
-                  <p>A/c Opening Charge: </p>
-                  <p><span>₹ Rs. 0</span></p>
-                  <p>Maintenance Charge: </p>
-                  <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
-                  <p>Delivery Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-                  <p>Intraday Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-              </div>
-              <div class="logo">
-                  <img src="https://s3-alpha-sig.figma.com/img/610b/e814/1b6bd8c87ef60aee807fccebe0207552?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=He7HPfUF3CRdZasK4JXNgX28OX-w1PMwLb1BD4ekXz47YcbiQvhJbRz4gr7aC1xEIfkWkzPd2mrgIQxyKSi8duW4kZD7RfWn0PtMMdjNnog3Vk2zVX04MrXS33H6sPSiheqLqbAnvb5e5cX8Bo~5Due-1deVSv3xUr1QlZFBbPfmPuJvKc2xewDa93HzjozDr~AeZMzC0yKomPik5SNtbdXOikbSyx8taGM4BuHaemaQg12aFN3D9AEAYdascWFX~n22rPvDoIc8LyQJ4Xc-ot~J8N-Oo2D28QcbY1hxxMrbl8o9QYk7XAaevoHuNpF-YM0~Gsj19bE95yxD2ir~OA__" alt="Fyers Logo">
-              </div>
-          </div>
-          </div>
-          <div class="geojit">
-            <div class="container2">
-              <div class="header">
-                  <h1>Geojit</h1>
-                  <div class="rating">
-                      <span class="stars" >★★★★☆</span>
-                  </div>
-                  <div class="review-account-container">
-                    <div class="reviews">
-                      <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
-                      <div><span>Reviews </span></div>
+                    <div class="review-account-container">
+                      <div class="reviews">
+                        <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
+                        <div><span>Reviews </span></div>
+                      </div>
+                      <div class="accounts">
+                      <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
+                      <div><span>Accounts</span></div>
+                      </div>
                     </div>
-                    <div class="accounts">
-                     <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
-                     <div><span>Accounts</span></div>
+                    <div class="cta">
+                        <p>Open Demat A/c for FREE</p>
+                        <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                        <button class="learn-more-btn">Learn More</button>
                     </div>
-                  </div>
-                  <div class="cta">
-                      <p>Open Demat A/c for FREE</p>
-                      <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
-                      <button class="learn-more-btn">Learn More</button>
-                  </div>
-              </div>
-              <div class="services">
-                  <ul>
-                      <li>Equity</li>
-                      <li>Commodity</li>
-                      <li>Currency</li>
-                      <li>Futures</li>
-                      <li>Options</li>
-                  </ul>
-              </div>
-              <div class="charges">
-                  <p>A/c Opening Charge: </p>
-                  <p><span>₹ Rs. 0</span></p>
-                  <p>Maintenance Charge: </p>
-                  <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
-                  <p>Delivery Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-                  <p>Intraday Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-              </div>
-              <div class="logo">
-                  <img src="https://s3-alpha-sig.figma.com/img/2bae/16fd/9f40ab4146d77cfa66bd253915b5372a?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Z0X4F5aFyKljSGpxnbJiVOzUK5RKY75omcYs8qDBLwlZ2cRgMMGBPaM7lf3Xz1~UnqgrmE~FHKMEmnr6BvuYK9SsGnvUBYF2ttYOypwXXTC3CcIUZvJHbyMKoazV0NGs-FkF39tdcKNCWWxg6CDbxRnfp9EbY4iv253y~v7PmHCttNQzyP1qM71~5praKTqB1RfG2q9iaLOr2EXV1YqmtbENAJ2cIgodhVG5sY1ZPNyWHi-RQhsrJIW1SejcvL1UW~SwJ1y4Hqkjqjb~aGNcX4rAtfazpFrpM1WVNE63~kJ7yc1ju06MsrfHSs9Z1M5tfZuQMAq0EjzGDQ6DweVS5g__" alt="Geojit Logo">
-              </div>
-          </div>
-          </div>
-          <div class="hdfc-securities">
-            <div class="container1">
-              <div class="header">
-                  <h1>HDFC Securities</h1>
-                  <div class="rating">
-                      <span class="stars" >★★★★☆</span>
-                  </div>
-                  <div class="review-account-container">
-                    <div class="reviews">
-                      <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
-                      <div><span>Reviews </span></div>
+                </div>
+                <div class="services">
+                    <ul>
+                        <li>Equity</li>
+                        <li>Commodity</li>
+                        <li>Currency</li>
+                        <li>Futures</li>
+                        <li>Options</li>
+                    </ul>
+                </div>
+                <div class="cta1 cta">
+                  <p>Open Demat A/c for FREE</p>
+                  <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                  <button class="learn-more-btn">Learn More</button>
+                </div>
+                <div class="charges">
+                    <p>A/c Opening Charge: </p>
+                    <p><span>₹ Rs. 0</span></p>
+                    <p>Maintenance Charge: </p>
+                    <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
+                    <p>Delivery Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                    <p>Intraday Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                </div>
+                <div class="logo">
+                    <img src="images/fyers.png" alt="Fyers Logo">
+                </div>
+            </div>
+            </div>
+            <div class="geojit">
+              <div class="container2">
+                <div class="header">
+                    <h1>Geojit</h1>
+                    <div class="rating">
+                        <span class="stars" >★★★★☆</span>
                     </div>
-                    <div class="accounts">
-                     <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
-                     <div><span>Accounts</span></div>
+                    <div class="review-account-container">
+                      <div class="reviews">
+                        <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
+                        <div><span>Reviews </span></div>
+                      </div>
+                      <div class="accounts">
+                      <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
+                      <div><span>Accounts</span></div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="cta">
-                      <p>Open Demat A/c for FREE</p>
-                      <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
-                      <button class="learn-more-btn">Learn More</button>
-                  </div>
-              </div>
-              <div class="services">
-                  <ul>
-                      <li>Equity</li>
-                      <li>Commodity</li>
-                      <li>Currency</li>
-                      <li>Futures</li>
-                      <li>Options</li>
-                  </ul>
-              </div>
-              <div class="charges">
-                  <p>A/c Opening Charge: </p>
-                  <p><span>₹ Rs. 0</span></p>
-                  <p>Maintenance Charge: </p>
-                  <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
-                  <p>Delivery Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-                  <p>Intraday Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-              </div>
-              <div class="logo">
-                  <img src="https://s3-alpha-sig.figma.com/img/555f/bea4/2f50f95b46205c172023f5cc97b7d506?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nf3Gj76ladEwZuUCfj9ZFG0eDbp9ZC5GBKLDXUm86SwkahHLw7bDc3VELIgSfOcXS-UMdqgkugav3CdiXtgYRX~2naXhO2RdD8jVyi9cio1NmNBxJNWNhQ4pw1hJrNzDcarUjEPQcgbl1lI~7gAWwkatIdn68SlKe88dfBsy~KX8TNgwKI0mg7Whr~Akyir70mWUgrEsySEzdiHPZhk8SpWgRSlrxnqKYukNnJ8h~~ngyKonOGnMa~yuxTvvpRBUffVCNY1~irXeO9qLh5BExEx6TVcAtNP~0Vm8LLmDB3g5RHQ2h5D0SWWBOz5rySa80E2kvW6OtOeLuTq1dyJU7w__" alt="HDFC Securities Logo">
-              </div>
-          </div>
-          </div>
-          <div class="iifl">
-            <div class="container2">
-              <div class="header">
-                  <h1>IIFL</h1>
-                  <div class="rating">
-                      <span class="stars" >★★★★☆</span>
-                  </div>
-                  <div class="review-account-container">
-                    <div class="reviews">
-                      <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
-                      <div><span>Reviews </span></div>
+                    <div class="cta">
+                        <p>Open Demat A/c for FREE</p>
+                        <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                        <button class="learn-more-btn">Learn More</button>
                     </div>
-                    <div class="accounts">
-                     <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
-                     <div><span>Accounts</span></div>
+                </div>
+                <div class="services">
+                    <ul>
+                        <li>Equity</li>
+                        <li>Commodity</li>
+                        <li>Currency</li>
+                        <li>Futures</li>
+                        <li>Options</li>
+                    </ul>
+                </div>
+                <div class="cta1 cta">
+                  <p>Open Demat A/c for FREE</p>
+                  <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                  <button class="learn-more-btn">Learn More</button>
+                </div>
+                <div class="charges">
+                    <p>A/c Opening Charge: </p>
+                    <p><span>₹ Rs. 0</span></p>
+                    <p>Maintenance Charge: </p>
+                    <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
+                    <p>Delivery Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                    <p>Intraday Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                </div>
+                <div class="logo">
+                    <img src="images/geojit.png" alt="Geojit Logo">
+                </div>
+            </div>
+            </div>
+            <div class="hdfc-securities">
+              <div class="container1">
+                <div class="header">
+                    <h1>HDFC Securities</h1>
+                    <div class="rating">
+                        <span class="stars" >★★★★☆</span>
                     </div>
-                  </div>
-                  <div class="cta">
-                      <p>Open Demat A/c for FREE</p>
-                      <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
-                      <button class="learn-more-btn">Learn More</button>
-                  </div>
-              </div>
-              <div class="services">
-                  <ul>
-                      <li>Equity</li>
-                      <li>Commodity</li>
-                      <li>Currency</li>
-                      <li>Futures</li>
-                      <li>Options</li>
-                  </ul>
-              </div>
-              <div class="charges">
-                  <p>A/c Opening Charge: </p>
-                  <p><span>₹ Rs. 0</span></p>
-                  <p>Maintenance Charge: </p>
-                  <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
-                  <p>Delivery Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-                  <p>Intraday Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-              </div>
-              <div class="logo">
-                  <img src="https://s3-alpha-sig.figma.com/img/ae35/d018/8a0262339da8f6ddc38a3d9a0ea31a8a?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZAZISX0Nvr3MkyUOEn4bkzx0Xp0u8C1iRgYPu7SP97XnMAKFhNE3QJ5KDoRJB2xbA4JmqRlddFBhMrf7SdB~5QucJ1FqKg9fNZQl6U52zLV2MxfH6uoGZxOLtdypeGJpzJmivMeSBoJZc1P1bgCwGYxVk1NSzeMgkd-6qJhjNgC7Ci4CGmIlXr5XF1LIvhsLQeIMvOBOMWN-jgt2tq6U3MEMvNqi5SC8rEJPQKcpdNr15shA~qHoi8Fxtu3ZPxH9YDyVQOy0siuCLMbOeJU3HvwaBpJSEAirJD5hI2bsZAu1M7jhY6qcz7ovDAkoVn8T02rQC-DU95u6X48Avq~q-Q__" alt="IIFL Logo">
-              </div>
-          </div>
-          </div>
-          <div class="kotak-securities">
-            <div class="container1">
-              <div class="header">
-                  <h1>Kotak Securities</h1>
-                  <div class="rating">
-                      <span class="stars" >★★★★☆</span>
-                  </div>
-                  <div class="review-account-container">
-                    <div class="reviews">
-                      <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
-                      <div><span>Reviews </span></div>
+                    <div class="review-account-container">
+                      <div class="reviews">
+                        <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
+                        <div><span>Reviews </span></div>
+                      </div>
+                      <div class="accounts">
+                      <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
+                      <div><span>Accounts</span></div>
+                      </div>
                     </div>
-                    <div class="accounts">
-                     <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
-                     <div><span>Accounts</span></div>
+                    <div class="cta">
+                        <p>Open Demat A/c for FREE</p>
+                        <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                        <button class="learn-more-btn">Learn More</button>
                     </div>
-                  </div>
-                  <div class="cta">
-                      <p>Open Demat A/c for FREE</p>
-                      <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
-                      <button class="learn-more-btn">Learn More</button>
-                  </div>
-              </div>
-              <div class="services">
-                  <ul>
-                      <li>Equity</li>
-                      <li>Commodity</li>
-                      <li>Currency</li>
-                      <li>Futures</li>
-                      <li>Options</li>
-                  </ul>
-              </div>
-              <div class="charges">
-                  <p>A/c Opening Charge: </p>
-                  <p><span>₹ Rs. 0</span></p>
-                  <p>Maintenance Charge: </p>
-                  <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
-                  <p>Delivery Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-                  <p>Intraday Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-              </div>
-              <div class="logo">
-                  <img src="https://s3-alpha-sig.figma.com/img/9fa8/c8cc/04bf107e53d64b2e048f6440737519f8?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bIPTzfr8~VlWPR7GcPEax2qtJRVYf6nr~bJbQxPGyLymYeyL8Mif25NNLTpDTCRfGU9EeszNS1wtjb08apXZUyQoYwIWlOZDoM95y2aden2Cqgs8TxQYDETXGC3wSPv5XRrlo0eoUZNdyRTtvipCyaClbBBbT9N-5pL3MMKSHtg9DkEe4tnRE8MHlY9d1o6FDHEZshOjQc1TSxCJMDB4nbgH~xJWqyyJ2Jh1dMBap6L1cOogrUOuomrnYpJcZM-AXcu17vy7n0nvdx7vbsj9w800Y9BvvRDVgTTt3VuLb5cCGq2TGF-XSkOwtkK2F2Zv2e~wQbSNdGKUD7lqOWy06Q__" alt="Kotak Securities Logo">
-              </div>
-          </div>
-          </div>  
-          <div class="motilal-oswal">
-            <div class="container2">
-              <div class="header">
-                  <h1>Motilal Oswal</h1>
-                  <div class="rating">
-                      <span class="stars" >★★★★☆</span>
-                  </div>
-                  <div class="review-account-container">
-                    <div class="reviews">
-                      <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
-                      <div><span>Reviews </span></div>
+                </div>
+                <div class="services">
+                    <ul>
+                        <li>Equity</li>
+                        <li>Commodity</li>
+                        <li>Currency</li>
+                        <li>Futures</li>
+                        <li>Options</li>
+                    </ul>
+                </div>
+                <div class="cta1 cta">
+                  <p>Open Demat A/c for FREE</p>
+                  <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                  <button class="learn-more-btn">Learn More</button>
+                </div>
+                <div class="charges">
+                    <p>A/c Opening Charge: </p>
+                    <p><span>₹ Rs. 0</span></p>
+                    <p>Maintenance Charge: </p>
+                    <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
+                    <p>Delivery Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                    <p>Intraday Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                </div>
+                <div class="logo">
+                    <img src="images/hdfc.png" alt="HDFC Securities Logo">
+                </div>
+            </div>
+            </div>
+            <div class="iifl">
+              <div class="container2">
+                <div class="header">
+                    <h1>IIFL</h1>
+                    <div class="rating">
+                        <span class="stars" >★★★★☆</span>
                     </div>
-                    <div class="accounts">
-                     <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
-                     <div><span>Accounts</span></div>
+                    <div class="review-account-container">
+                      <div class="reviews">
+                        <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
+                        <div><span>Reviews </span></div>
+                      </div>
+                      <div class="accounts">
+                      <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
+                      <div><span>Accounts</span></div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="cta">
-                      <p>Open Demat A/c for FREE</p>
-                      <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
-                      <button class="learn-more-btn">Learn More</button>
-                  </div>
-              </div>
-              <div class="services">
-                  <ul>
-                      <li>Equity</li>
-                      <li>Commodity</li>
-                      <li>Currency</li>
-                      <li>Futures</li>
-                      <li>Options</li>
-                  </ul>
-              </div>
-              <div class="charges">
-                  <p>A/c Opening Charge: </p>
-                  <p><span>₹ Rs. 0</span></p>
-                  <p>Maintenance Charge: </p>
-                  <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
-                  <p>Delivery Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-                  <p>Intraday Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-              </div>
-              <div class="logo">
-                  <img src="https://s3-alpha-sig.figma.com/img/fcc5/2797/06495011b5074ac18a1fc19642a5666c?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dK7~XURK5cDg9ARX8WQ2QbAkGNLeOTslaNZPP5tn88lzBVYyTUOMeZqfXEmiE1dJSR3ofxEXjk8ahuWyitAv3mObNuefZF6uZU~Lyb2EVUIAVe5V77hKQ1gXp63Gb442~s-DnsfDEu86E7OGPCr0COdKBy1NcKKEfUyJeyHjQDoxcCeHYFR-tJmfqM7WOS6oG2dv9jX5-t3lXZmumALNq-yKrScntwd6m3OKuUDJ-RtpHIuK3vingZqnnj3U3Kgia5tLwu6QPs4Hf2uNUhIpa0FI8j9s5cLsH227DPJOJjvNdCfZ1iPOITrg32kpVFRPqNI~rVQI~MyhS8SNL5oRVw__" alt="Motilal Oswal Logo">
-              </div>
-          </div>
-          </div>
-          <div class="nuvama">
-            <div class="container1">
-              <div class="header">
-                  <h1>Nuvama</h1>
-                  <div class="rating">
-                      <span class="stars" >★★★★☆</span>
-                  </div>
-                  <div class="review-account-container">
-                    <div class="reviews">
-                      <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
-                      <div><span>Reviews </span></div>
+                    <div class="cta">
+                        <p>Open Demat A/c for FREE</p>
+                        <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                        <button class="learn-more-btn">Learn More</button>
                     </div>
-                    <div class="accounts">
-                     <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
-                     <div><span>Accounts</span></div>
+                </div>
+                <div class="services">
+                    <ul>
+                        <li>Equity</li>
+                        <li>Commodity</li>
+                        <li>Currency</li>
+                        <li>Futures</li>
+                        <li>Options</li>
+                    </ul>
+                </div>
+                <div class="cta1 cta">
+                  <p>Open Demat A/c for FREE</p>
+                  <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                  <button class="learn-more-btn">Learn More</button>
+                </div>
+                <div class="charges">
+                    <p>A/c Opening Charge: </p>
+                    <p><span>₹ Rs. 0</span></p>
+                    <p>Maintenance Charge: </p>
+                    <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
+                    <p>Delivery Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                    <p>Intraday Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                </div>
+                <div class="logo">
+                    <img src="images/iifl.png" alt="IIFL Logo">
+                </div>
+            </div>
+            </div>
+            <div class="kotak-securities">
+              <div class="container1">
+                <div class="header">
+                    <h1>Kotak Securities</h1>
+                    <div class="rating">
+                        <span class="stars" >★★★★☆</span>
                     </div>
-                  </div>
-                  <div class="cta">
-                      <p>Open Demat A/c for FREE</p>
-                      <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
-                      <button class="learn-more-btn">Learn More</button>
-                  </div>
-              </div>
-              <div class="services">
-                  <ul>
-                      <li>Equity</li>
-                      <li>Commodity</li>
-                      <li>Currency</li>
-                      <li>Futures</li>
-                      <li>Options</li>
-                  </ul>
-              </div>
-              <div class="charges">
-                  <p>A/c Opening Charge: </p>
-                  <p><span>₹ Rs. 0</span></p>
-                  <p>Maintenance Charge: </p>
-                  <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
-                  <p>Delivery Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-                  <p>Intraday Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-              </div>
-              <div class="logo">
-                  <img src="https://s3-alpha-sig.figma.com/img/a4a4/ae59/15f11f5df9b14735212ffad524b68a4a?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ONC-zgLIh~sznhvVJfIY9l9xEmG29VBboLrRwCV4p7-UaZbr~0poggOvcHwzqTOWD6stTa1t0hEtH7-skMz8Fl7XIMFa3HGL32QcrfF58ejOV4Pp5Bmj3SPv0BpvFO8p7Ymbe898P-T8tTurgIK9QM2mrPZA82X-lKA6v4GkW3Gb1W7Y5Mri3NwaaLpMCATHEr8gBLgFhynrwUw5Y5djcE1xHGMhTS1H0Lj99I0CfMXaztcVdDEZ07ab4TTiscUDGge-FHFI32pgmIuJx2oI-cnb5se04Stsmpcof1n~~A2QwTubDJ~NDVYJTMFgVH5guSKlarqK8Md8gj-WpN2ToQ__" alt="Nuvama Logo">
-              </div>
-          </div>
-          </div>
-          <div class="paytm-money">
-            <div class="container2">
-              <div class="header">
-                  <h1>Paytm Money</h1>
-                  <div class="rating">
-                      <span class="stars" >★★★★☆</span>
-                  </div>
-                  <div class="review-account-container">
-                    <div class="reviews">
-                      <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
-                      <div><span>Reviews </span></div>
+                    <div class="review-account-container">
+                      <div class="reviews">
+                        <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
+                        <div><span>Reviews </span></div>
+                      </div>
+                      <div class="accounts">
+                      <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
+                      <div><span>Accounts</span></div>
+                      </div>
                     </div>
-                    <div class="accounts">
-                     <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
-                     <div><span>Accounts</span></div>
+                    <div class="cta">
+                        <p>Open Demat A/c for FREE</p>
+                        <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                        <button class="learn-more-btn">Learn More</button>
                     </div>
-                  </div>
-                  <div class="cta">
-                      <p>Open Demat A/c for FREE</p>
-                      <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
-                      <button class="learn-more-btn">Learn More</button>
-                  </div>
-              </div>
-              <div class="services">
-                  <ul>
-                      <li>Equity</li>
-                      <li>Commodity</li>
-                      <li>Currency</li>
-                      <li>Futures</li>
-                      <li>Options</li>
-                  </ul>
-              </div>
-              <div class="charges">
-                  <p>A/c Opening Charge: </p>
-                  <p><span>₹ Rs. 0</span></p>
-                  <p>Maintenance Charge: </p>
-                  <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
-                  <p>Delivery Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-                  <p>Intraday Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-              </div>
-              <div class="logo">
-                  <img src="https://s3-alpha-sig.figma.com/img/2469/f59c/2178e565edb7fa1ff2be202807260ad6?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KHUtqwIHEaL4g7AtYJpCS4Luyq0hVMWR0FEJ7m4mBcTSMWXQfuCB2~~mt92cqU6OBn8zbk~WC1MDeZL1-6aNLywAtOu62HU6svmOhtCFXuN4Q0VUdMBJHOG-HRpeAAm2XyWG40gWlm5v-cvxWWsqNG-wXyhExJkMMXZ43bb-VgAOHnx-yRTBBFYj-cGYWf76umk6YwhbZOelOuJvwC6BGCZBlattzwalETgJfFgQpGz4XjO0YpQ7LXAmrKpJ52HtBwWVbuHTyVtQ7WV9ZMjDwx4G9~altqzaE4iYKUENpn789LJM7vdpi9TBlDpY6JJLdQcPPY0PafkEElPH2~OC9g__" alt="Paytm Money Logo">
-              </div>
-          </div>
-          </div>
-          <div class="sbi-securities">
-            <div class="container1">
-              <div class="header">
-                  <h1>SBI Securities</h1>
-                  <div class="rating">
-                      <span class="stars" >★★★★☆</span>
-                  </div>
-                  <div class="review-account-container">
-                    <div class="reviews">
-                      <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
-                      <div><span>Reviews </span></div>
+                </div>
+                <div class="services">
+                    <ul>
+                        <li>Equity</li>
+                        <li>Commodity</li>
+                        <li>Currency</li>
+                        <li>Futures</li>
+                        <li>Options</li>
+                    </ul>
+                </div>
+                <div class="cta1 cta">
+                  <p>Open Demat A/c for FREE</p>
+                  <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                  <button class="learn-more-btn">Learn More</button>
+                </div>
+                <div class="charges">
+                    <p>A/c Opening Charge: </p>
+                    <p><span>₹ Rs. 0</span></p>
+                    <p>Maintenance Charge: </p>
+                    <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
+                    <p>Delivery Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                    <p>Intraday Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                </div>
+                <div class="logo">
+                    <img src="images/kotak-securities.png" alt="Kotak Securities Logo">
+                </div>
+            </div>
+            </div>  
+            <div class="motilal-oswal">
+              <div class="container2">
+                <div class="header">
+                    <h1>Motilal Oswal</h1>
+                    <div class="rating">
+                        <span class="stars" >★★★★☆</span>
                     </div>
-                    <div class="accounts">
-                     <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
-                     <div><span>Accounts</span></div>
+                    <div class="review-account-container">
+                      <div class="reviews">
+                        <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
+                        <div><span>Reviews </span></div>
+                      </div>
+                      <div class="accounts">
+                      <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
+                      <div><span>Accounts</span></div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="cta">
-                      <p>Open Demat A/c for FREE</p>
-                      <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
-                      <button class="learn-more-btn">Learn More</button>
-                  </div>
-              </div>
-              <div class="services">
-                  <ul>
-                      <li>Equity</li>
-                      <li>Commodity</li>
-                      <li>Currency</li>
-                      <li>Futures</li>
-                      <li>Options</li>
-                  </ul>
-              </div>
-              <div class="charges">
-                  <p>A/c Opening Charge: </p>
-                  <p><span>₹ Rs. 0</span></p>
-                  <p>Maintenance Charge: </p>
-                  <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
-                  <p>Delivery Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-                  <p>Intraday Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-              </div>
-              <div class="logo">
-                  <img src="https://s3-alpha-sig.figma.com/img/1088/133a/d4d71a20ac86ee854367d9965bb08369?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jbczCoso66AbmkMJzU38YniIIW6BCspl-fQpZbc~vW~CQkY6ggc8Y1X35-~gfjm~QVjS0VP-V~d3kIYwTu~FntGlkFbsjbKysXA63z-ogq1yJKbqS5VOpRGUc0mA7pDXlpksXlvjm2thuSGXRGl3OmSUW5uwvoutB4b80vNz~O-E9lMiWkPQTkObxwUVtkbYQcN4UQ5kfBT5E9krFYwO1rD6F6FewYU8A41YQY76fLdNg5OtshIaWu4lJnxh1nI9R1Hjz6pE8XkDvyEItpVr0~iw7nMKAcEIbGauILRVQhkUNgqc0-pB-iT5hdMis0BgN6-JetZ0zZ02fqJpPuCBoA__" alt="SBI-Securities Logo">
-              </div>
-          </div>
-          </div>
-          <div class="sharekhan">
-            <div class="container2">
-              <div class="header">
-                  <h1>Sharekhan</h1>
-                  <div class="rating">
-                      <span class="stars" >★★★★☆</span>
-                  </div>
-                  <div class="review-account-container">
-                    <div class="reviews">
-                      <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
-                      <div><span>Reviews </span></div>
+                    <div class="cta">
+                        <p>Open Demat A/c for FREE</p>
+                        <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                        <button class="learn-more-btn">Learn More</button>
                     </div>
-                    <div class="accounts">
-                     <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
-                     <div><span>Accounts</span></div>
+                </div>
+                <div class="services">
+                    <ul>
+                        <li>Equity</li>
+                        <li>Commodity</li>
+                        <li>Currency</li>
+                        <li>Futures</li>
+                        <li>Options</li>
+                    </ul>
+                </div>
+                <div class="cta1 cta">
+                  <p>Open Demat A/c for FREE</p>
+                  <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                  <button class="learn-more-btn">Learn More</button>
+                </div>
+                <div class="charges">
+                    <p>A/c Opening Charge: </p>
+                    <p><span>₹ Rs. 0</span></p>
+                    <p>Maintenance Charge: </p>
+                    <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
+                    <p>Delivery Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                    <p>Intraday Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                </div>
+                <div class="logo">
+                    <img src="images/motilal-oswal.jfif" alt="Motilal Oswal Logo">
+                </div>
+            </div>
+            </div>
+            <div class="nuvama">
+              <div class="container1">
+                <div class="header">
+                    <h1>Nuvama</h1>
+                    <div class="rating">
+                        <span class="stars" >★★★★☆</span>
                     </div>
-                  </div>
-                  <div class="cta">
-                      <p>Open Demat A/c for FREE</p>
-                      <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
-                      <button class="learn-more-btn">Learn More</button>
-                  </div>
-              </div>
-              <div class="services">
-                  <ul>
-                      <li>Equity</li>
-                      <li>Commodity</li>
-                      <li>Currency</li>
-                      <li>Futures</li>
-                      <li>Options</li>
-                  </ul>
-              </div>
-              <div class="charges">
-                  <p>A/c Opening Charge: </p>
-                  <p><span>₹ Rs. 0</span></p>
-                  <p>Maintenance Charge: </p>
-                  <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
-                  <p>Delivery Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-                  <p>Intraday Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-              </div>
-              <div class="logo">
-                  <img src="https://s3-alpha-sig.figma.com/img/0f13/05f9/5ab5d71eaefc918a5d61f2bf81c2989e?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=g9bx~F0tlZCoCTsnVPuRAXgba7-Gvix4JLwkH6pbsxsrJ1n-1zrPM35ikOcjAiJwSZrz9CsgsH7PJfZD9R9kwdpryZZwNfyNcC8jBJ2V1wEJvEPuSQxsuxzYWkudtH5yI459JOafORydtWvtT-Ji6KLctfDco3jREv5TrWNq5v3xEjwfhFFeOjFn7jHL1LhtuA8kFUQ3mOlpk043irFVdRjBQ~iRGMSorgCoZYyowTIDNXWjE-K~KGCgJnBetp5T1LH~yfqfZa9O~~fprs82w6c59Gk2mH1A3kkkJsvoxZbtySkg84PDR0myu6uTNQsH2gLfvnJ2znzX53Ri0WpFdg__" alt="Sharekhan Logo">
-              </div>
-          </div>
-          </div>
-          <div class="smc-global">
-            <div class="container1">
-              <div class="header">
-                  <h1>SMC Global</h1>
-                  <div class="rating">
-                      <span class="stars" >★★★★☆</span>
-                  </div>
-                  <div class="review-account-container">
-                    <div class="reviews">
-                      <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
-                      <div><span>Reviews </span></div>
+                    <div class="review-account-container">
+                      <div class="reviews">
+                        <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
+                        <div><span>Reviews </span></div>
+                      </div>
+                      <div class="accounts">
+                      <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
+                      <div><span>Accounts</span></div>
+                      </div>
                     </div>
-                    <div class="accounts">
-                     <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
-                     <div><span>Accounts</span></div>
+                    <div class="cta">
+                        <p>Open Demat A/c for FREE</p>
+                        <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                        <button class="learn-more-btn">Learn More</button>
                     </div>
-                  </div>
-                  <div class="cta">
-                      <p>Open Demat A/c for FREE</p>
-                      <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
-                      <button class="learn-more-btn">Learn More</button>
-                  </div>
-              </div>
-              <div class="services">
-                  <ul>
-                      <li>Equity</li>
-                      <li>Commodity</li>
-                      <li>Currency</li>
-                      <li>Futures</li>
-                      <li>Options</li>
-                  </ul>
-              </div>
-              <div class="charges">
-                  <p>A/c Opening Charge: </p>
-                  <p><span>₹ Rs. 0</span></p>
-                  <p>Maintenance Charge: </p>
-                  <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
-                  <p>Delivery Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-                  <p>Intraday Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-              </div>
-              <div class="logo">
-                  <img src="https://s3-alpha-sig.figma.com/img/c5b2/7dba/26fea2f358df066ad7a46727818c1dee?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LwTMl9oRVGGuRtahUZyVz5kD~rffClKONo5PoZM3sslyHq-DxoF2gsxEC4Qajqy0LsEajw~aVBYmlMfHSesQl2yVpXu6YDZlzm3nUbf-Q6imvTKXAnx307DqrXbhWf8IWFkDS-8s1g4Kj7KMfrqBbs4k3zMzVIfKdO~f6t3fZWe3qh2FHa72tpnUEAW-Ogxb05gTlhZ-R~Bk-nPa0RH-OZgjd8~piqcIDafE9zxcUbux5isAETMhuFQ-iDHBFr97Exg4J0CR38~Bc8AwFjZJYUZJYidZbDWA8BsvSx6fxXNE0~NPdGn6bgeeU9bVbKx88wxjT47aKK7DnEDva~lahQ__" alt="SMC Global Logo">
-              </div>
-          </div>
-          </div>
-          <div class="5paisa">
-            <div class="container2">
-              <div class="header">
-                  <h1>5Paisa</h1>
-                  <div class="rating">
-                      <span class="stars" >★★★★☆</span>
-                  </div>
-                  <div class="review-account-container">
-                    <div class="reviews">
-                      <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
-                      <div><span>Reviews </span></div>
+                </div>
+                <div class="services">
+                    <ul>
+                        <li>Equity</li>
+                        <li>Commodity</li>
+                        <li>Currency</li>
+                        <li>Futures</li>
+                        <li>Options</li>
+                    </ul>
+                </div>
+                <div class="cta1 cta">
+                  <p>Open Demat A/c for FREE</p>
+                  <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                  <button class="learn-more-btn">Learn More</button>
+                </div>
+                <div class="charges">
+                    <p>A/c Opening Charge: </p>
+                    <p><span>₹ Rs. 0</span></p>
+                    <p>Maintenance Charge: </p>
+                    <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
+                    <p>Delivery Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                    <p>Intraday Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                </div>
+                <div class="logo">
+                    <img src="images/nuvama.png" alt="Nuvama Logo">
+                </div>
+            </div>
+            </div>
+            <div class="paytm-money">
+              <div class="container2">
+                <div class="header">
+                    <h1>Paytm Money</h1>
+                    <div class="rating">
+                        <span class="stars" >★★★★☆</span>
                     </div>
-                    <div class="accounts">
-                     <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
-                     <div><span>Accounts</span></div>
+                    <div class="review-account-container">
+                      <div class="reviews">
+                        <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
+                        <div><span>Reviews </span></div>
+                      </div>
+                      <div class="accounts">
+                      <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
+                      <div><span>Accounts</span></div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="cta">
-                      <p>Open Demat A/c for FREE</p>
-                      <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
-                      <button class="learn-more-btn">Learn More</button>
-                  </div>
-              </div>
-              <div class="services">
-                  <ul>
-                      <li>Equity</li>
-                      <li>Commodity</li>
-                      <li>Currency</li>
-                      <li>Futures</li>
-                      <li>Options</li>
-                  </ul>
-              </div>
-              <div class="charges">
-                  <p>A/c Opening Charge: </p>
-                  <p><span>₹ Rs. 0</span></p>
-                  <p>Maintenance Charge: </p>
-                  <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
-                  <p>Delivery Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-                  <p>Intraday Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-              </div>
-              <div class="logo">
-                  <img src="https://s3-alpha-sig.figma.com/img/79c9/36f9/4257d51c6ce70bff435bc88ee21dd1cc?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fIMKWyL-ENsE2EdHcqe6fIUKdm2q2XlJP1-Otigkzvph0-vqvbMuhBFCY8bKVduEQJ9ek09WOhQimFESStvb0B7hb1pJu~nK0OSpN0wk5wRLcnrsqha8l4RoFCYP-~12EPB4u99XDrBhmZWQrn669qVpl1dUFUv2SowyOLYbyz2WHZi1Hy5N~fYCo9pVwKw-YhG5DxqBYD0I1llMgj3Jx7rW2DaDeeoHgGBVgKT3G1upMXwezbzoUPVeUnKrHKaoye-6l6uyWWDFtZSvhypzcVZ-nlIsVioLmR~L7lPNGCenvSyTQh5hAt8YQoFjrvOBK~PZAlg10mjhi8gyAnDwZQ__" alt="5Paisa Logo">
-              </div>
-          </div>
-          </div>
-          <div class="zerodha">
-            <div class="container1">
-              <div class="header">
-                  <h1>Zerodha</h1>
-                  <div class="rating">
-                      <span class="stars" >★★★★☆</span>
-                  </div>
-                  <div class="review-account-container">
-                    <div class="reviews">
-                      <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
-                      <div><span>Reviews </span></div>
+                    <div class="cta">
+                        <p>Open Demat A/c for FREE</p>
+                        <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                        <button class="learn-more-btn">Learn More</button>
                     </div>
-                    <div class="accounts">
-                     <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
-                     <div><span>Accounts</span></div>
+                </div>
+                <div class="services">
+                    <ul>
+                        <li>Equity</li>
+                        <li>Commodity</li>
+                        <li>Currency</li>
+                        <li>Futures</li>
+                        <li>Options</li>
+                    </ul>
+                </div>
+                <div class="cta1 cta">
+                  <p>Open Demat A/c for FREE</p>
+                  <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                  <button class="learn-more-btn">Learn More</button>
+                </div>
+                <div class="charges">
+                    <p>A/c Opening Charge: </p>
+                    <p><span>₹ Rs. 0</span></p>
+                    <p>Maintenance Charge: </p>
+                    <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
+                    <p>Delivery Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                    <p>Intraday Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                </div>
+                <div class="logo">
+                    <img src="images/paytm-money.png" alt="Paytm Money Logo">
+                </div>
+            </div>
+            </div>
+            <div class="sbi-securities">
+              <div class="container1">
+                <div class="header">
+                    <h1>SBI Securities</h1>
+                    <div class="rating">
+                        <span class="stars" >★★★★☆</span>
                     </div>
-                  </div>
-                  <div class="cta">
-                      <p>Open Demat A/c for FREE</p>
-                      <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
-                      <button class="learn-more-btn">Learn More</button>
-                  </div>
-              </div>
-              <div class="services">
-                  <ul>
-                      <li>Equity</li>
-                      <li>Commodity</li>
-                      <li>Currency</li>
-                      <li>Futures</li>
-                      <li>Options</li>
-                  </ul>
-              </div>
-              <div class="charges">
-                  <p>A/c Opening Charge: </p>
-                  <p><span>₹ Rs. 0</span></p>
-                  <p>Maintenance Charge: </p>
-                  <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
-                  <p>Delivery Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-                  <p>Intraday Brokerage: </p>
-                  <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
-              </div>
-              <div class="logo">
-                  <img src="https://s3-alpha-sig.figma.com/img/392a/c1bc/4dc796835c98faa4c0da1b70a21e5993?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iXmixxKVM~NqPpvGJTdM3WlVVVoW-zCAyyBJX9k3ZzfbGK~sbEVy38I76-3P7~NlicZgOkKtasjDuEwRYelk1sjIMwY82Sqlok~FTPweV6RBKKBf1jZbldS6puwNY9GSDrzkGpVKFV6wdej8nC6cHf3-Crtl9sOoyRjqXDNj8Wt5b0ty0cbv-d8aRe0f6Aj8mVsJuz-jWmUubEwit-PO-2rdHqd6h8tEXYU1rgXZdwDHGJgmsq3qKSqT27~d3JOoXE7s4iDhalyW7bQKSou0~yXwbegIqqxXqMVy98HH0iZoYOJQz7j50u0n4Q6DZuJgYi8o-MWOeNVxrml3seEQeQ__" alt="Zerodha Logo">
-              </div>
-          </div>
+                    <div class="review-account-container">
+                      <div class="reviews">
+                        <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
+                        <div><span>Reviews </span></div>
+                      </div>
+                      <div class="accounts">
+                      <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
+                      <div><span>Accounts</span></div>
+                      </div>
+                    </div>
+                    <div class="cta">
+                        <p>Open Demat A/c for FREE</p>
+                        <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                </div>
+                <div class="services">
+                    <ul>
+                        <li>Equity</li>
+                        <li>Commodity</li>
+                        <li>Currency</li>
+                        <li>Futures</li>
+                        <li>Options</li>
+                    </ul>
+                </div>
+                <div class="cta1 cta">
+                  <p>Open Demat A/c for FREE</p>
+                  <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                  <button class="learn-more-btn">Learn More</button>
+                </div>
+                <div class="charges">
+                    <p>A/c Opening Charge: </p>
+                    <p><span>₹ Rs. 0</span></p>
+                    <p>Maintenance Charge: </p>
+                    <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
+                    <p>Delivery Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                    <p>Intraday Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                </div>
+                <div class="logo">
+                    <img src="images/sbi.png" alt="SBI-Securities Logo">
+                </div>
+            </div>
+            </div>
+            <div class="sharekhan">
+              <div class="container2">
+                <div class="header">
+                    <h1>Sharekhan</h1>
+                    <div class="rating">
+                        <span class="stars" >★★★★☆</span>
+                    </div>
+                    <div class="review-account-container">
+                      <div class="reviews">
+                        <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
+                        <div><span>Reviews </span></div>
+                      </div>
+                      <div class="accounts">
+                      <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
+                      <div><span>Accounts</span></div>
+                      </div>
+                    </div>
+                    <div class="cta">
+                        <p>Open Demat A/c for FREE</p>
+                        <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                </div>
+                <div class="services">
+                    <ul>
+                        <li>Equity</li>
+                        <li>Commodity</li>
+                        <li>Currency</li>
+                        <li>Futures</li>
+                        <li>Options</li>
+                    </ul>
+                </div>
+                <div class="cta1 cta">
+                  <p>Open Demat A/c for FREE</p>
+                  <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                  <button class="learn-more-btn">Learn More</button>
+                </div>
+                <div class="charges">
+                    <p>A/c Opening Charge: </p>
+                    <p><span>₹ Rs. 0</span></p>
+                    <p>Maintenance Charge: </p>
+                    <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
+                    <p>Delivery Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                    <p>Intraday Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                </div>
+                <div class="logo">
+                    <img src="images/sharekhan.png" alt="Sharekhan Logo">
+                </div>
+            </div>
+            </div>
+            <div class="smc-global">
+              <div class="container1">
+                <div class="header">
+                    <h1>SMC Global</h1>
+                    <div class="rating">
+                        <span class="stars" >★★★★☆</span>
+                    </div>
+                    <div class="review-account-container">
+                      <div class="reviews">
+                        <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
+                        <div><span>Reviews </span></div>
+                      </div>
+                      <div class="accounts">
+                      <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
+                      <div><span>Accounts</span></div>
+                      </div>
+                    </div>
+                    <div class="cta">
+                        <p>Open Demat A/c for FREE</p>
+                        <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                </div>
+                <div class="services">
+                    <ul>
+                        <li>Equity</li>
+                        <li>Commodity</li>
+                        <li>Currency</li>
+                        <li>Futures</li>
+                        <li>Options</li>
+                    </ul>
+                </div>
+                <div class="cta1 cta">
+                  <p>Open Demat A/c for FREE</p>
+                  <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                  <button class="learn-more-btn">Learn More</button>
+                </div>
+                <div class="charges">
+                    <p>A/c Opening Charge: </p>
+                    <p><span>₹ Rs. 0</span></p>
+                    <p>Maintenance Charge: </p>
+                    <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
+                    <p>Delivery Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                    <p>Intraday Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                </div>
+                <div class="logo">
+                    <img src="images/smc.png" alt="SMC Global Logo">
+                </div>
+            </div>
+            </div>
+            <div class="5paisa">
+              <div class="container2">
+                <div class="header">
+                    <h1>5Paisa</h1>
+                    <div class="rating">
+                        <span class="stars" >★★★★☆</span>
+                    </div>
+                    <div class="review-account-container">
+                      <div class="reviews">
+                        <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
+                        <div><span>Reviews </span></div>
+                      </div>
+                      <div class="accounts">
+                      <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
+                      <div><span>Accounts</span></div>
+                      </div>
+                    </div>
+                    <div class="cta">
+                        <p>Open Demat A/c for FREE</p>
+                        <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                </div>
+                <div class="services">
+                    <ul>
+                        <li>Equity</li>
+                        <li>Commodity</li>
+                        <li>Currency</li>
+                        <li>Futures</li>
+                        <li>Options</li>
+                    </ul>
+                </div>
+                <div class="cta1 cta">
+                  <p>Open Demat A/c for FREE</p>
+                  <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                  <button class="learn-more-btn">Learn More</button>
+                </div>
+                <div class="charges">
+                    <p>A/c Opening Charge: </p>
+                    <p><span>₹ Rs. 0</span></p>
+                    <p>Maintenance Charge: </p>
+                    <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
+                    <p>Delivery Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                    <p>Intraday Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                </div>
+                <div class="logo">
+                    <img src="images/5paisa.png" alt="5Paisa Logo">
+                </div>
+            </div>
+            </div>
+            <div class="zerodha">
+              <div class="container1">
+                <div class="header">
+                    <h1>Zerodha</h1>
+                    <div class="rating">
+                        <span class="stars" >★★★★☆</span>
+                    </div>
+                    <div class="review-account-container">
+                      <div class="reviews">
+                        <span><i class="fa-solid fa-comment-dots"></i> 15K </span>
+                        <div><span>Reviews </span></div>
+                      </div>
+                      <div class="accounts">
+                      <span><i class="fa-solid fa-user-group"></i> 50.2K</span>
+                      <div><span>Accounts</span></div>
+                      </div>
+                    </div>
+                    <div class="cta">
+                        <p>Open Demat A/c for FREE</p>
+                        <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                </div>
+                <div class="services">
+                    <ul>
+                        <li>Equity</li>
+                        <li>Commodity</li>
+                        <li>Currency</li>
+                        <li>Futures</li>
+                        <li>Options</li>
+                    </ul>
+                </div>
+                <div class="cta1 cta">
+                  <p>Open Demat A/c for FREE</p>
+                  <button class="Open-ac-btn">Open A/c <i class="fa-solid fa-paper-plane"></i></button>
+                  <button class="learn-more-btn">Learn More</button>
+                </div>
+                <div class="charges">
+                    <p>A/c Opening Charge: </p>
+                    <p><span>₹ Rs. 0</span></p>
+                    <p>Maintenance Charge: </p>
+                    <p><span>₹300  <i class="fa-solid fa-circle-info"></i> </span></p>
+                    <p>Delivery Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                    <p>Intraday Brokerage: </p>
+                    <p><span>₹20  <i class="fa-solid fa-circle-info"></i></span></p>
+                </div>
+                <div class="logo">
+                    <img src="images/zerodha.png" alt="Zerodha Logo">
+                </div>
+            </div>
+            </div>
           </div>
         </div>
-      </div>
-</body>
-</html>
+  </body>
+  </html>
