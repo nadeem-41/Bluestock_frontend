@@ -509,7 +509,7 @@
 
   @media(max-width: 876px) {
     .navbar {
-      width:100%;
+      width:47rem;
       height: auto;
     }
 
@@ -586,16 +586,20 @@
         }
       
         .header h1{
-          margin-left: 4rem;
+          .header h1{
+          width: fit-content;
+          display: block;
+          margin-left: 7rem;
+    }
         }
       
-        .header,.rating{
+        .header,.rating {
           text-align: center
         }
       
       .rating{
         margin-top: -10px;
-        margin-left:4rem;
+        margin-left:-2remrem;
         display: inline;
       }
       
@@ -682,7 +686,7 @@
 
   @media(max-width: 576px) {
   .navbar{
-    width:100%;
+    width:32rem;
     height: auto;
   }
   .navbar-logo img {
@@ -835,8 +839,8 @@
       margin-bottom: 15px;
     }
     .cta button {
-      margin: 0px 0px 15px 0.5rem; /* Adjust spacing between buttons */
-      width: 320px;
+      margin: 0px 2rem 1rem 1rem; /* Adjust spacing between buttons */
+      width: 19rem;
       height: 40px;
       font-size: 21px;
     }
@@ -899,7 +903,8 @@
   }
   .navbar-actions i {
     font-size: 1.5rem;
-    margin-left: 30px;
+    margin-left:1rem;
+    margin-right: 3.5rem;
     margin-top: -5px;
   }
   .navbar-logo img{
@@ -926,6 +931,12 @@
       font-size: 25px; /* Add spacing between sections */
       display: inline;
       position: relative;
+    }
+
+    .header h1{
+      width: fit-content;
+      display: block;
+      margin-left: 7rem;
     }
 
     .header,.rating{
@@ -968,10 +979,10 @@
     .logo {
       margin-bottom: 20px; /* Add spacing between sections */
       position: absolute;
-    top: 20px;
-    left: 20px;
-    margin-left: 20px;
-    margin-top: -15px;
+      top: 20px;
+      left: 20px;
+      margin-left: 20px;
+      margin-top: -15px;
     }
 
     .review-account-container {
@@ -997,13 +1008,13 @@
       display: block;
     }
     .cta p{
-      text-align: center;
       font-size: 18px;
       margin-bottom: 15px;
+      margin-left: -2rem;
     }
     .cta button {
-      margin: 0px 0px 15px 0px; /* Adjust spacing between buttons */
-      width: 320px;
+      margin: 0rem 1rem 1rem 0rem; /* Adjust spacing between buttons */
+      width: 19rem;
       height: 40px;
       font-size: 21px;
     }
@@ -1014,6 +1025,7 @@
       top: 187px;
       left: 32px;
       border-radius: 10px;
+      object-fit: fill;
     }
   }
 
