@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Bluestocks</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="companylogo">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/33b9/eda0/4843225c388eec499ad6ac8810e70a6a?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iZLErNXXv-u5N7Xf8NBN22K9UmrsQfDh3LH0EI-9psfqASNY5RaNBA7cvbajKuPsyCM2uxRE~8cJMTqzZHTDVtBNlS6k7LqE0KS8Z2IKtDp7uOrkzhpdEUriJFWaKxuWF6rqF1J9PimKyrtYbc3IXJpjXTcONZykteekCIEd2c~tMk6CbBxX1oI2Fimd~OHoxyPkQQC5IKb2IrAq6ueIxyU9amxElqUeqodzEMiYeKkMNLKdzeUnkAJCBqyAoLMimguKuOWfKxZEoDpAZewZUQfaM7wOowpHZnD1JbmeeFy7eIH~cny3xhzjobH9sJxkUIguF~SqLomy3WIgi~1WnQ__"
+          alt="blustock_logo" class="logo-img"
+        /><span class="logo-name">BLUESTOCK</span>
+      </div>
+      <div class="nav-links">
+            <li>PRODUCTS</li>
+            <li>COMMUNITY</li>
+            <li>MEDIA</li>
+            <li>BROKER</li>
+            <li>LIVE NEWS &nbsp; <span class="tag">NEW</span></li>
+      </div>
+      <div class="btn-container">
+        <button class="sign_in-btn">Sign In</button>
+        <button class="sign_up-btn">Sign Up Now</button>
+        <i class="fa-solid fa-grip-vertical gripicon" ></i>
+      </div>
+    </div>
+    <div class="component3">
+      <div class="sidemenu">
+        <ul class="list-ul">
+          <div class="left-sidemenu">
+            <li class="display-flex-wrap">
+              <img src="https://s3-alpha-sig.figma.com/img/6df9/0e52/82474d01069af2d69582ec99a8cfe177?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hyN9b9lfQDxz8ndn3byxp2wPATTu6yczMrSfkRqE418E5XtTOj5iz5dr5ptjRw3wuzJ64gv5NrwGDUj9cn4nin1~SKO52nkI-OetRKBm58qZfXRep4NrnSv8tdSIxhTePMA~UAOsDOj9dVBN5Mc~0c2r12nmhJn2qf8sVFxC0ccQr68AYIlCNxe8oLMp4XnRpG6G6yWZ9NU4beN-97Eb0iymTA7myEnlnwi69vgCDH1YC2Czfh0MwxOi65GWJMn89b-uk~7a78nOh-jLRkQot9YvynYYEsuoeOhmoVKc2XSO7qaWXQ30aDWWXrcNAkP5E1Pxi2GOgWKsekgPNvBfzQ__" class="icon" alt="" />Active
+              Clients
+            </li>
+            <li class="display-flex-wrap">
+              <img src="https://s3-alpha-sig.figma.com/img/80a6/57c0/319dd39f5a4c9c1ddb5c95a45780d657?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UJ7VjrlpHpWZ7PpC~AAzBdwu3TA0-mrk5WvVmqiBKbD7T5aFMHDXgvkB476b2Dor4uGeRBFt1yIPFWbAe~wunZ6pmStR8sgNdZYV0ad7KPtINECWCDc4s9xpOiQwiPb5Rammh142r80gU6cJ1K~luwiPamvb7EgMOgzCT2o4m2BesuIXDP~t7o~Tw0Hgru4C5Sl2SQ1bNDMPrmtEeiyc7A9KSTtdXGc0JnPrjILGDrVYsaVNMpLv3ETHu~Yufy4wYrHOGNR96kOAA8oqduuZ7mvm0wH4je6d~bSlIoqavQnBoZj6BEGt-LReATPaVHaHoBXjCw7w0YIA0hIQHNg~eg__" class="icon" alt="" />Charges
+            </li>
+            <li class="display-flex-wrap">
+              <img src="https://s3-alpha-sig.figma.com/img/262f/6e19/fbd84ffe2e3810b476cc4d9e3c71d98a?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PSzv5JVkGa~GqQe1~B0571RUMmtJS7PM11fe2mk1Es7tkE81EltbNzvRv~W3Q5SirAYM3vlHsywz5~CSbaT6BEzyL-ha9wnIFgwqmo-53aQwuTILGETWQzS-5At4VxyVW3PAVoEdP4XhHGBjzoBtt50Y5LMcLJYqZEXEaUPgQVjghjqaiLMpzgNkQ0tZaU5ptBCjbRPYAQNtptSPEhxgVSnTQpOugsyaO7bT8baYxQaE-mmr~7RS86mwiTX9NQrAXxgEiFaKWbXQoxtC-BoXTl3EIkK0IaDdBdEJOTauW9JxjYT4jPCB8eOx9Q1~Ka4Zwf~SjtGTcoFLNr5mBl9y6w__" class="icon" alt="" />Complaints
+            </li>
+            <li class="display-flex-wrap">
+              <img src="https://s3-alpha-sig.figma.com/img/c375/1d16/f6f12c6d1c4918354a68ecff8500acdc?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GK5APDkTCQq7TfbxOez~Ssg769gg0Tqxq6rqkTtzYBJcwJXjt5Spf2mbZIOJgleViiNaHNnUTABxU73p00JQiPVdn~86chiq3xRyNlM806P5bDscW1Fv6HU-TvASksL5qb9rBd0ECelVzTapLEuToAR6xwEpOBdXJb94c6eokWgx4JAh9-jZVR8BYHMhmRrJOe-SO-9p8aihDqA1~5o9vO9u-pF0t~t-kANKetl3xwCXuXrOeSxVDTQh5oaok8dQZJiHSryYKMpN-LtGDeDdkRggwyll~pgZfwfYPInI1itVPdK6xrwjODdLDuPcsnh2EFU96vV0bkkWcF0TixOg4g__" class="icon" alt="" />share
+              Holdings
+            </li>
+          </div>
+          <div class="right-sidemenu">
+            <li class="display-flex-wrap">
+              <img src="https://s3-alpha-sig.figma.com/img/ace3/f242/d51b098fa4ac3b578a8d45aaccc2f598?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jhnE2NFnf7l5UzLrUWx5DIkBZSkjZ-F~yk7Y7dWGkn5Iq5OZChPxE3ISnKX-0aQHemzFXWM0UTxv-fQXXO9GmC4Wv4Gh9m2LlX0NLm3vx66m-Jtu4InlB0-NiwpPxbcwPqZM-gfrvCxUr6DE4S~b4XavhqTAm-xgG-P9LJEzn7zVQ3XdY6dvVFx4aFrjJ6h-5ReYh9Gk1Q~0g5GdVQb~GX7bQCNm75gVvyszA8nqwO~2rcUgF0DNwesmIsbQnY-i8RZk9GoAMx8FsIjAMalBbQxfRYbqWs1bA41PC8HMSBVFkb9fN8E4SfKbvkAoiM6nPSxJ8d-QUfmmKbQ2skgm0w__" class="icon" alt="" />Pros & Cons
+            </li>
+            <li class="display-flex-wrap">
+              <img src="https://s3-alpha-sig.figma.com/img/4c09/4265/9fd0f0e2f331cea2dae8e1219d537285?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Bh3wW9mypBtt~3FFqlkFlrcQtVeWl6hmb9tdZlrQXjFsNAUDQT~VT91zR6VtmCFgT5-vdUvixINHzzlAws7Pl4dfwq4JCHdouIQ0ktMFFHUtEOCgMSPivGhKt4iKER01tclvA39LxaL9J9533SzXOS2FbjyqQ8qKLM0efQzSsEqwLfQ7FSbvaVWaDxfn3yvU4x0iBV2eJ42vC7kT~3Nd4RVjyWmC-HxKe0Jbp9t~xnsoO8Hu~rFH8FCCSKqt7L9OlCFMycQCmUVtWYiQGxrgKNyixC71CGxJocFoXZD5EVJarpa8AZiNFIVxDQT8AWG6Nj0cT6Jc5E4BMg5ECYNUww__" class="icon" alt="" />Ratings
+            </li>
+            <li class="display-flex-wrap">
+              <img src="https://s3-alpha-sig.figma.com/img/d5ac/4856/fa69921cb685983e450688cb52cefb43?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eubQb9jNVZ3FaoFxnj9ycGW9cOPozaclWJ5-NOCjhyfPh7IpyfGExfe3jv6Qf6cQF-A1bikKdeEzAk2Vt52UvZqpnmq6xggNOcAVZJCnqTyyXuzNAE1ljUIJXD9Ve6d-wIv2NfyZ-kaYb18TqEFn6ifVkC0~q8CXgqY6oSNtNtVQiCLI-REcZ3DHYCJW91F2cvRAksfNWjLTjkneZeDOlrMQHp6kvmU3dXe7lK8Dr~ngNglwp~ZN1VOlYnU0rdFEHvSzzM-zXV7UiiQrwnSk2f5yKIAQZ-PynaRh2kX6rXpo5BCsPybCAFZ0u6kf9hpS3zTxnlBcekjLdpPZ6ivqLg__" class="icon" alt="" />Financials
+            </li>
+          </div>
+        </ul>
+        <div class="res-2nd-block">
+          <div class="card-1">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/eac1/6e57/bbad62126de80ecb10585472f5a7a68d?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=e2uv4sp-NoFI3ic2Mm~hFOro7A6ukQUdGvobVLag~EGIhVghrnM~vB9zt0yLepPKl1AEqlcNreYbNf3YqTS31IrLZphAwPhyAYP9egXeSA9aUFT8aONwAvfE8HCk~7wsIvSai2L5JDDyNfuYQKah7tOqWSDXLYZaQnwwH-xeWEkFodJOiS3vNL1eGMAuTpoQacLFOashffSfqwk773VbL~J3rmLSdsO9gT5weODY393OE8bSevsmL7gtQ2ue6t3qZCB13j1FT5HdJnh8pnsOn1ARETgvRPeFK3oxZ4vNkggeaGTrd9MgPiEilzd3Dyo1X7LsZENVktYXiDomj3uedA__"
+              alt=""
+              class="companylogo"
+            />
+            <h6 class="title">Angel One</h6>
+            <div class="star-row">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <span class="Rating-numerics"> 4.7 </span>
+            <button class="demat-btn">Open Demat Account</button>
+          </div>
+          <div class="vs"><span class="vs-tag">vs</span></div>
+          <div class="card-1">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/8bea/5bf5/87ac877cc53b42ae20c72b3fe597b2f2?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bquY3xdoJg7ePTBiTyrp5uwjdEdqg-ApK2JoGLCaqxwJ~m4smvr16EI1c-R5YExSB-ebl459q7xk7i8~MdhGGwpNicoM~X8RSSRRRAE14IaZ8QWB3I~02lu1TgvHldqZ1mucP24rA3c-BgXilQy2I~vlM4MvchEiqMSFz1-M0CKhgsSoOJjoyGyKDuEYjyiB~4SaPIvIopW2Vl~DO52xPiVC75cQAujRJUKRQ6qFihJzE-hwICZ4SNZq4i6uDI7IJqhkcIfk-Buv4jEIg9WJQnZTMrIm1xjFUcNCNxNNkTCqsxpa4YfSxKcPA004TIM-trUfiMQ7G3LwWCzYWe0eFw__"
+              alt=""
+              class="companylogo"
+            />
+            <h6 class="title">Zerodha</h6>
+            <div class="star-row">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <span class="Rating-numerics"> 4.6 </span>
+            <button class="demat-btn">Open Demat Account</button>
+          </div>
+        </div>
+      </div>
+      <div class="data-part-img">
+        <img src="./Assets/graph-1.png" class="img-res" alt="" />
+      </div>
+      <div class="tabular-comparison-sec">
+        <h2 class="Maintenance-heading">
+          Account Opening and Maintenance Charges
+        </h2>
+        <div class="maintenance-table">
+          <table class="charges-table">
+            <thead>
+              <tr>
+                <th>Charges</th>
+                <th>Angel One</th>
+                <th>Zerodha</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Account Opening Charges</td>
+                <td>0</td>
+                <td>200</td>
+              </tr>
+              <tr>
+                <td>Account Maintenance Charges</td>
+                <td>₹0 for the first year then ₹ 23.6/Month</td>
+                <td>₹ 300 per year</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h2 class="Brokerage-heading">Brokerage Charges</h2>
+        <div class="brokerage-charge-table">
+          <table class="charges-table">
+            <thead>
+              <tr>
+                <th>Brokerage Charges</th>
+                <th>Angel One</th>
+                <th>Zerodha</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Intraday</td>
+                <td>₹ 20 or 0.25% (Whichever is lower)</td>
+                <td>₹ 20 or 0.03% / executed order whichever is lower</td>
+              </tr>
+              <tr>
+                <td>Futures</td>
+                <td>₹ 20 or 0.25% (Whichever is lower)</td>
+                <td>₹ 20 or 0.03% / executed order whichever is lower</td>
+              </tr>
+              <tr>
+                <td>Options</td>
+                <td>₹ 20 or 0.25% (Whichever is lower)</td>
+                <td>₹ 20 per executed order (on Turnover)</td>
+              </tr>
+              <tr>
+                <td>Delivery</td>
+                <td>Zero</td>
+                <td>Zero</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="Brokerage-charges">
+        <h2 class="m-0">Brokerage Charges</h2>
+        <img src="./Assets/img2nd.png" class="img-res" />
+      </div>
+      <img src="./Assets/img3.png" class="img-res mb-50" />
+      <div class="shareholdings-sec">
+        <img src="./Assets/img4.png" class="img-res mb-50" alt="" />
+        <img src="./Assets/img5.png" class="img-res mb-50" alt="" />
+      </div>
+      <!-- trial -->
+      <div class="comparison-table">
+        <div class="header">
+          <span class="comaparison-header">Pros</span>
+          <img
+            class="comparison-header-logo"
+            src="https://s3-alpha-sig.figma.com/img/eac1/6e57/bbad62126de80ecb10585472f5a7a68d?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=e2uv4sp-NoFI3ic2Mm~hFOro7A6ukQUdGvobVLag~EGIhVghrnM~vB9zt0yLepPKl1AEqlcNreYbNf3YqTS31IrLZphAwPhyAYP9egXeSA9aUFT8aONwAvfE8HCk~7wsIvSai2L5JDDyNfuYQKah7tOqWSDXLYZaQnwwH-xeWEkFodJOiS3vNL1eGMAuTpoQacLFOashffSfqwk773VbL~J3rmLSdsO9gT5weODY393OE8bSevsmL7gtQ2ue6t3qZCB13j1FT5HdJnh8pnsOn1ARETgvRPeFK3oxZ4vNkggeaGTrd9MgPiEilzd3Dyo1X7LsZENVktYXiDomj3uedA__"
+            alt="AngelOne"
+          />
+          <span class="comparison-header">cons</span>
+        </div>
+        <table class="comparison-table">
+          <tbody>
+            <tr>
+              <td>
+                <svg
+                  width="30"
+                  height="30"
+                  class="icon"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <circle cx="15" cy="15" r="15" fill="#387ED1" />
+                  <rect
+                    x="7.17383"
+                    y="7.17383"
+                    width="16.3043"
+                    height="16.3043"
+                    fill="url(#pattern0_820_1566)"
+                  />
+                  <defs>
+                    <pattern
+                      id="pattern0_820_1566"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_820_1566"
+                        transform="scale(0.0111111)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_820_1566"
+                      width="90"
+                      height="90"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADa0lEQVR4nO2cu49NURSHD0Li1aBBIQiJP0BEp1OpvGM0Gg0RiUIpWo2CRPQKkYwQhYhkNGYyw4RKpRDMXNck5uzf75wxI1iyuZMoPO7jnL32vnd9yarvWl9W1j773H12lhmGYRiGYQwEeZ6vIymLAWAeQAPAI5LnnXPrtXPsC5xze34X/Yf4RHJIO8/kITn0H9GLnX5aO9ekIXmpTdELAHZp55ssAG61I7ol+7Z2vskCYKID0QszMzNrtXNOEv5a7KTdcM4d0M45OQBs6ERyq6uvaOedHM65vZ2KJjmsnXdyFEVxsouOfqmdd3IAuNqF6DfaeSdFURQbSRZdiG5o554UJG90MZ9/bsm1c08G59xOAF+6EQ2g1M4/GUje6bKbveiv2vknQVmWuwF871Y0yY/aNSQBgMc9SPYdPaJdQ/QURbG/F8kt0de064gaEVkKYLJX0SSPa9cSNSRPVCBZyrLcpF1LtIjICpKvKxD9SruWqCF5topuJnldu5ZoaTabawB8qEK0vYv+ByQvVyHZH0NoNBqrw7VIelvtzxWJfqhdT5SIyKqKHuekFee0a4oOEVlJ8kGFksU5t0O7rqiYm5vbQvJplZKpEP7lFYBpkvf9JslvuLJYRkVRFBdI5tqSWI/4yTzPt6k8tvkfBnCI5M1Ojw0wwQDQnJ2d3RpEsHax1Jf9PMgY0S6UccQxE80gou+ZaAYZH1MmmkFEz5toBhFd/yEehYVHIoy7JppBOvqgiWbtokftOZq1d/LbYNvwCOajKMa+IJIHXTSAd3mebzfRDCJ8TESWWUczSGfbUwfDdLU9RzNMR9vOkGFEL9iMZhDR9X9HE2gGSuRx30QziOijJpq1j41n9q6DtUtu2L/grF3yRNBzHcqLkGgEgItBtt0mGhPBj4Rpdxf14oiJZp+837COpp/T0yaaffJ+wzqa1tEMtxjajGYY0YdtdLB2yeO2YWHti+BUsH++B3gxHFf5bmWARA/7b3NUv8SKQILUHVkMaEugidYXxH7q6L/hv9UG8E1bEnsPl8WO/9OSJCKQJT3EWJbK1RE+2QiESZdxJksFEVninDvlj05FIE7aDQAv/P1PWWqIyHJ/RzSAkdjnt5dcluXmrE+uMR5q3bL7BMB7v/AoC/aM+nGRZCcbhmEYhmEYhmFkFfADQIGD4gcPsKsAAAAASUVORK5CYII="
+                    />
+                  </defs>
+                </svg>
+                Angel One charges zero account opening charges as well as zero
+                annual maintenance charges for only the first year.
+              </td>
+              <td>
+                <svg
+                  width="30"
+                  height="30"
+                  class="icon"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <circle cx="15" cy="15" r="15" fill="#00D9A4" />
+                  <rect
+                    x="7.17383"
+                    y="7.17383"
+                    width="16.3043"
+                    height="16.3043"
+                    fill="url(#pattern0_820_1571)"
+                  />
+                  <defs>
+                    <pattern
+                      id="pattern0_820_1571"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_820_1571"
+                        transform="scale(0.0111111)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_820_1571"
+                      width="90"
+                      height="90"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADRElEQVR4nO2cv49MURTHn1/xsyEaROI3/4CITqnREMGio7PZRKej1igI/gBRSBbZRiFBJFbWz0qlkPVjdoSde7/f9/aHrD3yslMpmJl9c8+9M+eTnHru+cy5J++duXOzzDAMwzAMwzAMwzAMwzAMwwhBURRb8jw/S/I2yWcAaiRBUhQjJ/mS5KCIrEy2EkRkRVPuUwC/laX+MwC8K4shSwkRWQrgHIBxbYFsU3Yyle2939vcjpJoXMhih+QpLiAJx2gWMySHYu/DbC2YxUAEIqTbkcWAtgSaaH1BtIpmajFCckBEllnrYPeFA3jrvd9tPZpBZE+oyI5gW0voAPBaRJabaAYRftJEM4johyaaQdpHzUQziOhZE80gor+ZaAbp0fdNNIOIPm6i2fW2MVb+amSi2XXRl+yFheHeDp1zu+wVnEFkTzjndtqsg2EqO8j4NNRWZb/PPSJIUiKIERPNML3aRLNH5h4RbFvRDgCfTDR7ZO6hXU2MIAAcM9HsuugXQeYefV7J4865HV2X3O+iSR4KIrnfRQP4bLMOBhM+arMOBqtse+pgGNn2HM0wFW1vhgwjesaeOhhE9BcTTevR0kNxwiqaXW8br4Ke8ajVamsbjcY2AEdJ3iT5ow8k18ucM01EZDXJiyQbvVrJjUZjexYLU1NTW0k+7wGxcwC+knxQ9uTgR8JaQURWNf9CVlniXuvfUbEjImvK7Vah7CHtnKKlrEIA0xVt5Ufa+UQNySsViZ4pn3S084mWer2+rjxwUlGfPqKdT9SQHKyoT9/QziX6S6xIfqxA9AftXKKH5Okqqroois3auUSNiCwB8KYC2QPauURPnueHK3j6uK6dRxIAeLxI0U+0c0iCoij2A5hfhOzv2jkkA8l7i6joOe31J4P3fg+AXx2KLrTXnxQkb3VY1ZPaa0+KPM83Na8VjvvejF4AwLUoD6/0GvnC3dLtin6vve7k8N4f7KBHD2uvOzkAbOygoq9qrztJSE62I9pm0h0CYKyNap4tf0io9qvuEwDcaUP0Xe31JgvJyy1KngGwT3u9yULyTAuS5wGc115r0njvD/xH9E8b9leAc27DX9U7XV7mV57jKA/NOOfWV/E52vwBGuCD7GBT17QAAAAASUVORK5CYII="
+                    />
+                  </defs>
+                </svg>
+                Call and trade fee is charged at an extra Rs 20 per executed
+                order.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <svg
+                  width="30"
+                  height="30"
+                  class="icon"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <circle cx="15" cy="15" r="15" fill="#387ED1" />
+                  <rect
+                    x="7.17383"
+                    y="7.17383"
+                    width="16.3043"
+                    height="16.3043"
+                    fill="url(#pattern0_820_1566)"
+                  />
+                  <defs>
+                    <pattern
+                      id="pattern0_820_1566"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_820_1566"
+                        transform="scale(0.0111111)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_820_1566"
+                      width="90"
+                      height="90"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADa0lEQVR4nO2cu49NURSHD0Li1aBBIQiJP0BEp1OpvGM0Gg0RiUIpWo2CRPQKkYwQhYhkNGYyw4RKpRDMXNck5uzf75wxI1iyuZMoPO7jnL32vnd9yarvWl9W1j773H12lhmGYRiGYQwEeZ6vIymLAWAeQAPAI5LnnXPrtXPsC5xze34X/Yf4RHJIO8/kITn0H9GLnX5aO9ekIXmpTdELAHZp55ssAG61I7ol+7Z2vskCYKID0QszMzNrtXNOEv5a7KTdcM4d0M45OQBs6ERyq6uvaOedHM65vZ2KJjmsnXdyFEVxsouOfqmdd3IAuNqF6DfaeSdFURQbSRZdiG5o554UJG90MZ9/bsm1c08G59xOAF+6EQ2g1M4/GUje6bKbveiv2vknQVmWuwF871Y0yY/aNSQBgMc9SPYdPaJdQ/QURbG/F8kt0de064gaEVkKYLJX0SSPa9cSNSRPVCBZyrLcpF1LtIjICpKvKxD9SruWqCF5topuJnldu5ZoaTabawB8qEK0vYv+ByQvVyHZH0NoNBqrw7VIelvtzxWJfqhdT5SIyKqKHuekFee0a4oOEVlJ8kGFksU5t0O7rqiYm5vbQvJplZKpEP7lFYBpkvf9JslvuLJYRkVRFBdI5tqSWI/4yTzPt6k8tvkfBnCI5M1Ojw0wwQDQnJ2d3RpEsHax1Jf9PMgY0S6UccQxE80gou+ZaAYZH1MmmkFEz5toBhFd/yEehYVHIoy7JppBOvqgiWbtokftOZq1d/LbYNvwCOajKMa+IJIHXTSAd3mebzfRDCJ8TESWWUczSGfbUwfDdLU9RzNMR9vOkGFEL9iMZhDR9X9HE2gGSuRx30QziOijJpq1j41n9q6DtUtu2L/grF3yRNBzHcqLkGgEgItBtt0mGhPBj4Rpdxf14oiJZp+837COpp/T0yaaffJ+wzqa1tEMtxjajGYY0YdtdLB2yeO2YWHti+BUsH++B3gxHFf5bmWARA/7b3NUv8SKQILUHVkMaEugidYXxH7q6L/hv9UG8E1bEnsPl8WO/9OSJCKQJT3EWJbK1RE+2QiESZdxJksFEVninDvlj05FIE7aDQAv/P1PWWqIyHJ/RzSAkdjnt5dcluXmrE+uMR5q3bL7BMB7v/AoC/aM+nGRZCcbhmEYhmEYhmFkFfADQIGD4gcPsKsAAAAASUVORK5CYII="
+                    />
+                  </defs>
+                </svg>
+                Zero brokerage charges for equity delivery and remaining
+                segments like intraday and F&O which is flat Rs. 20 per trade.
+              </td>
+              <td>
+                <svg
+                  width="30"
+                  height="30"
+                  class="icon"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <circle cx="15" cy="15" r="15" fill="#00D9A4" />
+                  <rect
+                    x="7.17383"
+                    y="7.17383"
+                    width="16.3043"
+                    height="16.3043"
+                    fill="url(#pattern0_820_1571)"
+                  />
+                  <defs>
+                    <pattern
+                      id="pattern0_820_1571"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_820_1571"
+                        transform="scale(0.0111111)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_820_1571"
+                      width="90"
+                      height="90"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADRElEQVR4nO2cv49MURTHn1/xsyEaROI3/4CITqnREMGio7PZRKej1igI/gBRSBbZRiFBJFbWz0qlkPVjdoSde7/f9/aHrD3yslMpmJl9c8+9M+eTnHru+cy5J++duXOzzDAMwzAMwzAMwzAMwzAMwwhBURRb8jw/S/I2yWcAaiRBUhQjJ/mS5KCIrEy2EkRkRVPuUwC/laX+MwC8K4shSwkRWQrgHIBxbYFsU3Yyle2939vcjpJoXMhih+QpLiAJx2gWMySHYu/DbC2YxUAEIqTbkcWAtgSaaH1BtIpmajFCckBEllnrYPeFA3jrvd9tPZpBZE+oyI5gW0voAPBaRJabaAYRftJEM4johyaaQdpHzUQziOhZE80gor+ZaAbp0fdNNIOIPm6i2fW2MVb+amSi2XXRl+yFheHeDp1zu+wVnEFkTzjndtqsg2EqO8j4NNRWZb/PPSJIUiKIERPNML3aRLNH5h4RbFvRDgCfTDR7ZO6hXU2MIAAcM9HsuugXQeYefV7J4865HV2X3O+iSR4KIrnfRQP4bLMOBhM+arMOBqtse+pgGNn2HM0wFW1vhgwjesaeOhhE9BcTTevR0kNxwiqaXW8br4Ke8ajVamsbjcY2AEdJ3iT5ow8k18ucM01EZDXJiyQbvVrJjUZjexYLU1NTW0k+7wGxcwC+knxQ9uTgR8JaQURWNf9CVlniXuvfUbEjImvK7Vah7CHtnKKlrEIA0xVt5Ufa+UQNySsViZ4pn3S084mWer2+rjxwUlGfPqKdT9SQHKyoT9/QziX6S6xIfqxA9AftXKKH5Okqqroois3auUSNiCwB8KYC2QPauURPnueHK3j6uK6dRxIAeLxI0U+0c0iCoij2A5hfhOzv2jkkA8l7i6joOe31J4P3fg+AXx2KLrTXnxQkb3VY1ZPaa0+KPM83Na8VjvvejF4AwLUoD6/0GvnC3dLtin6vve7k8N4f7KBHD2uvOzkAbOygoq9qrztJSE62I9pm0h0CYKyNap4tf0io9qvuEwDcaUP0Xe31JgvJyy1KngGwT3u9yULyTAuS5wGc115r0njvD/xH9E8b9leAc27DX9U7XV7mV57jKA/NOOfWV/E52vwBGuCD7GBT17QAAAAASUVORK5CYII="
+                    />
+                  </defs>
+                </svg>
+                User Interface is a bit complex as it is not for beginners.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="header">
+          <span class="comaparison-header">Pros</span>
+          <img
+            class="comparison-header-logo"
+            src="https://s3-alpha-sig.figma.com/img/8bea/5bf5/87ac877cc53b42ae20c72b3fe597b2f2?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bquY3xdoJg7ePTBiTyrp5uwjdEdqg-ApK2JoGLCaqxwJ~m4smvr16EI1c-R5YExSB-ebl459q7xk7i8~MdhGGwpNicoM~X8RSSRRRAE14IaZ8QWB3I~02lu1TgvHldqZ1mucP24rA3c-BgXilQy2I~vlM4MvchEiqMSFz1-M0CKhgsSoOJjoyGyKDuEYjyiB~4SaPIvIopW2Vl~DO52xPiVC75cQAujRJUKRQ6qFihJzE-hwICZ4SNZq4i6uDI7IJqhkcIfk-Buv4jEIg9WJQnZTMrIm1xjFUcNCNxNNkTCqsxpa4YfSxKcPA004TIM-trUfiMQ7G3LwWCzYWe0eFw__"
+            alt="Zerodha"
+          />
+          <span class="comparison-header">cons</span>
+        </div>
+        <table class="comparison-table">
+          <tbody>
+            <tr>
+              <td>
+                <svg
+                  width="30"
+                  height="30"
+                  class="icon"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <circle cx="15" cy="15" r="15" fill="#387ED1" />
+                  <rect
+                    x="7.17383"
+                    y="7.17383"
+                    width="16.3043"
+                    height="16.3043"
+                    fill="url(#pattern0_820_1566)"
+                  />
+                  <defs>
+                    <pattern
+                      id="pattern0_820_1566"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_820_1566"
+                        transform="scale(0.0111111)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_820_1566"
+                      width="90"
+                      height="90"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADa0lEQVR4nO2cu49NURSHD0Li1aBBIQiJP0BEp1OpvGM0Gg0RiUIpWo2CRPQKkYwQhYhkNGYyw4RKpRDMXNck5uzf75wxI1iyuZMoPO7jnL32vnd9yarvWl9W1j773H12lhmGYRiGYQwEeZ6vIymLAWAeQAPAI5LnnXPrtXPsC5xze34X/Yf4RHJIO8/kITn0H9GLnX5aO9ekIXmpTdELAHZp55ssAG61I7ol+7Z2vskCYKID0QszMzNrtXNOEv5a7KTdcM4d0M45OQBs6ERyq6uvaOedHM65vZ2KJjmsnXdyFEVxsouOfqmdd3IAuNqF6DfaeSdFURQbSRZdiG5o554UJG90MZ9/bsm1c08G59xOAF+6EQ2g1M4/GUje6bKbveiv2vknQVmWuwF871Y0yY/aNSQBgMc9SPYdPaJdQ/QURbG/F8kt0de064gaEVkKYLJX0SSPa9cSNSRPVCBZyrLcpF1LtIjICpKvKxD9SruWqCF5topuJnldu5ZoaTabawB8qEK0vYv+ByQvVyHZH0NoNBqrw7VIelvtzxWJfqhdT5SIyKqKHuekFee0a4oOEVlJ8kGFksU5t0O7rqiYm5vbQvJplZKpEP7lFYBpkvf9JslvuLJYRkVRFBdI5tqSWI/4yTzPt6k8tvkfBnCI5M1Ojw0wwQDQnJ2d3RpEsHax1Jf9PMgY0S6UccQxE80gou+ZaAYZH1MmmkFEz5toBhFd/yEehYVHIoy7JppBOvqgiWbtokftOZq1d/LbYNvwCOajKMa+IJIHXTSAd3mebzfRDCJ8TESWWUczSGfbUwfDdLU9RzNMR9vOkGFEL9iMZhDR9X9HE2gGSuRx30QziOijJpq1j41n9q6DtUtu2L/grF3yRNBzHcqLkGgEgItBtt0mGhPBj4Rpdxf14oiJZp+837COpp/T0yaaffJ+wzqa1tEMtxjajGYY0YdtdLB2yeO2YWHti+BUsH++B3gxHFf5bmWARA/7b3NUv8SKQILUHVkMaEugidYXxH7q6L/hv9UG8E1bEnsPl8WO/9OSJCKQJT3EWJbK1RE+2QiESZdxJksFEVninDvlj05FIE7aDQAv/P1PWWqIyHJ/RzSAkdjnt5dcluXmrE+uMR5q3bL7BMB7v/AoC/aM+nGRZCcbhmEYhmEYhmFkFfADQIGD4gcPsKsAAAAASUVORK5CYII="
+                    />
+                  </defs>
+                </svg>
+                You don't pay any brokerage when you buy shares using
+                cash-and-carry (CNC). Delivery trade has no leverage. Once
+                bought, shares get delivered to your demat account and if sold,
+                shares will get debited from your demat account.
+              </td>
+              <td>
+                <svg
+                  width="30"
+                  height="30"
+                  class="icon"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <circle cx="15" cy="15" r="15" fill="#00D9A4" />
+                  <rect
+                    x="7.17383"
+                    y="7.17383"
+                    width="16.3043"
+                    height="16.3043"
+                    fill="url(#pattern0_820_1571)"
+                  />
+                  <defs>
+                    <pattern
+                      id="pattern0_820_1571"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_820_1571"
+                        transform="scale(0.0111111)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_820_1571"
+                      width="90"
+                      height="90"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADRElEQVR4nO2cv49MURTHn1/xsyEaROI3/4CITqnREMGio7PZRKej1igI/gBRSBbZRiFBJFbWz0qlkPVjdoSde7/f9/aHrD3yslMpmJl9c8+9M+eTnHru+cy5J++duXOzzDAMwzAMwzAMwzAMwzAMwwhBURRb8jw/S/I2yWcAaiRBUhQjJ/mS5KCIrEy2EkRkRVPuUwC/laX+MwC8K4shSwkRWQrgHIBxbYFsU3Yyle2939vcjpJoXMhih+QpLiAJx2gWMySHYu/DbC2YxUAEIqTbkcWAtgSaaH1BtIpmajFCckBEllnrYPeFA3jrvd9tPZpBZE+oyI5gW0voAPBaRJabaAYRftJEM4johyaaQdpHzUQziOhZE80gor+ZaAbp0fdNNIOIPm6i2fW2MVb+amSi2XXRl+yFheHeDp1zu+wVnEFkTzjndtqsg2EqO8j4NNRWZb/PPSJIUiKIERPNML3aRLNH5h4RbFvRDgCfTDR7ZO6hXU2MIAAcM9HsuugXQeYefV7J4865HV2X3O+iSR4KIrnfRQP4bLMOBhM+arMOBqtse+pgGNn2HM0wFW1vhgwjesaeOhhE9BcTTevR0kNxwiqaXW8br4Ke8ajVamsbjcY2AEdJ3iT5ow8k18ucM01EZDXJiyQbvVrJjUZjexYLU1NTW0k+7wGxcwC+knxQ9uTgR8JaQURWNf9CVlniXuvfUbEjImvK7Vah7CHtnKKlrEIA0xVt5Ufa+UQNySsViZ4pn3S084mWer2+rjxwUlGfPqKdT9SQHKyoT9/QziX6S6xIfqxA9AftXKKH5Okqqroois3auUSNiCwB8KYC2QPauURPnueHK3j6uK6dRxIAeLxI0U+0c0iCoij2A5hfhOzv2jkkA8l7i6joOe31J4P3fg+AXx2KLrTXnxQkb3VY1ZPaa0+KPM83Na8VjvvejF4AwLUoD6/0GvnC3dLtin6vve7k8N4f7KBHD2uvOzkAbOygoq9qrztJSE62I9pm0h0CYKyNap4tf0io9qvuEwDcaUP0Xe31JgvJyy1KngGwT3u9yULyTAuS5wGc115r0njvD/xH9E8b9leAc27DX9U7XV7mV57jKA/NOOfWV/E52vwBGuCD7GBT17QAAAAASUVORK5CYII="
+                    />
+                  </defs>
+                </svg>
+                Doesn't provide stock tips, research reports or recommendations.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <svg
+                  width="30"
+                  height="30"
+                  class="icon"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <circle cx="15" cy="15" r="15" fill="#387ED1" />
+                  <rect
+                    x="7.17383"
+                    y="7.17383"
+                    width="16.3043"
+                    height="16.3043"
+                    fill="url(#pattern0_820_1566)"
+                  />
+                  <defs>
+                    <pattern
+                      id="pattern0_820_1566"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_820_1566"
+                        transform="scale(0.0111111)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_820_1566"
+                      width="90"
+                      height="90"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADa0lEQVR4nO2cu49NURSHD0Li1aBBIQiJP0BEp1OpvGM0Gg0RiUIpWo2CRPQKkYwQhYhkNGYyw4RKpRDMXNck5uzf75wxI1iyuZMoPO7jnL32vnd9yarvWl9W1j773H12lhmGYRiGYQwEeZ6vIymLAWAeQAPAI5LnnXPrtXPsC5xze34X/Yf4RHJIO8/kITn0H9GLnX5aO9ekIXmpTdELAHZp55ssAG61I7ol+7Z2vskCYKID0QszMzNrtXNOEv5a7KTdcM4d0M45OQBs6ERyq6uvaOedHM65vZ2KJjmsnXdyFEVxsouOfqmdd3IAuNqF6DfaeSdFURQbSRZdiG5o554UJG90MZ9/bsm1c08G59xOAF+6EQ2g1M4/GUje6bKbveiv2vknQVmWuwF871Y0yY/aNSQBgMc9SPYdPaJdQ/QURbG/F8kt0de064gaEVkKYLJX0SSPa9cSNSRPVCBZyrLcpF1LtIjICpKvKxD9SruWqCF5topuJnldu5ZoaTabawB8qEK0vYv+ByQvVyHZH0NoNBqrw7VIelvtzxWJfqhdT5SIyKqKHuekFee0a4oOEVlJ8kGFksU5t0O7rqiYm5vbQvJplZKpEP7lFYBpkvf9JslvuLJYRkVRFBdI5tqSWI/4yTzPt6k8tvkfBnCI5M1Ojw0wwQDQnJ2d3RpEsHax1Jf9PMgY0S6UccQxE80gou+ZaAYZH1MmmkFEz5toBhFd/yEehYVHIoy7JppBOvqgiWbtokftOZq1d/LbYNvwCOajKMa+IJIHXTSAd3mebzfRDCJ8TESWWUczSGfbUwfDdLU9RzNMR9vOkGFEL9iMZhDR9X9HE2gGSuRx30QziOijJpq1j41n9q6DtUtu2L/grF3yRNBzHcqLkGgEgItBtt0mGhPBj4Rpdxf14oiJZp+837COpp/T0yaaffJ+wzqa1tEMtxjajGYY0YdtdLB2yeO2YWHti+BUsH++B3gxHFf5bmWARA/7b3NUv8SKQILUHVkMaEugidYXxH7q6L/hv9UG8E1bEnsPl8WO/9OSJCKQJT3EWJbK1RE+2QiESZdxJksFEVninDvlj05FIE7aDQAv/P1PWWqIyHJ/RzSAkdjnt5dcluXmrE+uMR5q3bL7BMB7v/AoC/aM+nGRZCcbhmEYhmEYhmFkFfADQIGD4gcPsKsAAAAASUVORK5CYII="
+                    />
+                  </defs>
+                </svg>
+                They offer services under a simple pricing model. They charge
+                0.03% or Rs 20 per executed order, whichever is lower,
+                regardless of the trade size. The maximum brokerage paid by the
+                customer is Rs 20 per trade.
+              </td>
+              <td>
+                <svg
+                  width="30"
+                  height="30"
+                  class="icon"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <circle cx="15" cy="15" r="15" fill="#00D9A4" />
+                  <rect
+                    x="7.17383"
+                    y="7.17383"
+                    width="16.3043"
+                    height="16.3043"
+                    fill="url(#pattern0_820_1571)"
+                  />
+                  <defs>
+                    <pattern
+                      id="pattern0_820_1571"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_820_1571"
+                        transform="scale(0.0111111)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_820_1571"
+                      width="90"
+                      height="90"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADRElEQVR4nO2cv49MURTHn1/xsyEaROI3/4CITqnREMGio7PZRKej1igI/gBRSBbZRiFBJFbWz0qlkPVjdoSde7/f9/aHrD3yslMpmJl9c8+9M+eTnHru+cy5J++duXOzzDAMwzAMwzAMwzAMwzAMwwhBURRb8jw/S/I2yWcAaiRBUhQjJ/mS5KCIrEy2EkRkRVPuUwC/laX+MwC8K4shSwkRWQrgHIBxbYFsU3Yyle2939vcjpJoXMhih+QpLiAJx2gWMySHYu/DbC2YxUAEIqTbkcWAtgSaaH1BtIpmajFCckBEllnrYPeFA3jrvd9tPZpBZE+oyI5gW0voAPBaRJabaAYRftJEM4johyaaQdpHzUQziOhZE80gor+ZaAbp0fdNNIOIPm6i2fW2MVb+amSi2XXRl+yFheHeDp1zu+wVnEFkTzjndtqsg2EqO8j4NNRWZb/PPSJIUiKIERPNML3aRLNH5h4RbFvRDgCfTDR7ZO6hXU2MIAAcM9HsuugXQeYefV7J4865HV2X3O+iSR4KIrnfRQP4bLMOBhM+arMOBqtse+pgGNn2HM0wFW1vhgwjesaeOhhE9BcTTevR0kNxwiqaXW8br4Ke8ajVamsbjcY2AEdJ3iT5ow8k18ucM01EZDXJiyQbvVrJjUZjexYLU1NTW0k+7wGxcwC+knxQ9uTgR8JaQURWNf9CVlniXuvfUbEjImvK7Vah7CHtnKKlrEIA0xVt5Ufa+UQNySsViZ4pn3S084mWer2+rjxwUlGfPqKdT9SQHKyoT9/QziX6S6xIfqxA9AftXKKH5Okqqroois3auUSNiCwB8KYC2QPauURPnueHK3j6uK6dRxIAeLxI0U+0c0iCoij2A5hfhOzv2jkkA8l7i6joOe31J4P3fg+AXx2KLrTXnxQkb3VY1ZPaa0+KPM83Na8VjvvejF4AwLUoD6/0GvnC3dLtin6vve7k8N4f7KBHD2uvOzkAbOygoq9qrztJSE62I9pm0h0CYKyNap4tf0io9qvuEwDcaUP0Xe31JgvJyy1KngGwT3u9yULyTAuS5wGc115r0njvD/xH9E8b9leAc27DX9U7XV7mV57jKA/NOOfWV/E52vwBGuCD7GBT17QAAAAASUVORK5CYII="
+                    />
+                  </defs>
+                </svg>
+                Lifetime free AMC demat account plans are not available.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <svg
+                  width="30"
+                  height="30"
+                  class="icon"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <circle cx="15" cy="15" r="15" fill="#387ED1" />
+                  <rect
+                    x="7.17383"
+                    y="7.17383"
+                    width="16.3043"
+                    height="16.3043"
+                    fill="url(#pattern0_820_1566)"
+                  />
+                  <defs>
+                    <pattern
+                      id="pattern0_820_1566"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_820_1566"
+                        transform="scale(0.0111111)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_820_1566"
+                      width="90"
+                      height="90"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADa0lEQVR4nO2cu49NURSHD0Li1aBBIQiJP0BEp1OpvGM0Gg0RiUIpWo2CRPQKkYwQhYhkNGYyw4RKpRDMXNck5uzf75wxI1iyuZMoPO7jnL32vnd9yarvWl9W1j773H12lhmGYRiGYQwEeZ6vIymLAWAeQAPAI5LnnXPrtXPsC5xze34X/Yf4RHJIO8/kITn0H9GLnX5aO9ekIXmpTdELAHZp55ssAG61I7ol+7Z2vskCYKID0QszMzNrtXNOEv5a7KTdcM4d0M45OQBs6ERyq6uvaOedHM65vZ2KJjmsnXdyFEVxsouOfqmdd3IAuNqF6DfaeSdFURQbSRZdiG5o554UJG90MZ9/bsm1c08G59xOAF+6EQ2g1M4/GUje6bKbveiv2vknQVmWuwF871Y0yY/aNSQBgMc9SPYdPaJdQ/QURbG/F8kt0de064gaEVkKYLJX0SSPa9cSNSRPVCBZyrLcpF1LtIjICpKvKxD9SruWqCF5topuJnldu5ZoaTabawB8qEK0vYv+ByQvVyHZH0NoNBqrw7VIelvtzxWJfqhdT5SIyKqKHuekFee0a4oOEVlJ8kGFksU5t0O7rqiYm5vbQvJplZKpEP7lFYBpkvf9JslvuLJYRkVRFBdI5tqSWI/4yTzPt6k8tvkfBnCI5M1Ojw0wwQDQnJ2d3RpEsHax1Jf9PMgY0S6UccQxE80gou+ZaAYZH1MmmkFEz5toBhFd/yEehYVHIoy7JppBOvqgiWbtokftOZq1d/LbYNvwCOajKMa+IJIHXTSAd3mebzfRDCJ8TESWWUczSGfbUwfDdLU9RzNMR9vOkGFEL9iMZhDR9X9HE2gGSuRx30QziOijJpq1j41n9q6DtUtu2L/grF3yRNBzHcqLkGgEgItBtt0mGhPBj4Rpdxf14oiJZp+837COpp/T0yaaffJ+wzqa1tEMtxjajGYY0YdtdLB2yeO2YWHti+BUsH++B3gxHFf5bmWARA/7b3NUv8SKQILUHVkMaEugidYXxH7q6L/hv9UG8E1bEnsPl8WO/9OSJCKQJT3EWJbK1RE+2QiESZdxJksFEVninDvlj05FIE7aDQAv/P1PWWqIyHJ/RzSAkdjnt5dcluXmrE+uMR5q3bL7BMB7v/AoC/aM+nGRZCcbhmEYhmEYhmFkFfADQIGD4gcPsKsAAAAASUVORK5CYII="
+                    />
+                  </defs>
+                </svg>
+                Zerodha is a self-clearing broker. They don't charge clearing
+                charges from customers
+              </td>
+              <td>
+                <svg
+                  width="30"
+                  height="30"
+                  class="icon"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <circle cx="15" cy="15" r="15" fill="#00D9A4" />
+                  <rect
+                    x="7.17383"
+                    y="7.17383"
+                    width="16.3043"
+                    height="16.3043"
+                    fill="url(#pattern0_820_1571)"
+                  />
+                  <defs>
+                    <pattern
+                      id="pattern0_820_1571"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_820_1571"
+                        transform="scale(0.0111111)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_820_1571"
+                      width="90"
+                      height="90"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADRElEQVR4nO2cv49MURTHn1/xsyEaROI3/4CITqnREMGio7PZRKej1igI/gBRSBbZRiFBJFbWz0qlkPVjdoSde7/f9/aHrD3yslMpmJl9c8+9M+eTnHru+cy5J++duXOzzDAMwzAMwzAMwzAMwzAMwwhBURRb8jw/S/I2yWcAaiRBUhQjJ/mS5KCIrEy2EkRkRVPuUwC/laX+MwC8K4shSwkRWQrgHIBxbYFsU3Yyle2939vcjpJoXMhih+QpLiAJx2gWMySHYu/DbC2YxUAEIqTbkcWAtgSaaH1BtIpmajFCckBEllnrYPeFA3jrvd9tPZpBZE+oyI5gW0voAPBaRJabaAYRftJEM4johyaaQdpHzUQziOhZE80gor+ZaAbp0fdNNIOIPm6i2fW2MVb+amSi2XXRl+yFheHeDp1zu+wVnEFkTzjndtqsg2EqO8j4NNRWZb/PPSJIUiKIERPNML3aRLNH5h4RbFvRDgCfTDR7ZO6hXU2MIAAcM9HsuugXQeYefV7J4865HV2X3O+iSR4KIrnfRQP4bLMOBhM+arMOBqtse+pgGNn2HM0wFW1vhgwjesaeOhhE9BcTTevR0kNxwiqaXW8br4Ke8ajVamsbjcY2AEdJ3iT5ow8k18ucM01EZDXJiyQbvVrJjUZjexYLU1NTW0k+7wGxcwC+knxQ9uTgR8JaQURWNf9CVlniXuvfUbEjImvK7Vah7CHtnKKlrEIA0xVt5Ufa+UQNySsViZ4pn3S084mWer2+rjxwUlGfPqKdT9SQHKyoT9/QziX6S6xIfqxA9AftXKKH5Okqqroois3auUSNiCwB8KYC2QPauURPnueHK3j6uK6dRxIAeLxI0U+0c0iCoij2A5hfhOzv2jkkA8l7i6joOe31J4P3fg+AXx2KLrTXnxQkb3VY1ZPaa0+KPM83Na8VjvvejF4AwLUoD6/0GvnC3dLtin6vve7k8N4f7KBHD2uvOzkAbOygoq9qrztJSE62I9pm0h0CYKyNap4tf0io9qvuEwDcaUP0Xe31JgvJyy1KngGwT3u9yULyTAuS5wGc115r0njvD/xH9E8b9leAc27DX9U7XV7mV57jKA/NOOfWV/E52vwBGuCD7GBT17QAAAAASUVORK5CYII="
+                    />
+                  </defs>
+                </svg>
+                An additional charge of Rs 50 per executed order for MIS/BO/CO
+                positions which are not square off by the customer.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <svg
+                  width="30"
+                  height="30"
+                  class="icon"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <circle cx="15" cy="15" r="15" fill="#387ED1" />
+                  <rect
+                    x="7.17383"
+                    y="7.17383"
+                    width="16.3043"
+                    height="16.3043"
+                    fill="url(#pattern0_820_1566)"
+                  />
+                  <defs>
+                    <pattern
+                      id="pattern0_820_1566"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_820_1566"
+                        transform="scale(0.0111111)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_820_1566"
+                      width="90"
+                      height="90"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADa0lEQVR4nO2cu49NURSHD0Li1aBBIQiJP0BEp1OpvGM0Gg0RiUIpWo2CRPQKkYwQhYhkNGYyw4RKpRDMXNck5uzf75wxI1iyuZMoPO7jnL32vnd9yarvWl9W1j773H12lhmGYRiGYQwEeZ6vIymLAWAeQAPAI5LnnXPrtXPsC5xze34X/Yf4RHJIO8/kITn0H9GLnX5aO9ekIXmpTdELAHZp55ssAG61I7ol+7Z2vskCYKID0QszMzNrtXNOEv5a7KTdcM4d0M45OQBs6ERyq6uvaOedHM65vZ2KJjmsnXdyFEVxsouOfqmdd3IAuNqF6DfaeSdFURQbSRZdiG5o554UJG90MZ9/bsm1c08G59xOAF+6EQ2g1M4/GUje6bKbveiv2vknQVmWuwF871Y0yY/aNSQBgMc9SPYdPaJdQ/QURbG/F8kt0de064gaEVkKYLJX0SSPa9cSNSRPVCBZyrLcpF1LtIjICpKvKxD9SruWqCF5topuJnldu5ZoaTabawB8qEK0vYv+ByQvVyHZH0NoNBqrw7VIelvtzxWJfqhdT5SIyKqKHuekFee0a4oOEVlJ8kGFksU5t0O7rqiYm5vbQvJplZKpEP7lFYBpkvf9JslvuLJYRkVRFBdI5tqSWI/4yTzPt6k8tvkfBnCI5M1Ojw0wwQDQnJ2d3RpEsHax1Jf9PMgY0S6UccQxE80gou+ZaAYZH1MmmkFEz5toBhFd/yEehYVHIoy7JppBOvqgiWbtokftOZq1d/LbYNvwCOajKMa+IJIHXTSAd3mebzfRDCJ8TESWWUczSGfbUwfDdLU9RzNMR9vOkGFEL9iMZhDR9X9HE2gGSuRx30QziOijJpq1j41n9q6DtUtu2L/grF3yRNBzHcqLkGgEgItBtt0mGhPBj4Rpdxf14oiJZp+837COpp/T0yaaffJ+wzqa1tEMtxjajGYY0YdtdLB2yeO2YWHti+BUsH++B3gxHFf5bmWARA/7b3NUv8SKQILUHVkMaEugidYXxH7q6L/hv9UG8E1bEnsPl8WO/9OSJCKQJT3EWJbK1RE+2QiESZdxJksFEVninDvlj05FIE7aDQAv/P1PWWqIyHJ/RzSAkdjnt5dcluXmrE+uMR5q3bL7BMB7v/AoC/aM+nGRZCcbhmEYhmEYhmFkFfADQIGD4gcPsKsAAAAASUVORK5CYII="
+                    />
+                  </defs>
+                </svg>
+                Set long-standing stop loss and target orders for your stock
+                investments.
+              </td>
+              <td>
+                <svg
+                  width="30"
+                  height="30"
+                  class="icon"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <circle cx="15" cy="15" r="15" fill="#00D9A4" />
+                  <rect
+                    x="7.17383"
+                    y="7.17383"
+                    width="16.3043"
+                    height="16.3043"
+                    fill="url(#pattern0_820_1571)"
+                  />
+                  <defs>
+                    <pattern
+                      id="pattern0_820_1571"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_820_1571"
+                        transform="scale(0.0111111)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_820_1571"
+                      width="90"
+                      height="90"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADRElEQVR4nO2cv49MURTHn1/xsyEaROI3/4CITqnREMGio7PZRKej1igI/gBRSBbZRiFBJFbWz0qlkPVjdoSde7/f9/aHrD3yslMpmJl9c8+9M+eTnHru+cy5J++duXOzzDAMwzAMwzAMwzAMwzAMwwhBURRb8jw/S/I2yWcAaiRBUhQjJ/mS5KCIrEy2EkRkRVPuUwC/laX+MwC8K4shSwkRWQrgHIBxbYFsU3Yyle2939vcjpJoXMhih+QpLiAJx2gWMySHYu/DbC2YxUAEIqTbkcWAtgSaaH1BtIpmajFCckBEllnrYPeFA3jrvd9tPZpBZE+oyI5gW0voAPBaRJabaAYRftJEM4johyaaQdpHzUQziOhZE80gor+ZaAbp0fdNNIOIPm6i2fW2MVb+amSi2XXRl+yFheHeDp1zu+wVnEFkTzjndtqsg2EqO8j4NNRWZb/PPSJIUiKIERPNML3aRLNH5h4RbFvRDgCfTDR7ZO6hXU2MIAAcM9HsuugXQeYefV7J4865HV2X3O+iSR4KIrnfRQP4bLMOBhM+arMOBqtse+pgGNn2HM0wFW1vhgwjesaeOhhE9BcTTevR0kNxwiqaXW8br4Ke8ajVamsbjcY2AEdJ3iT5ow8k18ucM01EZDXJiyQbvVrJjUZjexYLU1NTW0k+7wGxcwC+knxQ9uTgR8JaQURWNf9CVlniXuvfUbEjImvK7Vah7CHtnKKlrEIA0xVt5Ufa+UQNySsViZ4pn3S084mWer2+rjxwUlGfPqKdT9SQHKyoT9/QziX6S6xIfqxA9AftXKKH5Okqqroois3auUSNiCwB8KYC2QPauURPnueHK3j6uK6dRxIAeLxI0U+0c0iCoij2A5hfhOzv2jkkA8l7i6joOe31J4P3fg+AXx2KLrTXnxQkb3VY1ZPaa0+KPM83Na8VjvvejF4AwLUoD6/0GvnC3dLtin6vve7k8N4f7KBHD2uvOzkAbOygoq9qrztJSE62I9pm0h0CYKyNap4tf0io9qvuEwDcaUP0Xe31JgvJyy1KngGwT3u9yULyTAuS5wGc115r0njvD/xH9E8b9leAc27DX9U7XV7mV57jKA/NOOfWV/E52vwBGuCD7GBT17QAAAAASUVORK5CYII="
+                    />
+                  </defs>
+                </svg>
+                Call & Trade is available at an additional fee of Rs 50 per
+                executed order.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <svg
+                  width="30"
+                  height="30"
+                  class="icon"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <circle cx="15" cy="15" r="15" fill="#387ED1" />
+                  <rect
+                    x="7.17383"
+                    y="7.17383"
+                    width="16.3043"
+                    height="16.3043"
+                    fill="url(#pattern0_820_1566)"
+                  />
+                  <defs>
+                    <pattern
+                      id="pattern0_820_1566"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_820_1566"
+                        transform="scale(0.0111111)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_820_1566"
+                      width="90"
+                      height="90"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADa0lEQVR4nO2cu49NURSHD0Li1aBBIQiJP0BEp1OpvGM0Gg0RiUIpWo2CRPQKkYwQhYhkNGYyw4RKpRDMXNck5uzf75wxI1iyuZMoPO7jnL32vnd9yarvWl9W1j773H12lhmGYRiGYQwEeZ6vIymLAWAeQAPAI5LnnXPrtXPsC5xze34X/Yf4RHJIO8/kITn0H9GLnX5aO9ekIXmpTdELAHZp55ssAG61I7ol+7Z2vskCYKID0QszMzNrtXNOEv5a7KTdcM4d0M45OQBs6ERyq6uvaOedHM65vZ2KJjmsnXdyFEVxsouOfqmdd3IAuNqF6DfaeSdFURQbSRZdiG5o554UJG90MZ9/bsm1c08G59xOAF+6EQ2g1M4/GUje6bKbveiv2vknQVmWuwF871Y0yY/aNSQBgMc9SPYdPaJdQ/QURbG/F8kt0de064gaEVkKYLJX0SSPa9cSNSRPVCBZyrLcpF1LtIjICpKvKxD9SruWqCF5topuJnldu5ZoaTabawB8qEK0vYv+ByQvVyHZH0NoNBqrw7VIelvtzxWJfqhdT5SIyKqKHuekFee0a4oOEVlJ8kGFksU5t0O7rqiYm5vbQvJplZKpEP7lFYBpkvf9JslvuLJYRkVRFBdI5tqSWI/4yTzPt6k8tvkfBnCI5M1Ojw0wwQDQnJ2d3RpEsHax1Jf9PMgY0S6UccQxE80gou+ZaAYZH1MmmkFEz5toBhFd/yEehYVHIoy7JppBOvqgiWbtokftOZq1d/LbYNvwCOajKMa+IJIHXTSAd3mebzfRDCJ8TESWWUczSGfbUwfDdLU9RzNMR9vOkGFEL9iMZhDR9X9HE2gGSuRx30QziOijJpq1j41n9q6DtUtu2L/grF3yRNBzHcqLkGgEgItBtt0mGhPBj4Rpdxf14oiJZp+837COpp/T0yaaffJ+wzqa1tEMtxjajGYY0YdtdLB2yeO2YWHti+BUsH++B3gxHFf5bmWARA/7b3NUv8SKQILUHVkMaEugidYXxH7q6L/hv9UG8E1bEnsPl8WO/9OSJCKQJT3EWJbK1RE+2QiESZdxJksFEVninDvlj05FIE7aDQAv/P1PWWqIyHJ/RzSAkdjnt5dcluXmrE+uMR5q3bL7BMB7v/AoC/aM+nGRZCcbhmEYhmEYhmFkFfADQIGD4gcPsKsAAAAASUVORK5CYII="
+                    />
+                  </defs>
+                </svg>
+                An all-new mobile app built for both, passive investors and
+                active day traders, with significant speed and user experience
+                enhancements.
+              </td>
+              <td>
+                <svg
+                  width="30"
+                  height="30"
+                  class="icon"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <circle cx="15" cy="15" r="15" fill="#00D9A4" />
+                  <rect
+                    x="7.17383"
+                    y="7.17383"
+                    width="16.3043"
+                    height="16.3043"
+                    fill="url(#pattern0_820_1571)"
+                  />
+                  <defs>
+                    <pattern
+                      id="pattern0_820_1571"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_820_1571"
+                        transform="scale(0.0111111)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_820_1571"
+                      width="90"
+                      height="90"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADRElEQVR4nO2cv49MURTHn1/xsyEaROI3/4CITqnREMGio7PZRKej1igI/gBRSBbZRiFBJFbWz0qlkPVjdoSde7/f9/aHrD3yslMpmJl9c8+9M+eTnHru+cy5J++duXOzzDAMwzAMwzAMwzAMwzAMwwhBURRb8jw/S/I2yWcAaiRBUhQjJ/mS5KCIrEy2EkRkRVPuUwC/laX+MwC8K4shSwkRWQrgHIBxbYFsU3Yyle2939vcjpJoXMhih+QpLiAJx2gWMySHYu/DbC2YxUAEIqTbkcWAtgSaaH1BtIpmajFCckBEllnrYPeFA3jrvd9tPZpBZE+oyI5gW0voAPBaRJabaAYRftJEM4johyaaQdpHzUQziOhZE80gor+ZaAbp0fdNNIOIPm6i2fW2MVb+amSi2XXRl+yFheHeDp1zu+wVnEFkTzjndtqsg2EqO8j4NNRWZb/PPSJIUiKIERPNML3aRLNH5h4RbFvRDgCfTDR7ZO6hXU2MIAAcM9HsuugXQeYefV7J4865HV2X3O+iSR4KIrnfRQP4bLMOBhM+arMOBqtse+pgGNn2HM0wFW1vhgwjesaeOhhE9BcTTevR0kNxwiqaXW8br4Ke8ajVamsbjcY2AEdJ3iT5ow8k18ucM01EZDXJiyQbvVrJjUZjexYLU1NTW0k+7wGxcwC+knxQ9uTgR8JaQURWNf9CVlniXuvfUbEjImvK7Vah7CHtnKKlrEIA0xVt5Ufa+UQNySsViZ4pn3S084mWer2+rjxwUlGfPqKdT9SQHKyoT9/QziX6S6xIfqxA9AftXKKH5Okqqroois3auUSNiCwB8KYC2QPauURPnueHK3j6uK6dRxIAeLxI0U+0c0iCoij2A5hfhOzv2jkkA8l7i6joOe31J4P3fg+AXx2KLrTXnxQkb3VY1ZPaa0+KPM83Na8VjvvejF4AwLUoD6/0GvnC3dLtin6vve7k8N4f7KBHD2uvOzkAbOygoq9qrztJSE62I9pm0h0CYKyNap4tf0io9qvuEwDcaUP0Xe31JgvJyy1KngGwT3u9yULyTAuS5wGc115r0njvD/xH9E8b9leAc27DX9U7XV7mV57jKA/NOOfWV/E52vwBGuCD7GBT17QAAAAASUVORK5CYII="
+                    />
+                  </defs>
+                </svg>
+                3-in-1 trading account is not available as Zerodha doesn't
+                provide banking services.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="rating-sec">
+        <h2 class="rating-heading">Ratings</h2>
+        <div class="rating-wrap">
+          <div class="card-1">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/eac1/6e57/bbad62126de80ecb10585472f5a7a68d?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=e2uv4sp-NoFI3ic2Mm~hFOro7A6ukQUdGvobVLag~EGIhVghrnM~vB9zt0yLepPKl1AEqlcNreYbNf3YqTS31IrLZphAwPhyAYP9egXeSA9aUFT8aONwAvfE8HCk~7wsIvSai2L5JDDyNfuYQKah7tOqWSDXLYZaQnwwH-xeWEkFodJOiS3vNL1eGMAuTpoQacLFOashffSfqwk773VbL~J3rmLSdsO9gT5weODY393OE8bSevsmL7gtQ2ue6t3qZCB13j1FT5HdJnh8pnsOn1ARETgvRPeFK3oxZ4vNkggeaGTrd9MgPiEilzd3Dyo1X7LsZENVktYXiDomj3uedA__"
+              alt=""
+              class="companylogo"
+            />
+            <h6 class="title">Angel One</h6>
+            <div class="star-row">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <span class="Rating-numerics"> 4.7 </span>
+            <span class="review-row mt-20"
+              >Trust factor
+              <div class="star-row">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </span>
+            <span class="review-row"
+              >Ease of use
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+              <div class="star-row">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </span>
+            <span class="review-row mb-20"
+              >Technology &nbsp;&nbsp;&nbsp;&nbsp;
+              <div class="star-row">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </span>
+            <button class="demat-btn mb-20">Open Demat Account</button>
+          </div>
+          <div class="card-1">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/8bea/5bf5/87ac877cc53b42ae20c72b3fe597b2f2?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bquY3xdoJg7ePTBiTyrp5uwjdEdqg-ApK2JoGLCaqxwJ~m4smvr16EI1c-R5YExSB-ebl459q7xk7i8~MdhGGwpNicoM~X8RSSRRRAE14IaZ8QWB3I~02lu1TgvHldqZ1mucP24rA3c-BgXilQy2I~vlM4MvchEiqMSFz1-M0CKhgsSoOJjoyGyKDuEYjyiB~4SaPIvIopW2Vl~DO52xPiVC75cQAujRJUKRQ6qFihJzE-hwICZ4SNZq4i6uDI7IJqhkcIfk-Buv4jEIg9WJQnZTMrIm1xjFUcNCNxNNkTCqsxpa4YfSxKcPA004TIM-trUfiMQ7G3LwWCzYWe0eFw__"
+              alt=""
+              class="companylogo"
+            />
+            <h6 class="title">Zerodha</h6>
+            <div class="star-row">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="Rating-numerics"> 4.6 </span>
+            <span class="review-row mt-20"
+              >Trust factor &nbsp
+              <div class="star-row">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </span>
+            <span class="review-row"
+              >Ease of use &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <div class="star-row">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </span>
+            <span class="review-row mb-20"
+              >Technology &nbsp;
+              <div class="star-row">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </span>
+            <button class="demat-btn mb-20">Open Demat Account</button>
+          </div>
+        </div>
+      </div>
+      <div class="financial-data">
+        <img src="./Assets/img6.png" class="img-res mb-50" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

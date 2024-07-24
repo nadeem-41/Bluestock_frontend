@@ -1,0 +1,512 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.navbar{
+    padding: 20px 10px 0 10px;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid #bdbdbd4d;
+}
+.companylogo{
+    display: flex;
+    gap: 8px;
+    
+}
+.logo-img{
+  margin-top: 0;
+    width: 85px;
+    height: 45px;
+    margin-bottom: 10px;
+}
+.logo-name{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.nav-links{
+    display: flex;
+    gap: 16px;
+}
+.nav-links>li{
+    list-style: none;
+    color: #9A9A9A;
+}
+.sign_in-btn{
+    padding: 8px 16px;
+    color: #9A9A9A;
+    border: none;
+    background-color: #fff;
+    font-size: 16px;
+}
+.sign_up-btn{
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #3F52FF;
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 30px;
+}
+.sign_up-btn:hover{
+  background-color: #3f52ff9c;
+}
+.gripicon{
+    font-size: 25px;
+}
+.component3 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 250px 0 250px;
+}
+.sidemenu {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+.res-2nd-block {
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+}
+.list-ul {
+  list-style: none;
+  color: #2457c5;
+  /* border: 1px solid grey; */
+}
+.display-flex-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.521vw;
+  line-height: 30px;
+  margin: 0 0 10px 0;
+}
+.icon {
+  height: auto;
+  width: 26px;
+}
+.card-1 {
+  width: 240px;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  box-shadow: 3px 3px 8px 2px rgb(191, 189, 189);
+}
+.companylogo {
+  height: 80px;
+  width: auto;
+}
+.title {
+  font-size: 20px;
+}
+.star-row {
+  color: #fabf35;
+}
+.Rating-numerics {
+  font-size: 36px;
+  font-weight: 700;
+}
+.demat-btn {
+  padding: 0.31vw 0.625vw;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #45bbbc;
+  font-size: 12px;
+  position: absolute;
+  bottom: 15px;
+}
+.vs {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vs-tag {
+  background-color: #000;
+  padding: 8px 12px;
+  color: #fff;
+  border-radius: 50%;
+}
+.data-part-img {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.img-res {
+  width: 700px;
+  height: auto;
+}
+.m-0 {
+  margin: 0;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+.Maintenance-heading,
+.Brokerage-heading {
+  margin-top: 35px;
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+.charges-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 100px;
+}
+
+.charges-table thead {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.charges-table th,
+.charges-table td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.charges-table th {
+  font-size: 1.2em;
+}
+.Brokerage-charges {
+  margin-bottom: 50px;
+}
+.shareholdings-sec {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f8e9e7;
+  color: #0056b3;
+  width: 100%;
+  padding: 8px;
+  font-size: 32px;
+  font-weight: 600;
+  border-right: 2px solid #2457c5;
+  border-left: 2px solid #2457c5;
+  border-top: 2px solid #2457c5;
+}
+.comparison-header-logo {
+  width: 55px;
+  height: 55px;
+}
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  /* border: 2px solid #2457C5; */
+  margin-bottom: 60px;
+}
+
+.comparison-table td {
+  padding: 15px;
+  border: 2px solid #2457c5;
+  width: 50%;
+}
+
+.comparison-table .icon {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mb-20 {
+  margin-bottom: 40px;
+  position: relative;
+}
+.rating-sec {
+  width: 100%;
+}
+.rating-header{
+    margin-left: 50ox;
+}
+.rating-wrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  /* margin-top: 30px; */
+  margin-bottom: 40px;
+}
+.review-row {
+  display: flex;
+  gap: 8px;
+  font-weight: 600;
+}
+@media (width<=550px) {
+    .navbar{
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 22px;
+    }
+    .companylogo{
+        display: flex;
+        gap: 8px;
+    }
+    .logo-img{
+        width: 85px;
+        height: 45px;
+    }
+    .logo-name{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .nav-links{
+        display: none;
+    }
+    .sign_in-btn{
+        display: none;
+    }
+    .sign_up-btn{
+        display: none;
+    }
+    .gripicon{
+        font-size: 25px;
+    }
+  .component3 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 0 20px 0 20px;
+  }
+  .sidemenu {
+    width: 100%;
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 25px;
+  }
+  .list-ul {
+    list-style: none;
+    color: #2457c5;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid grey; */
+  }
+  .display-flex-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 30px;
+    margin: 0 0 0.781vw 0;
+  }
+  .icon {
+    height: 29px;
+    width: auto;
+  }
+  .res-2nd-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .res-2nd-block {
+    margin: 40px 0 40px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  .card-1 {
+    width: 150px;
+    height: auto;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 8px;
+    /* border: 1px solid rgb(231, 228, 228); */
+    border-radius: 7px;
+    box-shadow: 3px 3px 8px 2px rgb(191, 189, 189);
+  }
+  .companylogo {
+    height: 60px;
+    width: auto;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .star-row {
+    color: #fabf35;
+  }
+  .Rating-numerics {
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .demat-btn {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #45bbbc;
+    font-size: 12px;
+    position:static;
+    bottom: 22px;
+  }
+  .vs {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .vs-tag {
+    background-color: #000;
+    padding: 4px 8px;
+    color: #fff;
+    border-radius: 50%;
+  }
+  .data-part-img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .img-res {
+    width: 100%;
+    height: auto;
+    /* margin: 15px; */
+  }
+  .mb-50 {
+    margin-bottom: 50px;
+  }
+  .maintenance-table {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .charges-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+  }
+
+  .charges-table thead {
+    background-color: #0056b3;
+    color: #fff;
+  }
+
+  .charges-table th,
+  .charges-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+
+  .charges-table th {
+    font-size: 16px;
+  }
+  .brokerage-charge-table {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .Brokerage-charges {
+    width: 100%;
+  }
+  .shareholdings-sec {
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f8e9e7;
+    color: #0056b3;
+    width: 100%;
+    padding: 8px;
+    font-size: 32px;
+    font-weight: 600;
+    border-right: 2px solid #2457c5;
+    border-left: 2px solid #2457c5;
+    border-top: 2px solid #2457c5;
+  }
+  .comparison-header-logo {
+    width: 55px;
+    height: 55px;
+  }
+  .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    /* border: 2px solid #2457C5; */
+    margin-bottom: 40px;
+  }
+  .comparison-table td {
+    padding: 15px;
+    border: 2px solid #2457c5;
+    width: 50%;
+  }
+
+  .comparison-table .icon {
+    width: 20px;
+    height: auto;
+  }
+  .rating-header{
+    margin-left: 30px;
+  }
+  .rating-wrap {
+    display: flex;
+    height: 320px;
+    padding: 5px;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .rating-wrap > .card-1 > span {
+    font-size: 9px;
+  }
+  .rating-wrap > .card-1 > .title {
+    font-size: 15px;
+  }
+  .rating-wrap > .card-1 > .Rating-numerics {
+    font-size: 30px;
+  }
+  .mt-20 {
+    margin-top: 20px;
+  }
+  .mb-20 {
+    margin-bottom: 20px;
+    /* position: relative; */
+  }
+  .review-row {
+    display: flex;
+    gap: 8px;
+    font-weight: 600;
+  }
+}
