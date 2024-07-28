@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div class="navbar">
+        <div class="companylogo">
+          <img
+            src="https://s3-alpha-sig.figma.com/img/33b9/eda0/4843225c388eec499ad6ac8810e70a6a?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iZLErNXXv-u5N7Xf8NBN22K9UmrsQfDh3LH0EI-9psfqASNY5RaNBA7cvbajKuPsyCM2uxRE~8cJMTqzZHTDVtBNlS6k7LqE0KS8Z2IKtDp7uOrkzhpdEUriJFWaKxuWF6rqF1J9PimKyrtYbc3IXJpjXTcONZykteekCIEd2c~tMk6CbBxX1oI2Fimd~OHoxyPkQQC5IKb2IrAq6ueIxyU9amxElqUeqodzEMiYeKkMNLKdzeUnkAJCBqyAoLMimguKuOWfKxZEoDpAZewZUQfaM7wOowpHZnD1JbmeeFy7eIH~cny3xhzjobH9sJxkUIguF~SqLomy3WIgi~1WnQ__"
+            alt="blustock_logo" class="logo-img"
+          /><span class="logo-name">BLUESTOCK</span>
+        </div>
+        <div class="nav-links">
+              <li>PRODUCTS</li>
+              <li>COMMUNITY</li>
+              <li>MEDIA</li>
+              <li>BROKER</li>
+              <li>LIVE NEWS &nbsp; <span class="tag">NEW</span></li>
+        </div>
+        <div class="btn-container">
+          <button class="sign_in-btn">Sign In</button>
+          <button class="sign_up-btn">Sign Up Now</button>
+          <i class="fa-solid fa-grip-vertical gripicon" ></i>
+        </div>
+      </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPO Listings</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: poppins, Arial, Helvetica, sans-serif;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .navbar{
+        padding: 20px 10px 0 10px;
+        height: 80px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 1px solid #bdbdbd4d;
+        }
+        .companylogo{
+            display: flex;
+            gap: 8px;
+            
+        }
+        .logo-img{
+        margin-top: 0;
+            width: 85px;
+            height: 45px;
+            margin-bottom: 10px;
+        }
+        .nav-links{
+            display: flex;
+            gap: 16px;
+        }
+        .nav-links>li{
+            list-style: none;
+            color: #9A9A9A;
+        }
+        .sign_in-btn{
+            padding: 8px 16px;
+            color: #9A9A9A;
+            border: none;
+            background-color: #fff;
+            font-size: 16px;
+        }
+        .sign_up-btn{
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            color: #fff;
+            background-color: #3F52FF;
+            font-weight: 600;
+            font-size: 16px;
+            margin-right: 30px;
+        }
+        .sign_up-btn:hover{
+        background-color: #3f52ff9c;
+        }
+        .gripicon{
+            font-size: 25px;
+        }
+        .logo-name{
+            font-size: 40px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            width: 90%;
+        }
+        .card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: white;
+            width: 87%;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            display: block;
+            width: 85px;
+            height: 58px;
+        }
+        .card h2 {
+            text-align: center;
+            color: #4260e1;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .card .info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .card .info div {
+            text-align: center;
+        }
+        .card .info div span {
+            display: block;
+            color: #a0a0a0;
+            font-size: 12px;
+        }
+        .card .info div strong {
+            display: block;
+            color: #000;
+            font-size: 14px;
+        }
+        .card .buttons {
+            display: flex;
+            justify-content: space-around;
+        }
+        .card .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            text-align: center;
+        }
+        .card .buttons a.rhp {
+            border: 1px solid #4260e1;
+            color: #4260e1;
+        }
+        .card .buttons a.drhp {
+            background-color: #ff6158;
+            color: white;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .faq-container {
+            width: 90%;
+            /* max-width: 800px; */
+            margin: 40px auto;
+            background-color: transparent;
+        }
+        .faq-header {
+            /* text-align: center; */
+            margin-bottom: 20px;
+        }
+        .faq-header h2 {
+            /* color: #4260e1; */
+            margin-bottom: 5px;
+            font-size: 24px;
+        }
+        .faq-header p {
+            color: #a0a0a0;
+            font-size: 14px;
+        }
+        .faq-item {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        .faq-question h3 {
+            color: #000;
+            font-size: 16px;
+            margin: 0;
+        }
+        .faq-question span {
+            font-size: 18px;
+            color: #4260e1;
+        }
+        .faq-answer {
+            margin-top: 10px;
+            display: none;
+            color: #666;
+            font-size: 14px;
+        }
+        .try{
+            display:flex
+        }
+        @media (width<=550px) {
+            .navbar{
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 20px;
+                padding-right: 22px;
+            }
+            .companylogo{
+                display: flex;
+                gap: 8px;
+            }
+            .logo-img{
+                width: 85px;
+                height: 45px;
+            }
+            .logo-name{
+                font-size: 25px;
+                font-weight: 700;
+            }
+            .nav-links{
+                display: none;
+            }
+            .sign_in-btn{
+                display: none;
+            }
+            .sign_up-btn{
+                display: none;
+            }
+            .gripicon{
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- First 6 cards -->
+        <div class="card">
+            <div class="try">
+                <img src="Assets/logo1.png" alt="Nova Agritech Ltd.">
+                <h2>Nova Agritech Ltd.</h2>
+            </div>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Rs 39 - 41</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>2024-01-22</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>2024-01-24</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>143.81 Cr.</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>2024-01-30</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="try">
+                <img src="Assets/logo2.png" alt="EPACK Durable Ltd.">
+                <h2>EPACK Durable Ltd.</h2>
+            </div>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Rs 298 - 300</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>2024-01-23</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>2024-01-23</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>840.02 Cr.</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>2024-01-29</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="try">
+                <img src="Assets/logo3.png" alt="RK Swamy Ltd.">
+                <h2>RK Swamy Ltd.</h2>
+            </div>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>Not Issued</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="try">
+                <img src="Assets/logo4.png" alt="Oravel Stays Ltd.">
+                <h2>Oravel Stays Ltd.</h2>
+            </div>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>8430 Cr.</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>Not Issued</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="try">
+                <img src="Assets/logo5.png" alt="Imagine Marketing Ltd.">
+                <h2>Imagine Marketing Ltd.</h2>
+            </div>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>2000 Cr.</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>Not Issued</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="try">
+                <img src="Assets/logo6.png" alt="Kids Clinic India Ltd.">
+                <h2>Kids Clinic India Ltd.</h2>
+            </div>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>Not Issued</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="try">
+                <img src="Assets/logo7.png" alt="OLA Electric Mobility Ltd.">
+                <h2>OLA Electric Mobility Ltd.</h2>
+            </div>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>Not Issued</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="try">
+                <img src="Assets/logo8.png" alt="One Mobikwik Systems Ltd.">
+                <h2>One Mobikwik Systems Ltd.</h2>
+            </div>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>1900 Cr.</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>Not Issued</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Assets/logo9.png" alt="Le Travenues Technology">
+            <h2>Le Travenues Technology</h2>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>1600 Cr.</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>Not Issued</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="try">
+                <img src="Assets/logo10.png" alt="CMR Green Technologies">
+                <h2>CMR Green Technologies</h2>
+            </div>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>Not Issued</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="try">
+                <img src="Assets/logo11.png" alt="Wellness Forever">
+                <h2>Wellness Forever</h2>
+            </div>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>Not Issued</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="try">
+                <img src="Assets/logo12.png" alt="PKH Ventures Ltd.">
+                <h2>PKH Ventures Ltd.</h2>
+            </div>
+            <div class="info">
+                <div>
+                    <span>PRICE BAND</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>OPEN</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>CLOSE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE SIZE</span>
+                    <strong>Not Issued</strong>
+                </div>
+                <div>
+                    <span>ISSUE TYPE</span>
+                    <strong>Book Built</strong>
+                </div>
+                <div>
+                    <span>LISTING DATE</span>
+                    <strong>Not Issued</strong>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#" class="rhp">RHP</a>
+                <a href="#" class="drhp">DRHP</a>
+            </div>
+        </div>
+    </div>
+</body>
+<body>
+    <div class="faq-container">
+        <div class="faq-header">
+            <h2>Frequently Asked Questions?</h2>
+            <p>Find answers to common questions that come in your mind related to IPO.</p>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>How to Subscribe to an IPO?</h3>
+                <span>−</span>
+            </div>
+            <div class="faq-answer" style="display: block;">
+                <p>Step 1: Login to your respective service provider.</p>
+                <p>Step 2: Click on the IPO button.</p>
+                <p>Step 3: Select the IPO you want to bid and enter the relevant details.</p>
+                <p>Step 4: Your subscription will be completed once you make the payment or give permission.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>Should I buy an IPO first day?</h3>
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                <!-- Answer content here -->
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>How do you know if an IPO is good?</h3>
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                <!-- Answer content here -->
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>How to check IPO start date?</h3>
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                <!-- Answer content here -->
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>What is issue size?</h3>
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                <!-- Answer content here -->
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>How many shares in a lot?</h3>
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                <!-- Answer content here -->
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>How is the lot size calculated?</h3>
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                <!-- Answer content here -->
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>Who decides the IPO price band?</h3>
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                <!-- Answer content here -->
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>What is IPO GMP?</h3>
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                <!-- Answer content here -->
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>How many lots should I apply for IPO?</h3>
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                <!-- Answer content here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const span = question.querySelector('span');
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    span.textContent = '+';
+                } else {
+                    answer.style.display = 'block';
+                    span.textContent = '−';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
