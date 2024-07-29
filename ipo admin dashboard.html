@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLUESTOCK FINETECH</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="Assets\Logo.png" alt="Logo" style="width:40px;">
+        </a>
+        <span class="name">BLUESTOCK FINETECH</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-center">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </div>
+            </div>
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item">
+                    <div class="profile-circle">
+                        V
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hi, Vishal</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="Assets\profile.jpg" alt="" class="rounded-circle" style="width:30px;">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <style>
+        /* Navbar */
+.search-box {
+    position: relative;
+    width: 100%;
+}
+
+.search-box input {
+    padding-left: 2.5rem;
+}
+
+.search-box .fa-search {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.navbar-nav .nav-link {
+    color: #000;
+}
+
+.name {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    font-weight: 700;
+    color: #5A67BA;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-center {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.navbar-center .search-box {
+    max-width: 600px;
+    margin: auto;
+}
+
+.navbar-nav .profile-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #f0a500;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+/* Sidebar */
+body {
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+    width: 270px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    z-index: 1000;
+    margin-top: 0.7px;
+}
+
+.sidebar-heading {
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.list-group-item {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.sidebar-section {
+    padding: 15px 20px;
+}
+
+.sidebar-heading {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #6c757d;
+    margin-left: 20px;
+}
+
+/* Main content */
+.custom-container {
+    margin-top: 3rem;
+    margin-left: 18rem;
+}
+
+.chart-container img {
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+.quick-links .list-group-item img {
+    width: 50px;
+    margin-right: 1px;
+}
+
+.card {
+    height: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-group-item a {
+    margin-left: 15rem;
+    text-decoration: none;
+    color: #1F384C;
+}
+
+.listing a {
+    margin-left: 17rem;
+}
+
+.listinges a {
+    margin-left: 12.5rem;
+}
+
+.row {
+    margin-top: 2.5rem;
+}
+
+.container-fluid h2 {
+    color: #1F384C;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .custom-container {
+        margin-left: 15rem;
+    }
+
+    .list-group-item a {
+        margin-left: 10rem;
+    }
+
+    .listing a {
+        margin-left: 12rem;
+    }
+
+    .listinges a {
+        margin-left: 9rem;
+    }
+
+    .chart-container img {
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .custom-container {
+        margin-left: 12rem;
+    }
+
+    .list-group-item a {
+        margin-left: 8rem;
+    }
+
+    .listing a {
+        margin-left: 10rem;
+    }
+
+    .listinges a {
+        margin-left: 7rem;
+    }
+
+    .chart-container img {
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #sidebar-wrapper {
+        width: 200px;
+    }
+
+    .custom-container {
+        margin-left: 10rem;
+    }
+
+    .list-group-item a {
+        margin-left: 5rem;
+    }
+
+    .listing a {
+        margin-left: 6rem;
+    }
+
+    .listinges a {
+        margin-left: 4rem;
+    }
+
+    .chart-container img {
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #sidebar-wrapper {
+        width: 150px;
+    }
+
+    .custom-container {
+        margin-left: 8rem;
+    }
+
+    .list-group-item a {
+        margin-left: 3rem;
+    }
+
+    .listing a {
+        margin-left: 4rem;
+    }
+
+    .listinges a {
+        margin-left: 2rem;
+    }
+
+    .chart-container img {
+        margin-left: 0;
+    }
+
+    .navbar-center {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .profile-circle {
+        margin: 0;
+    }
+}
+
+        </style>
+
+
+
+
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <p class="sidebar-heading">MENU</p>
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <i class="fas fa-tachometer-alt"></i> Dashboard
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <i class="fas fa-shopping-cart"></i> Manage IPO
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <i class="fas fa-file-alt"></i> IPO Subscription
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <i class="fas fa-check-circle"></i> IPO Allotment
+                </a>
+                <p class="sidebar-heading">OTHERS</p>
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <i class="fas fa-cog"></i> Settings
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <i class="fas fa-plug"></i> API Manager
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <i class="fas fa-user"></i> Accounts
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <i class="fas fa-question-circle"></i> Help
+                </a>
+
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <div class="container-fluid custom-container">
+            <h2>Dashboard</h2>
+            <div class="row">
+                <!-- IPO Dashboard India -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">IPO Dashboard India</h5>
+                            <p><span style="color: green;">↑ 20 IPO in Gain</span></p>
+                            <div class="chart-container">
+                                <img src="Assets\Rating.png" class="img-fluid" alt="Rating Chart" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <div class="card quick-links">
+                        <div class="card-body">
+                            <h5 class="card-title">Quick Links</h5>
+                            <p class="card-text">Adipiscing elit, sed do eiusmod tempor</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <img src="Assets\Group 299 (3).png" alt="NSE India"> NSE India
+                                    <a href="#">Visit Now</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <img src="Assets\Group 299.png" alt="BSE India"> BSE India
+                                    <a href="#">Visit Now</a>
+                                </li>
+                                <li class="list-group-item listing">
+                                    <img src="Assets\Group 299 (1).png" alt="SEBI"> SEBI
+                                    <a href="#" class="listing">Visit Now</a>
+                                </li>
+                                <li class="list-group-item listinges">
+                                    <img src="Assets\Group 299 (2).png" alt="Money Control"> Money Control
+                                    <a href="#" class="listinges">Visit Now</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main Board IPO -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="chart-container">
+                                <img src="Assets\Order Time.png" class="img-fluid" alt="Order Time Chart" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
