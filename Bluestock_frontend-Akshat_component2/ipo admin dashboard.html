@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bluestock Fintech</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <style>
+
+            /* General styles */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f5f5f5;
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                overflow-x: hidden; /* Prevent horizontal scrolling */
+            }
+
+            /* Navbar */
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                padding: 10px 20px;
+                background-color: #fff;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                box-sizing: border-box;
+            }
+
+            .search-box {
+                position: relative;
+                width: 100%;
+                max-width: 600px; /* Set maximum width for the search box */
+            }
+
+            .search-box input {
+                padding-left: 2.5rem;
+                width: 100%; /* Ensure the input field takes full width */
+                box-sizing: border-box;
+            }
+
+            .search-box .fa-search {
+                position: absolute;
+                top: 50%;
+                left: 10px;
+                transform: translateY(-50%);
+                color: #aaa;
+            }
+
+            .navbar-nav .nav-link {
+                color: #000;
+            }
+            .nav-link1{
+                margin-right: 45px;
+                margin-top: 20px;
+            }
+            .name {
+                font-size: 1rem;
+                margin-left: -0.5rem;
+                font-weight: 700;
+                color: #5A67BA;
+            }
+
+            .navbar-center {
+                flex-grow: 1;
+                text-align: center;
+                max-width: 600px; /* Constrain the width */
+                margin: auto;
+            }
+
+            .navbar-nav .profile-circle {
+                width: 40px;
+                height: 40px;
+                background-color: #f0a500;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                font-size: 1.2em;
+                margin-left: 10px;
+            }
+
+            .navbar-brand {
+                font-size: 1rem;
+                margin-top: 1rem;
+                margin-left: 2.25rem;
+                font-weight: 700;
+                color: #5A67BA;
+            }
+
+            /* Sidebar */
+            #wrapper {
+                display: flex;
+                flex: 1;
+            }
+
+            #sidebar-wrapper {
+                width: 250px;
+                height: 100vh;
+                position: fixed;
+                left: 0; /* Start hidden off-screen */
+                top: 0;
+                z-index: 1000;
+                background-color: #f8f9fa;
+                transition: left 0.3s ease;
+                overflow-y: auto;
+                border-right: 1px solid #e7e7e7;
+                box-sizing: border-box;
+            }
+
+            #sidebar-wrapper.show {
+                left: 0; /* Slide in */
+            }
+
+            .sidebar-heading {
+                padding: 15px 20px;
+                font-size: 1.2rem;
+                background-color: #f8f9fa;
+                border-bottom: 1px solid #e7e7e7;
+                font-size: 0.85rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: #6c757d;
+                margin-left: 40px;
+            }
+
+            .list-group-item {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+
+            .sidebar-section {
+                padding: 15px 20px;
+            }
+            
+            .name{
+                    margin-top: 2px;
+                    
+                }
+
+
+             /*Toggle Button*/
+             #menu-toggle {
+                display:block ;
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                z-index: 1100;
+                background: transparent;
+                border: none;
+                color: #5A67BA;
+                font-size: 1.5rem;
+            }
+            
+                        @media (max-width: 768px) {
+                #menu-toggle {
+                    display: block; /* Show on small screens */
+                }
+            }
+
+            #menu-toggle.hidden {
+                display: none; /* Hide the button if needed */
+            }
+
+            /* Main content */
+            .content {
+                flex-grow: 1;
+                background-color: #fff;
+                padding: 20px;
+                margin-left: 250px; /* Full width initially */
+                transition: margin-left 0.3s ease; /* Smooth transition */
+                box-sizing: border-box;
+                overflow-x: auto; /* Allow content to scroll horizontally if needed */
+            }
+
+            .content h1 {
+                margin-bottom: 30px;
+            }
+
+            .content h2 {
+                margin-bottom: 20px;
+            }
+
+            .content table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+                box-sizing: border-box;
+            }
+
+            .content table th,
+            .content table td {
+                padding: 8px;
+                text-align: left;
+            }
+
+            .content table th {
+                font-weight: bold;
+            }
+
+            .content .actions {
+                display: flex;
+                align-items: center;
+                gap: 10px; /* Add gap between buttons */
+            }
+
+            .content .status-ongoing,
+            .content .status-comming,
+            .content .status-new-listed {
+                width: 100px;
+                height: 31px;
+                border-radius: 22px;
+                cursor: pointer;
+                border: 1px solid;
+                text-align: center;
+                line-height: 31px;
+            }
+
+            .content .status-ongoing {
+                background-color: #EBF9F1;
+                border-color: #41BC63;
+                color: #41BC63;
+            }
+
+            .content .status-comming {
+                background-color: #FBF9F4;
+                border-color: #BC9241;
+                color: #BC9241;
+            }
+            .nav-item-dropdown{
+                margin-top: 0px;
+                margin-right: 10px;
+            }
+
+            .nav-item{
+                margin-top: 2px;
+            }
+
+
+
+            .content .status-new-listed {
+                background-color: #FBF9F4;
+                border-color: #BC4141;
+                color: #BC4141;
+            }
+
+            .content .update {
+                width: 92px;
+                height: 37px;
+                background-color: #624DE3;
+                border-radius: 8px;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+
+            .content .delete {
+                padding: 5px;
+                font-size: 14px;
+                border-radius: 3px;
+                cursor: pointer;
+                background-color: transparent;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none; 
+            }
+
+            .content .delete img {
+                width: 24px;
+                height: 24px;
+                margin-right: 3px;
+            }
+
+            .content .view {
+                padding: 5px;
+                font-size: 14px;
+                border-radius: 3px;
+                cursor: pointer;
+                background-color: transparent;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none; 
+            }
+
+            .content .view img {
+                width: 24px;
+                height: 24px;
+                margin-right: 3px;
+            }
+
+            .content table tbody tr {
+                background-color: #ffffff;
+                margin-bottom: 10px;
+            }
+
+            .content table tbody tr:nth-child(odd) {
+                background-color: #f1f2f7;
+            }
+            .bg-light border-righ.hide{
+                transform: translateX(-100%);  
+
+            }
+
+            .content .pagination {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin-top: 20px;
+                padding: 0 16px;
+                box-sizing: border-box;
+                overflow-x: auto;
+            }
+
+            .content .pagination button {
+                color: rgb(0, 0, 0);
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                padding: 8px 12px;
+                margin: 0 5px;
+                cursor: pointer;
+            }
+
+            .content .pagination button.active {
+                border: 1px solid black;
+            }
+
+            .table-body {
+                background-color: #f9f9f9;
+            }
+
+            /* Responsive Design */
+            @media (max-width: 1200px) {
+                .content {
+                    margin-left: 200px;
+                }
+            }
+
+            @media (max-width: 992px) {
+                .content {
+                    margin-left: 150px;
+                }
+            }
+
+            @media (max-width: 768px) {
+                #sidebar-wrapper {
+                    width: 200px;
+                }
+
+                .content {
+                    margin-left: 200px;
+                }
+            }
+
+            @media (max-width: 576px) {
+                #sidebar-wrapper {
+                    width: 150px;
+                }
+
+                .content {
+                    margin-left: 15px;
+                }
+
+                .navbar-center {
+                    display: none;
+                }
+
+                .navbar {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                .navbar-nav {
+                    flex-direction: row;
+                    width: 100%;
+                    justify-content: space-between;
+                }
+
+                .profile-circle {
+                    margin: 0;
+                }
+
+                .name {
+                margin-left: 2px;
+            }
+            #sidebar-wrapper.show {
+                transform: translateX(0);
+            }
+
+            /* Hide sidebar when hamburger is clicked */
+            #sidebar-wrapper.hide {
+                transform: translateX(-100%);
+            }
+            }
+
+            @media (max-width: 768px) {
+                .custom-container {
+                    margin-left: 2rem;
+                }
+
+                .list-group-item a {
+                    margin-left: 5rem;
+                }
+
+                .listing a {
+                    margin-left: 6rem;
+                }
+
+                .listinges a {
+                    margin-left: 4rem;
+                }
+
+                .chart-container img {
+                    margin-left: 1rem;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .custom-container {
+                    margin-left: 0;
+                }
+
+                .list-group-item a {
+                    margin-left: 3rem;
+                }
+
+                .listing a {
+                    margin-left: 4rem;
+                }
+
+                .listinges a {
+                    margin-left: 2rem;
+                }
+                .navbar-brand{
+                    display: none;
+                }
+
+                .chart-container img {
+                    margin-left: 0;
+                }
+            }
+
+            /* Navbar */
+            .search-box {
+                position: relative;
+                width: 100%;
+            }
+
+            .container-fluid-custom-container {
+                flex-grow: 1;
+                background-color: #fff;
+                padding: 20px;
+                margin-left: 250px; /* Full width initially */
+                transition: margin-left 0.3s ease; /* Smooth transition */
+                box-sizing: border-box;
+                overflow-x: auto; /* Allow content to scroll horizontally if needed */
+
+            }
+
+            .search-box input {
+                padding-left: 2.5rem;
+            }
+
+            .search-box .fa-search {
+                position: absolute;
+                top: 50%;
+                left: 10px;
+                transform: translateY(-50%);
+                color: #aaa;
+            }
+            .nav-item-dropdown{
+                margin-top: 0px;
+                margin-right: 10px;
+
+            }
+            .nav-item{
+                margin-top: 2px;
+            }
+
+            .navbar-nav .nav-link {
+                color: #000;
+            }
+            .nav-link1{
+                margin-right: 50px;
+                margin-top: 20px;
+            }
+
+            .name {
+                font-size: 1rem;
+                margin-left: -0.5rem;
+                font-weight: 700;
+                color: #5A67BA;
+            }
+            .navbar-brand{
+                font-size: 1rem;
+                margin-top: 1rem;
+                margin-left: 2.25rem;
+                font-weight: 700;
+                color: #5A67BA;
+            }
+
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: left;
+                width: 100%;
+            }
+
+            .navbar-center {
+                flex-grow: 1;
+                text-align: center;
+            }
+
+            .navbar-center .search-box {
+                max-width: 600px;
+                margin: auto;
+            }
+
+            .navbar-nav .profile-circle {
+                width: 40px;
+                height: 40px;
+                background-color: #f0a500;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                font-size: 1.2em;
+                margin-left: 0px;
+            }
+
+            /* Sidebar */
+            body {
+                overflow-x: hidden;
+            }
+
+            #sidebar-wrapper {
+                width: 250px;
+                height: 140vh;
+                position: fixed;
+                left: 0;
+                top: 0;
+                z-index: 1000;
+                background-color: #f8f9fa;
+                transition: all 0.3s ease;
+                overflow-y: auto;
+                border-right: 1px solid #e7e7e7;
+            }
+
+            #sidebar-wrapper.show {
+                left: 0;
+            }
+
+            .sidebar-heading {
+                padding: 15px 20px;
+                font-size: 1.2rem;
+                background-color: #f8f9fa;
+                border-bottom: 1px solid #e7e7e7;
+            }
+
+            .list-group-item {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+
+            .sidebar-section {
+                padding: 15px 20px;
+            }
+
+            .sidebar-heading {
+                font-size: 0.85rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: #6c757d;
+                margin-left: 40px;
+            }
+
+            /* Main content */
+            .custom-container {
+                margin-top: 3rem;
+                margin-left: 250px;
+                transition: margin-left 0.3s ease;
+            }
+
+            .chart-container img {
+                justify-content: center;
+                align-items: center;
+                margin-left: 5rem;
+            }
+
+            .quick-links .list-group-item img {
+                width: 50px;
+                margin-right: 1px;
+            }
+
+            .card {
+                height: 100%;
+            }
+
+            .card-body {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .bg-light border-righ.hide{
+                transform: translateX(-100%);  
+
+            }
+
+            .list-group-item a {
+                margin-left: 15rem;
+                text-decoration: none;
+                color: #1F384C;
+            }
+
+            .listing a {
+                margin-left: 17rem;
+            }
+
+            .listinges a {
+                margin-left: 12.5rem;
+            }
+
+            .row {
+                margin-top: 2.5rem;
+            }
+
+            .container-fluid h2 {
+                color: #1F384C;
+            }
+
+            /* Responsive Design */
+            @media (max-width: 1200px) {
+                .custom-container {
+                    margin-left: 5rem;
+                }
+
+                .list-group-item a {
+                    margin-left: 10rem;
+                }
+
+                .listing a {
+                    margin-left: 12rem;
+                }
+
+                .listinges a {
+                    margin-left: 9rem;
+                }
+
+                .chart-container img {
+                    margin-left: 0rem;
+                }
+            }
+
+            @media (max-width: 992px) {
+                .custom-container {
+                    margin-left: 4rem;
+                }
+
+                .list-group-item a {
+                    margin-left: 8rem;
+                }
+
+                .listing a {
+                    margin-left: 10rem;
+                }
+
+                .listinges a {
+                    margin-left: 7rem;
+                }
+
+                .chart-container img {
+                    margin-left: 2rem;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .custom-container {
+                    margin-left: 2rem;
+                }
+
+                .list-group-item a {
+                    margin-left: 5rem;
+                }
+
+                .listing a {
+                    margin-left: 6rem;
+                }
+
+                .listinges a {
+                    margin-left: 4rem;
+                }
+
+                .chart-container img {
+                    margin-left: 1rem;
+                }
+            }
+
+             #menu-toggle {
+                display: block; /* Show hamburger icon on small screens */
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                z-index: 1100;
+                background: transparent;
+                border: none;
+                color: #5A67BA;
+                font-size: 1.5rem;
+            }
+            
+            @media (max-width: 768px) {
+                #sidebar-wrapper {
+                    width: 200px;
+                }
+
+                .content {
+                    margin-left: 200px;
+                }
+            }
+
+            @media (max-width: 576px) {
+                #sidebar-wrapper {
+                width: 150px;
+            }
+
+            .custom-container {
+                margin-left: 0;
+            }
+
+            .list-group-item a {
+                margin-left: 3rem;
+            }
+
+            .listing a {
+                margin-left: 4rem;
+            }
+
+            .listinges a {
+                margin-left: 2rem;
+            }
+
+            .chart-container img {
+                margin-left: 0;
+            }
+
+            .navbar-center {
+                display: none;
+            }
+
+            .navbar {
+                flex-direction: column;
+            }
+
+            .navbar-nav {
+                flex-direction: row;
+            }
+
+            .profile-circle {
+                margin: 0;
+            }
+
+            .navbar-brand {
+                display: none;
+            }
+
+            .name {
+                margin-left: 0px;
+                font-size: 1.08rem;
+                text-align: right;
+                font-weight: bold;
+                line-height: 2rem; 
+                /*text-transform: uppercase;*/
+            }
+
+            .container-fluid-custom-container {
+                margin-left: 0;
+            }
+
+            #sidebar-wrapper.show {
+                transform: translateX(0);
+            }
+
+            /* Hide sidebar when hamburger is clicked */
+            #sidebar-wrapper.hide {
+                transform: translateX(-100%);
+            }
+        }
+
+        #menu-toggle {
+                display:block ;
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                z-index: 1100;
+                background: transparent;
+                border: none;
+                color: #5A67BA;
+                font-size: 1.5rem;
+            }
+
+                        @media (max-width: 768px) {
+                #menu-toggle {
+                    display: block; /* Show on small screens */
+                }
+                
+            }
+
+            #menu-toggle.hidden {
+                display: none; /* Hide the button if needed */
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="Assets/Logo1.png" alt="Logo" style="width:40px;">
+            </a>
+            <button id="menu-toggle" class="btn btn-primary">
+                <i class="fas fa-bars"></i> <!-- Hamburger icon -->
+            </button>
+
+           
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-center">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    </div>
+                </div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <div class="profile-circle">
+                            V
+                        </div>
+                    </li>
+
+                    <li class="nav-item-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="Assets/profile.jpg" alt="" class="rounded-circle" style="width:30px;">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link1" href="#"><i class="fas fa-bell"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar -->
+            <div class="bg-light border-right" id="sidebar-wrapper">
+                <a class="navbar-brand" href="#">
+                    <img src="Assets/Logo1.png" alt="Logo" style="width:40px;">
+                </a>
+                <span class="name">Bluestock Fintech</span>
+                <p class="sidebar-heading">MENU</p>
+                <div class="list-group list-group-flush">
+                    <a href="#" class="list-group-item list-group-item
+                    <a href="#" class="list-group-item list-group-item-action bg-light">
+                        <i class="fas fa-tachometer-alt"></i> Dashboard
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light">
+                        <i class="fas fa-shopping-cart"></i> Manage IPO
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light">
+                        <i class="fas fa-file-alt"></i> IPO Subscription
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light">
+                        <i class="fas fa-check-circle"></i> IPO Allotment
+                    </a>
+                    <p class="sidebar-heading">OTHERS</p>
+                    <a href="#" class="list-group-item list-group-item-action bg-light">
+                        <i class="fas fa-cog"></i> Settings
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light">
+                        <i class="fas fa-plug"></i> API Manager
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light">
+                        <i class="fas fa-user"></i> Accounts
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light">
+                        <i class="fas fa-question-circle"></i> Help
+                    </a>
+                </div>
+            </div>
+
+             <!-- Page Content -->
+             <div id="page-content-wrapper">
+                <div class="container-fluid-custom-container">
+                    <h2>Dashboard</h2>
+                    <div class="row">
+                        <!-- IPO Dashboard India -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">IPO Dashboard India</h5>
+                                    <p><span style="color: green;">↑ 20 IPO in Gain</span></p>
+                                    <div class="chart-container">
+                                        <img src="Assets/Rating.png" class="img-fluid" alt="Rating Chart" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Quick Links -->
+                        <div class="col-md-4">
+                            <div class="card quick-links">
+                                <div class="card-body">
+                                    <h5 class="card-title">Quick Links</h5>
+                                    <p class="card-text">Adipiscing elit, sed do eiusmod tempor</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <img src="Assets/Group 299 (3).png" alt="NSE India"> NSE India
+                                            <a href="#">Visit Now</a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <img src="Assets/Group 299.png" alt="BSE India"> BSE India
+                                            <a href="#">Visit Now</a>
+                                        </li>
+                                        <li class="list-group-item listing">
+                                            <img src="Assets/Group 299 (1).png" alt="SEBI"> SEBI
+                                            <a href="#" class="listing">Visit Now</a>
+                                        </li>
+                                        <li class="list-group-item listinges">
+                                            <img src="Assets/Group 299 (2).png" alt="Money Control"> Money Control
+                                            <a href="#" class="listinges">Visit Now</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Main Board IPO -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="chart-container">
+                                        <img src="Assets/Order Time.png" class="img-fluid" alt="Order Time Chart" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /#page-content-wrapper -->
+        </div>
+
+        <!-- Scripts -->
+                
+            
+            
+        
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <script>
+                document.getElementById('menu-toggle').addEventListener('click', function() {
+            var sidebar = document.getElementById('sidebar-wrapper');
+            if (sidebar.classList.contains('hide')) {
+                sidebar.classList.remove('hide');
+                sidebar.classList.add('show');
+            } else {
+                sidebar.classList.remove('show');
+                sidebar.classList.add('hide');
+            }
+            });
+            </script>
+        </div>
+
+    </body>
+
+</html>
